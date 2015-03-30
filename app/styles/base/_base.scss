@@ -59,3 +59,14 @@ a{
   cursor: pointer !important;
 }
 
+
+// -------------------------------------------------
+//
+// Forms
+// 
+// -------------------------------------------------
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+

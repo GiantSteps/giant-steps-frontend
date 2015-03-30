@@ -1,6 +1,32 @@
 <section class="top-nav">
+	
+	<!--HOME LOGO-->
 	<a ui-sref="home"><div class="nav-logo"></div></a>
+	
+	<!--SLOGAN-->
 	<div class="nav-mission">
 		<h4>Seven League Boots For Music Creation And Performance</h4>
 	</div>
+
+	<!--SEARCH BAR-->
+	<div class="nav-search">
+		<span class="fa fa-search"></span>
+		<input ng-model="topNavCtrl.search.input" placeholder="Search" ng-focus="topNavCtrl.search.toggleResults()" ng-blur="topNavCtrl.search.toggleResults()">
+
+	</div>
+
+	<div class="nav-results" ng-show="topNavCtrl.search.showResults">
+		<ul>
+			<li ng-show="(topNavCtrl.search.criteria | filter : topNavCtrl.search.input).length == 0"><strong>Sorry, no results</strong></li>
+			
+			<li ng-repeat="result in topNavCtrl.search.criteria | filter : topNavCtrl.search.input">
+				<a ng-if="result.type == 'news'" ng-href="{{result.link}}"><span class="fa fa-newspaper-o"></span>{{result.title}}</a>
+				<a ng-if="result.type == 'paper'" ng-href="{{result.link}}"><span class="fa fa-file"></span>{{result.title}}</a>
+				<a ng-if="result.type == 'event'" ng-href="{{result.link}}"><span class="fa fa-globe"></span>{{result.title}}</a>
+			</li>
+		</ul>
+	</div>
+
+
+
 </section>
