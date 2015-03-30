@@ -1,0 +1,28 @@
+// -------------------------------------------------
+//
+// Media Queries
+// 
+// -------------------------------------------------
+
+
+$breakpoints: (
+  "extra-small" 300px,
+  "small" 350px,
+  "kinda" 568px,
+  "medium" 700px,
+  "large" 1040px,
+  "extra-large" 1180px,
+  "extra-extra-large" 1200px,
+  "widescreen" 1400px,
+  "huge" 1600px
+);
+
+@mixin mq($size, $type: "min-width") { 
+  @each $breakpoint in $breakpoints {
+    @if ($size == nth($breakpoint, 1)) {
+      @media ($type: nth($breakpoint, 2)) {
+        @content;
+      }
+    }
+  }
+}

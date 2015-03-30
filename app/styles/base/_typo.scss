@@ -1,0 +1,174 @@
+// -------------------------------------------------
+//
+// TYPO
+// 
+// -------------------------------------------------
+
+
+
+/* Webfont: Akkurat-Italic2 */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Italic2.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Italic2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Italic2.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Italic2.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Italic2.svg#Akkurat-Italic2') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Akkurat-Regular */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Regular.svg#Akkurat-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: lighter;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Akkurat-Regular2 */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Regular2.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Regular2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Regular2.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Regular2.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Regular2.svg#Akkurat-Regular2') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Akkurat */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat.svg#Akkurat') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+// -------------------------------------------------
+//
+// Styles
+// 
+// -------------------------------------------------
+
+body{
+    font-family:'Akkurat', Helvetica, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-size: 1.5em;
+    @include mq("medium"){
+        font-size: 2.25em;
+    }
+    @include mq("large"){
+        font-size: 3.375em;
+    }
+    @include mq("widescreen"){
+        font-size: 5.063em;
+    }
+}
+
+h2{
+    font-weight: normal;
+    font-size: 1em;
+    @include mq("medium"){
+        font-size: 1.5em;
+    }
+    @include mq("large"){
+        font-size: 2.25em;
+    }
+    @include mq("widescreen"){
+        font-size: 3.375em;
+    }
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 0.667em;
+    @include mq("medium"){
+        font-size: 1em;
+    }
+    @include mq("large"){
+        font-size: 1.5em;
+    }
+    @include mq("widescreen"){
+        font-size: 2.25em;
+    }
+}
+
+h4{
+    font-weight: bold;
+    font-size: 0.667em;
+    @include mq("medium"){
+        font-size: 0.667em;
+    }
+    @include mq("large"){
+        font-size: 0.8em;
+    }
+    @include mq("widescreen"){
+        font-size: 1em;
+    }
+}
+
+p{
+    line-height: 1.5;
+    font-size: 0.667em;
+    @include mq("medium"){
+        font-size: 1em;
+    }
+    @include mq("large"){
+        font-size: 1.5em;
+    }
+    @include mq("widescreen"){
+        font-size: 2.25em;
+    }
+}
+
+small{
+    display: block;
+    font-size: 0.5em;
+    @include mq("medium"){
+        font-size: 0.667em;
+    }
+    @include mq("large"){
+        font-size: 0.667em;
+    }
+}
+
+
+// -------------------------------------------------
+//
+// Lists
+// 
+// -------------------------------------------------
+ul,ol{
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    font-weight: bold;
+}
