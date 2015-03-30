@@ -1,0 +1,31 @@
+$topnavheight: 50px;
+
+.top-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $topnavheight;
+	background: transparent;
+	.nav-logo{
+		position: absolute;
+		top: 0;
+		left: 20px;
+		width: 150px;
+		height: 100%;
+		background: url(../images/logo.svg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+	.nav-mission{
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		h4{
+			font-weight: lighter;
+			@include uppercase();
+			line-height: $topnavheight;
+		}
+	}
+}

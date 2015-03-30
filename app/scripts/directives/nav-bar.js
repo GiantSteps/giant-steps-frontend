@@ -12,15 +12,11 @@ angular.module('giantSteps2App')
     var controller = function(){
     	this.navItems = [
     		{
-    			name: 'Home',
-    			state: 'home'
-    		},
-    		{
     			name: 'About',
     			state: 'about'
     		},
     		{
-    			name: 'Workshops & Events',
+    			name: 'Workshops &\xA0Events',
     			state: 'events'
     		},
     		{

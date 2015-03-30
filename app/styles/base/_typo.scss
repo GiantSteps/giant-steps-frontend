@@ -159,6 +159,13 @@ small{
 }
 
 
+a{
+    color: $text;
+    border-bottom: 3px solid $text;
+    text-decoration: none;
+}
+
+
 // -------------------------------------------------
 //
 // Lists

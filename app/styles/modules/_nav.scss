@@ -6,7 +6,6 @@ nav{
 	height: 100px;
 	color: $key;
 	ul{
-		background: red;
 		display: inline-block;
 		width: 100%;
 		height: 100%;
@@ -16,6 +15,17 @@ nav{
 		@include justify-content(center);
 		li{
 			display: inline-block;
+			margin: 0 10%;
+			width: 40px;
+			font-size: 1.25em;
+			text-align: left;
+			a{
+				color: $key;
+				display: block;
+				border-bottom: 0;
+				font-weight: lighter;
+				@include uppercase();
+			}
 		}
 	}
 }
