@@ -15,10 +15,13 @@
 
 	</div>
 
+	<!--SEARCH RESULTS-->
 	<div class="nav-results" ng-show="topNavCtrl.search.showResults">
 		<ul>
+			<!--NO RESULTS MSG-->
 			<li ng-show="(topNavCtrl.search.criteria | filter : topNavCtrl.search.input).length == 0"><strong>Sorry, no results</strong></li>
-			
+
+			<!--RESULTS. NO ORDERING ATM -->
 			<li ng-repeat="result in topNavCtrl.search.criteria | filter : topNavCtrl.search.input">
 				<a ng-if="result.type == 'news'" ng-href="{{result.link}}"><span class="fa fa-newspaper-o"></span>{{result.title}}</a>
 				<a ng-if="result.type == 'paper'" ng-href="{{result.link}}"><span class="fa fa-file"></span>{{result.title}}</a>
