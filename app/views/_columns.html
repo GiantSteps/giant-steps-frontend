@@ -1,28 +1,34 @@
 <div class="columns">
 	<div class="col col1 about">
 		<p>The GiantSteps project aims to create the “seven-league boots” for music production in the next decade and beyond. We envision digital musical tools that unleash the creative potential of practitioners by targeting three directions:
-		Developing and integrating musical expert agents, supportive and inspirational systems for melody, harmony, rhythm, structure or style, providing suggestions from sample to song level, while guiding users when they lack inspiration or technical or musical knowledge. These systems will be based on the latest findings in multimodal music information research (MIR) on symbolic, audio and metadata, as well as on new recommendation strategies</p>
+			<ul>
+				<li>Developing and integrating <strong>musical expert agents</strong>, supportive and inspirational systems for melody, harmony, rhythm, structure or style, providing suggestions from sample to song level, while guiding users when they lack inspiration or technical or musical knowledge. These systems will be based on the latest findings in multimodal music information research (MIR) on symbolic, audio and metadata, as well as on new recommendation strategies for the music production domain.</li>
+				<li>Developing improved <strong>interfaces</strong> and paradigms for musical human-computer interaction and <strong>collaborative</strong> control of multi-dimensional parameter spaces, leading to intuitive, expressive and tangible input modalities. These interfaces will incorporate novel <strong>visualisation</strong> techniques that provide meaningful and relevant feedback to enable fast comprehensibility for novices and improved workflows for professionals.</li>
+				<li>Addressing <strong>low cost portable devices</strong> by developing low complexity algorithms for music analysis and recommendation tailored to their capabilities. This will allow for beyond state of the art music analysis algorithms in <strong>affordable production tools</strong> and Apps that can be easily distributed and accessed by both professionals and amateurs.</li>
+			</ul>
 
-		<p>The GiantSteps project aims to create the “seven-league boots” for music production in the next decade and beyond. We envision digital musical tools that unleash the creative potential of practitioners by targeting three directions:
-		Developing and integrating musical expert agents, supportive and inspirational systems for melody, harmony, rhythm, structure or style, providing suggestions from sample to song level, while guiding users when they lack inspiration or technical or musical knowledge. These systems will be based on the latest findings in multimodal music information research (MIR) on symbolic, audio and metadata, as well as on new recommendation strategies</p>
+			<p><a href class="read-more">READ MORE</a></p>
+		</p>
 	</div>
 	<div class="col col2 workshops">
 		<ul>
 			<li ng-repeat="item in colCtrl.workshops">
 				<div class="event-col-item">
 					
-					<strong>● {{item.title}}</strong>
+					<a href class="col-title"><strong>● {{item.title}}</strong></a>
 					
-					<p><small>Posted on {{item.date | date : 'MMM dd, yyyy'}} by {{item.author}}</small></p>
+					<p><small>Posted on <span>{{item.date | date : 'MMM dd, yyyy'}}</span> by <span>{{item.author}}</span></small></p>
 					
 					<!--COL IMAGE-->
 					<div ng-if="item.image" class="image-col-container">
-						<img ng-src="{{item.image}}" />
+						<a href><img ng-src="{{item.image}}" /></a>
 					</div>
 
 					<!--COL EMBED-->
 					<div ng-if="item.embed" class="embed-col-container" ng-bind-html="colCtrl.trust(item.embed)">
 					</div>
+
+					<p><a href class="read-more">READ MORE</a></p>
 
 
 				</div>
