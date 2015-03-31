@@ -1,3 +1,28 @@
+// -------------------------------------------------
+//
+// Main Landing Page
+// 
+// -------------------------------------------------
+
+@include keyframes(vibe1){
+	from{
+		@include transform(translateX(0) translateY(0) translateZ(0));
+	}
+	to{
+		@include transform(translateX(2px) translateY(-2px) translateZ(1px));
+	}
+}
+
+@include keyframes(vibe2){
+	from{
+		@include transform(translateX(0) translateY(0) translateZ(0));
+	}
+	to{
+		@include transform(translateX(-2px) translateY(2px) translateZ(1px));
+	}
+}
+
+
 .main{
 	position: absolute;
 	top: 0;
@@ -12,6 +37,7 @@
 		@include display(flex);
 		@include justify-content(center);
 		@include align-items(center);
+		@include user-select(none);
 		p{
 			max-width: 80%;
 			max-height: 80%;
@@ -19,6 +45,13 @@
 			font-weight: lighter;
 			font-size: 5em;
 			line-height: 1;
+			span{
+				cursor: pointer !important;
+				// @include animation(vibe1 .2s linear infinite);
+			}
+			&.creativity-msg, &.experimentation-msg, &.performance-msg{
+				display: none;
+			}
 		}
 	}
 }
