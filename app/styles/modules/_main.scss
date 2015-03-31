@@ -76,8 +76,16 @@
 			max-height: 80%;
 			text-align: left;
 			font-weight: lighter;
-			font-size: 5em;
+			font-size: 2em;
 			line-height: 1;
+			@include mq("large"){
+				font-size: 5em;
+			}
+			@include mq("widescreen"){
+				max-width: 60%;
+				width: 60%;
+				text-align: center;
+			}
 			span{
 				cursor: pointer !important;
 			}

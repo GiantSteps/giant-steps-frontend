@@ -29,6 +29,10 @@ $topnavheight: 50px;
 		width: 100%;
 		height: 100%;
 		text-align: center;
+		display: none;
+		@include mq("large"){
+			display: block;
+		}
 		h4{
 			font-weight: lighter;
 			@include uppercase();
@@ -44,6 +48,10 @@ $topnavheight: 50px;
 		width: 150px;
 		margin-top: 12.5px;
 		border-bottom: 1px solid $text;
+		display: none;
+		@include mq("large"){
+			display: block;
+		}
 		input{
 			height: 25px;
 			margin-top: 0;

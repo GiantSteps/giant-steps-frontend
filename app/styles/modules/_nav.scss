@@ -16,10 +16,13 @@ nav{
 		li{
 			display: inline-block;
 			width: 25%;
-			font-size: 1.25em;
+			font-size: 0.9em;
 			text-align: center;
 			font-weight: lighter;
 			@include uppercase();
+			@include mq("large"){
+				font-size: 1.25em;
+			}
 			a{
 				color: $key;
 				display: block;
