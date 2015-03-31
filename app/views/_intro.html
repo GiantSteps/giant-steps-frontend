@@ -1,0 +1,19 @@
+<div class="main-container" id="main-container">
+
+  	<div class="image-container" id="image-container">
+  		<div class="image-box" id="image-box">
+  			<img ng-show="intro.creativity" src="images/maxresdefault.jpg" />
+  			<img ng-show="intro.experimentation" src="images/maxresdefault2.jpg" />
+  			<img ng-show="intro.performance" src="images/maxresdefault3.jpg" />
+  		</div>
+  	</div>
+  	
+  	<p class="total-msg" ng-show="intro.main" id="total-msg">STRIDING FORWARD IN ELECTRONIC MUSICAL <span ng-click="intro.show('creativity')">CREATIVITY</span>, ●●●●●●●●●● <span ng-click="intro.show('experimentation')">EXPERIMENTATION</span> AND <span ng-click="intro.show('performance')">PERFORMANCE</span> ●●</p>
+
+  	<p class="creativity-msg topic" ng-show="intro.creativity" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL <span>CREATIVITY</span>, ●●●●●●●●●●●● ●●●●●● ●●●●●●●●</p>
+
+  	<p class="experimentation-msg topic" ng-show="intro.experimentation" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL ●●●●●●●●●●●●, <span>EXPERIMENTATION</span> ●●● ●●●●●●●●</p>
+
+  	<p class="performance-msg topic" ng-show="intro.performance" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL ●●●●●●●●●●●●, ●●●●●●●●●●●● ●●● PERFORMANCE</p>
+
+  </div>
