@@ -9,7 +9,7 @@
 angular.module('giantSteps2App')
   .directive('topNav', function () {
     
-    var controller = function($scope){
+    var controller = function(){
     	this.search = {
     		input: '',
 	    	showResults: false,
@@ -46,7 +46,7 @@ angular.module('giantSteps2App')
 	    		self.showResults = !self.showResults;
 	    	}
     	};
-    }
+    };
 
     return {
       templateUrl: 'views/_top-nav.html',

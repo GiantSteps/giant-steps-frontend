@@ -37,7 +37,7 @@ angular.module('giantSteps2App')
           scrollTop: $(window).height() - 150
         },300);
       };
-    }
+    };
 
     return {
       templateUrl: 'views/_navbar.html',

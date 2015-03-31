@@ -32,7 +32,8 @@ angular.module('giantSteps2App')
 
   		this.trust = function(text){
   			return $sce.trustAsHtml(text);
-  		}
+  		};
+  		
   		this.workshops = [
   			{
   				title: 'CHI2015 Workshop: Collaborating with Intelligent Machines: Interfaces for Creative Sound',

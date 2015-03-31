@@ -8,7 +8,7 @@
  */
 angular.module('giantSteps2App').directive('makeIntro', function () {
 
-	var link = function($scope, element, attrs){
+	var link = function($scope){
 
 		$scope.intro = {
 			main: true,
@@ -43,7 +43,7 @@ angular.module('giantSteps2App').directive('makeIntro', function () {
 				self.experimentation = false;
 				self.performance = false;
 			}
-		}
+		};
 	};
 
 	return {
