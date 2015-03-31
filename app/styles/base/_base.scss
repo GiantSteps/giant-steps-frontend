@@ -34,12 +34,14 @@ div,section,article{
 	height: 100%;
   background: $background;
   overflow: hidden;
-  position: relative;
-  @include transition(all .4s ease);
-  &.open{
-      @include transform(translateZ(-2000px));
-      // @include filter(blur(5px));
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-view{
+  width: 100%;
+  height: 100%;
 }
 
 // -------------------------------------------------

@@ -1,7 +1,7 @@
 <div class="main-container" id="main-container">
 
   	<div class="image-container" id="image-container">
-  		<div class="image-box" id="image-box">
+  		<div class="image-box" id="image-box" ng-click="intro.back()">
   			<img ng-show="intro.creativity" src="images/maxresdefault.jpg" />
   			<img ng-show="intro.experimentation" src="images/maxresdefault2.jpg" />
   			<img ng-show="intro.performance" src="images/maxresdefault3.jpg" />
@@ -15,5 +15,6 @@
   	<p class="experimentation-msg topic" ng-show="intro.experimentation" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL ●●●●●●●●●●●●, <span>EXPERIMENTATION</span> ●●● ●●●●●●●●</p>
 
   	<p class="performance-msg topic" ng-show="intro.performance" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL ●●●●●●●●●●●●, ●●●●●●●●●●●● ●●● PERFORMANCE</p>
-
+    
+    <nav-bar></nav-bar>
   </div>

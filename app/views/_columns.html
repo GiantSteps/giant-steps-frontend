@@ -1,0 +1,34 @@
+<div class="columns">
+	<div class="col col1 about">
+		<p>The GiantSteps project aims to create the “seven-league boots” for music production in the next decade and beyond. We envision digital musical tools that unleash the creative potential of practitioners by targeting three directions:
+		Developing and integrating musical expert agents, supportive and inspirational systems for melody, harmony, rhythm, structure or style, providing suggestions from sample to song level, while guiding users when they lack inspiration or technical or musical knowledge. These systems will be based on the latest findings in multimodal music information research (MIR) on symbolic, audio and metadata, as well as on new recommendation strategies</p>
+
+		<p>The GiantSteps project aims to create the “seven-league boots” for music production in the next decade and beyond. We envision digital musical tools that unleash the creative potential of practitioners by targeting three directions:
+		Developing and integrating musical expert agents, supportive and inspirational systems for melody, harmony, rhythm, structure or style, providing suggestions from sample to song level, while guiding users when they lack inspiration or technical or musical knowledge. These systems will be based on the latest findings in multimodal music information research (MIR) on symbolic, audio and metadata, as well as on new recommendation strategies</p>
+	</div>
+	<div class="col col2 workshops">
+		<ul>
+			<li ng-repeat="item in colCtrl.workshops">
+				<div class="event-col-item">
+					
+					<strong>● {{item.title}}</strong>
+					
+					<p><small>Posted on {{item.date | date : 'MMM dd, yyyy'}} by {{item.author}}</small></p>
+					
+					<!--COL IMAGE-->
+					<div ng-if="item.image" class="image-col-container">
+						<img ng-src="{{item.image}}" />
+					</div>
+
+					<!--COL EMBED-->
+					<div ng-if="item.embed" class="embed-col-container" ng-bind-html="colCtrl.trust(item.embed)">
+					</div>
+
+
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="col col3 projects"></div>
+	<div class="col col4 contact"></div>
+</div>

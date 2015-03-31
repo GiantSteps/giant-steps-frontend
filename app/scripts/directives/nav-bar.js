@@ -9,6 +9,8 @@
 angular.module('giantSteps2App')
   .directive('navBar', function () {
 
+    var main = $('#main');
+
     var controller = function(){
     	this.navItems = [
     		{
@@ -28,6 +30,13 @@ angular.module('giantSteps2App')
     			state: 'contact'
     		}
     	];
+
+
+      this.scrollTo = function(){
+        main.animate({
+          scrollTop: $(window).height() - 150
+        },300);
+      };
     }
 
     return {

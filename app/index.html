@@ -23,7 +23,8 @@
 
 
     <div class="container">
-      <div ui-view=""></div>
+      <top-nav></top-nav>
+      <div ui-view="" class="main-view"></div>
     </div>
 
 
@@ -40,6 +41,7 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
@@ -48,6 +50,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/jquery.transit/jquery.transit.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -61,6 +64,7 @@
         <script src="scripts/controllers/events.js"></script>
         <script src="scripts/directives/top-nav.js"></script>
         <script src="scripts/directives/make-intro.js"></script>
+        <script src="scripts/directives/columns.js"></script>
         <!-- endbuild -->
 </body>
 </html>

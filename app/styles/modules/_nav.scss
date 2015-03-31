@@ -1,5 +1,5 @@
 nav{
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -15,16 +15,17 @@ nav{
 		@include justify-content(center);
 		li{
 			display: inline-block;
-			margin: 0 10%;
-			width: 40px;
+			width: 25%;
 			font-size: 1.25em;
-			text-align: left;
+			text-align: center;
+			font-weight: lighter;
+			@include uppercase();
 			a{
 				color: $key;
 				display: block;
 				border-bottom: 0;
 				font-weight: lighter;
-				@include uppercase();
+				
 			}
 		}
 	}
