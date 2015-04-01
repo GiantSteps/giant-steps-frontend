@@ -1,0 +1,38 @@
+.about{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: block;
+	overflow-y: scroll;
+	@include mq("large"){
+		overflow-y: hidden;
+		@include flex();
+	}
+	.about-text{
+		width: 80%;
+		margin-left: 10%;
+		position: relative;
+		top: 100px;
+		@include mq("large"){
+			margin-top: 0;
+			margin: 0;
+			top: 0;
+		}
+		p{
+			font-weight: lighter;
+			font-weight: bold;
+		}
+		ul{
+			font-weight: lighter;
+			list-style-type: disc;
+			li{
+				font-weight: lighter;
+				margin: 20px 0;
+				strong{
+					color: $key;
+				}
+			}
+		}
+	}
+}

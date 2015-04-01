@@ -9,10 +9,7 @@ nav{
 		display: inline-block;
 		width: 100%;
 		height: 100%;
-		@include display(flex);
-		@include flex-direction(row);
-		@include align-items(center);
-		@include justify-content(center);
+		@include flex(row);
 		li{
 			display: inline-block;
 			width: 25%;
