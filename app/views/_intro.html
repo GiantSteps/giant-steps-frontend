@@ -1,4 +1,5 @@
-<div class="main-container" id="main-container">
+<div class="main-container" ng-class="{reverse: intro.reverse}" id="main-container">
+  <div top-nav></div>
 
   	<div class="image-container" id="image-container">
   		<div class="image-box" id="image-box" ng-click="intro.back()">
@@ -8,13 +9,37 @@
   		</div>
   	</div>
   	
-  	<p class="total-msg" ng-show="intro.main" id="total-msg">STRIDING FORWARD IN ELECTRONIC MUSICAL <span ng-click="intro.show('creativity')">CREATIVITY</span>, ●●●●●●●●●● <span ng-click="intro.show('experimentation')">EXPERIMENTATION</span> AND <span ng-click="intro.show('performance')">PERFORMANCE</span> ●●</p>
+  	<p class="total-msg" ng-show="intro.main" id="total-msg">
+      <span class="line1">STRIDING FORWARD IN</span>
+      <span class="line2">ELECTRONIC MUSICAL</span>
+      <span class="line3" ng-click="intro.show('creativity')"><span class="trigger">CREATIVITY</span>, ●●●●●●●</span>
+      <span class="line4" ng-click="intro.show('experimentation')">●●● <span class="trigger">EXPERIMENTATION</span></span>
+      <span class="line5" ng-click="intro.show('performance')">AND <span class="trigger">PERFORMANCE</span> ●●</span>
+    </p>
 
-  	<p class="creativity-msg topic" ng-show="intro.creativity" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL <span>CREATIVITY</span>, ●●●●●●●●●●●● ●●●●●● ●●●●●●●●</p>
+  	<p class="creativity-msg topic" ng-show="intro.creativity" ng-click="intro.back()">
+      <span class="line1">STRIDING FORWARD IN</span>
+      <span class="line2">●●●●●●●●●●●●●●●●●●</span>
+      <span class="line3"><span class="trigger">CREATIVITY</span> ●●●●●●●●●</span>
+      <span class="line4">●●●●●●●●●●●●●●●●●●</span>
+      <span class="line5">●●●●●●●●●●●●●●●●●●</span>
+    </p>
 
-  	<p class="experimentation-msg topic" ng-show="intro.experimentation" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL ●●●●●●●●●●●●, <span>EXPERIMENTATION</span> ●●● ●●●●●●●●</p>
+  	<p class="experimentation-msg topic" ng-show="intro.experimentation" ng-click="intro.back()">
+      <span class="line1">STRIDING FORWARD IN</span>
+      <span class="line2">●●●●●●●●●●●●●●●●●●</span>
+      <span class="line3">●●●●●●●●●●●●●●●●●●</span>
+      <span class="line4">●●● <span class="trigger">EXPERIMENTATION</span></span>
+      <span class="line5">●●●●●●●●●●●●●●●●●●</span>
+    </p>
 
-  	<p class="performance-msg topic" ng-show="intro.performance" ng-click="intro.back()">STRIDING FORWARD IN ELECTRONIC MUSICAL ●●●●●●●●●●●●, ●●●●●●●●●●●● ●●● PERFORMANCE</p>
+  	<p class="performance-msg topic" ng-show="intro.performance" ng-click="intro.back()">
+      <span class="line1">STRIDING FORWARD IN</span>
+      <span class="line2">●●●●●●●●●●●●●●●●●●</span>
+      <span class="line3">●●●●●●●●●●●●●●●●●●</span>
+      <span class="line4">●●●●●●●●●●●●●●●●●●</span>
+      <span class="line5">●●● <span class="trigger">PERFORMANCE</span> ●●</span>
+    </p>
     
     <nav-bar></nav-bar>
   </div>
