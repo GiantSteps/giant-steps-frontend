@@ -7,19 +7,19 @@
  * # EventsCtrl
  * Controller of the giantSteps2App
  */
-angular.module('giantSteps2App').controller('EventsCtrl', function ($scope) {
+angular.module('giantSteps2App').controller('EventsCtrl', ['$scope', 'eventService', function ($scope, eventService) {
 
-	$scope.calendar = [
-		{
-			title: 'CHI2015 Workshop: Collaborating with Intelligent Machines: Interfaces for Creative Sound',
-			posted: Date.now(),
-			author: 'admin',
-			date: ''
+	
+	$scope.events = [];
+	// -------------------------------------------------
+	//
+	// Get events
+	// 
+	// -------------------------------------------------
+	
+	eventService.getData().then(function(response){
+		$scope.events = response;
+	});
 
-		}
 
-
-	];
-
-
-});
+}]);

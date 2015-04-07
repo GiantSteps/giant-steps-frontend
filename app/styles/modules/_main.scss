@@ -95,6 +95,9 @@
 			font-size: 2em;
 			line-height: 1;
 			opacity: 1;
+			-webkit-text-align: justify;
+			-moz-text-align: justify;
+			text-align: justify;
 			span{
 				display: block;
 				&.trigger{

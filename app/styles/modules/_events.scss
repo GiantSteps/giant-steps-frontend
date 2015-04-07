@@ -1,17 +1,104 @@
 .events{
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	margin: 0;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: $key;
-	.event{
-		width: 23.8%;
-		height: 100%;
-		margin: 1% 0 1% 1.6%;
+	background: white;
+	.events-container{
 		position: relative;
-		background: yellow;
+		width: 100%;
+		height: 100%;
+		padding-top: 100px;
+		overflow-y: scroll;
+	}
+	.event{
+		width: 90%;
+		display: inline-block;
+		float: left;
+		height: 100%;
+		min-height: 500px;
+		margin: 1% 5% 1% 5%;
+		position: relative;
+		text-align: center;
+		border: 2px solid black;
+		overflow: hidden;
+		@include mq("medium"){
+			width: 47.6%;
+			margin: 1% 1% 1% 1%;
+		}
+		@include mq("large"){
+			width: 23.8%;
+			margin: 1% 0 1% 1%;
+		}
+		.event-image{
+			width: 100%;
+			height: 200px;
+			margin-bottom: 25px;
+			background-size: cover !important;
+			background-repeat: no-repeat !important;
+			background-position: center center !important;
+
+			img{
+				width: auto;
+				height: 100%;
+			}
+		}
+		.event-date{
+			@include uppercase();
+			color: $key;
+			h3{
+				font-size: 1em;
+			}
+		}
+		.event-location{
+			@include uppercase();
+			color: $key;
+			h3{
+				font-size: 1em;
+			}
+
+		}
+		.event-title{
+			margin-top: 25px;
+			padding: 0 10px;
+			h2{
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+
+		}
+		.event-teaser{
+			padding: 0 10px;
+			p{
+				text-align: left;
+			}
+		}
+
+		.event-more{
+			color: $key;
+			@include uppercase();
+			position: absolute;
+			width: 100%;
+			bottom: 25px;
+			line-height: 1;
+			text-align: center;
+			p{
+				line-height: 1;
+				margin: 0;
+				display: inline-block;
+				font-size: 0.8em;
+				&:after{
+					content: '';
+					display: block;
+					width: 100%;
+					height: 2px;
+					background: $key;
+					margin: 0;
+				}
+			}
+		}
 	}
 }
