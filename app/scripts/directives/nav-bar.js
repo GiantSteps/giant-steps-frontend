@@ -22,8 +22,8 @@ angular.module('giantSteps2App')
     			state: 'events'
     		},
     		{
-    			name: 'Projects',
-    			state: 'projects'
+    			name: 'Project',
+    			state: 'project'
     		},
     		{
     			name: 'Contact',

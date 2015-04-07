@@ -72,3 +72,29 @@ a{
   outline-style: none;
 }
 
+@include keyframes(fadeIn){
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@include keyframes(fadeOut){
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.ng-enter{
+  z-index: 9999;
+  @include animation(fadeIn 0.2s linear);
+}
+
+.ng-leave{
+  z-index: 8888;
+  @include animation(fadeOut 0.2s linear);
+}

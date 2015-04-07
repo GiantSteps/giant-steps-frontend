@@ -31,6 +31,25 @@
 				color: $key;
 				font-weight: normal;
 			}
+			p{
+				max-width: 90%;
+				margin-left: 5%;
+				font-size: 0.8em;
+				.project-header{
+					@include uppercase();
+				}
+			}
+			ul{
+				font-size: 0.8em;
+				width: 90%;
+				margin-left: 5%;
+				line-height: 1.5em;
+				list-style-type: disc;
+				padding-left: 5%;
+				li{
+					margin: 10px 0;
+				}
+			}
 		}
 	}
 }
