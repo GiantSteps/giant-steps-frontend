@@ -376,7 +376,9 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'library/*',
+            'fonts/*'
           ]
         }, {
           expand: true,
@@ -390,6 +392,22 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      }
+    },
+
+
+    aws: grunt.file.readJSON('env.json'),
+
+    s3: {
+      options:{
+        accessKeyId: '<%= aws.accessKeyId %>',
+        secretAccessKey: '<%= aws.secretAccessKey %>',
+        bucket: '<%= aws.bucket %>'
+      },
+
+      build:{
+        cwd: 'dist/',
+        src: '**'
       }
     },
 
