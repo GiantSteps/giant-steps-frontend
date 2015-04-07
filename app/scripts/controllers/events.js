@@ -22,4 +22,14 @@ angular.module('giantSteps2App').controller('EventsCtrl', ['$scope', 'eventServi
 	});
 
 
+	// -------------------------------------------------
+	//
+	// Go to event
+	// 
+	// -------------------------------------------------
+	$scope.goToEvent = function(){
+		return;
+	};
+
+
 }]);

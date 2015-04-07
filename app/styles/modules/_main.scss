@@ -48,7 +48,7 @@
 		padding: 0;
 		top: 0;
 		left: 0;
-		@include flex();
+		@include flex('column');
 		@include user-select(none);
 		&.reverse{
 			background: black;
@@ -95,9 +95,6 @@
 			font-size: 2em;
 			line-height: 1;
 			opacity: 1;
-			-webkit-text-align: justify;
-			-moz-text-align: justify;
-			text-align: justify;
 			span{
 				display: block;
 				&.trigger{

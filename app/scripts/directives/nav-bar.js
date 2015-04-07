@@ -31,12 +31,13 @@ angular.module('giantSteps2App')
     		}
     	];
 
+    };
 
-      this.scrollTo = function(){
-        main.animate({
-          scrollTop: $(window).height() - 150
-        },300);
-      };
+
+    var link = function($scope, element, attrs){
+      if (attrs.display === 'fixed'){
+        element.addClass('stick');
+      }
     };
 
     return {
@@ -44,6 +45,7 @@ angular.module('giantSteps2App')
       restrict: 'AE',
       replace: true,
       controllerAs: 'navCtrl',
-      controller: controller
+      controller: controller,
+      link: link
     };
   });

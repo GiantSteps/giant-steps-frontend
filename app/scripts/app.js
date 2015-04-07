@@ -34,7 +34,7 @@ angular
     .state('projects', {
       url: '/projects',
       templateUrl: 'views/projects.html',
-      controller: 'ProjectCtrl'
+      controller: 'ProjectsCtrl'
     })
     .state('contact', {
       url: '/contact',

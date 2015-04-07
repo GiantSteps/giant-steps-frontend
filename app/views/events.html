@@ -1,11 +1,12 @@
+<div top-nav></div>
 <section class="events">
-	<div top-nav></div>
+	
 
 		<section class="events-container">
 
-			<div class="event" ng-repeat="event in events">
+			<div class="event" ng-repeat="event in events" ng-click="goToEvent()">
 				<div class="event-image" ng-style="{background: 'url(' + event.image + ')' }">
-					<!-- <img ng-src="{{event.image}}" /> -->
+					<div class="event-image-overlay"></div>
 				</div>
 
 				<div class="event-date">
@@ -26,8 +27,8 @@
 				</div>
 			</div>
 		
-
+			<nav-bar></nav-bar>
 	</section>
 
-
 </section>
+

@@ -22,6 +22,7 @@
 		p{
 			font-weight: lighter;
 			font-weight: bold;
+			@include uppercase();
 		}
 		ul{
 			font-weight: lighter;

@@ -1,14 +1,21 @@
 nav{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 100px;
 	color: $key;
+	&.stick{
+		position: absolute;
+	}
 	ul{
 		display: inline-block;
+		position: relative;
+		top: 0;
+		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 50px;
+		padding: 0;
 		@include flex(row);
 		li{
 			display: inline-block;
@@ -25,6 +32,9 @@ nav{
 				display: block;
 				border-bottom: 0;
 				font-weight: lighter;
+				&:hover{
+					text-decoration: underline;
+				}
 				
 			}
 		}
