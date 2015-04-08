@@ -18,18 +18,26 @@
 		.project-col{
 			border: 1px solid black;
 			display: inline-block;
-			width: 23%;
+			width: 31.5%;
 			margin: 1% 0 1% 1%;
 			height: 95%;
 			position: relative;
 			overflow: hidden;
 			overflow-y: auto;
+			background: white;
 			.project-title{
 				margin-top: 10px;
 				font-size: 1.5em;
 				text-align: center;
 				color: $key;
 				font-weight: normal;
+				margin-bottom: 20px;
+			}
+			img{
+				max-width: 90%;
+				width: 90%;
+				height: auto;
+				margin-left: 5%;
 			}
 			p{
 				max-width: 90%;
@@ -37,6 +45,7 @@
 				font-size: 0.8em;
 				.project-header{
 					@include uppercase();
+					font-size: 1.2em
 				}
 			}
 			ul{
