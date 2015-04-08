@@ -19,7 +19,7 @@
 	<div class="nav-results" ng-show="topNavCtrl.search.showResults">
 		<ul>
 			<!--NO RESULTS MSG-->
-			<li ng-show="(topNavCtrl.search.criteria | filter : topNavCtrl.search.input).length == 0"><strong>Sorry, no results</strong></li>
+			<li class="no-results" ng-show="(topNavCtrl.search.criteria | filter : topNavCtrl.search.input).length == 0"><strong>Sorry, no results</strong></li>
 
 			<!--RESULTS. NO ORDERING ATM -->
 			<li ng-repeat="result in topNavCtrl.search.criteria | filter : topNavCtrl.search.input">

@@ -53,6 +53,27 @@
 		&.reverse{
 			background: black;
 			color: white;
+			.top-nav{
+				.nav-logo{
+					background: url(../images/logo-white.svg);
+					background-repeat: no-repeat;
+					background-position: center center;
+					background-size: contain;
+				}
+				.nav-search{
+					border-bottom: 1px solid white;
+					input{
+						border-bottom: 1px solid white;
+						color: white;
+					}
+				}
+				.nav-results{
+					color: black !important;
+				}
+				.no-results{
+					color: black;
+				}
+			}
 		}
 		.image-container{
 			position: absolute;
