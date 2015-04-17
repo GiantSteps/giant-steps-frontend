@@ -1,0 +1,122 @@
+
+// -------------------------------------------------
+//
+// Main Admin Page
+// 
+// -------------------------------------------------
+
+.admin{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	@include flex(row);
+	.admin-question{
+		position: absolute;
+		top: 100px;
+		left: 0;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	a.admin-option-link{
+		text-decoration: none;
+		border-bottom: none;
+	}
+	.admin-option{
+		display: inline-block;
+		width: 200px;
+		height: 100px;
+		margin: 25px;
+		color: black;
+		text-align: center;
+		@include flex();
+		border: 1px solid black;
+		&:hover{
+			background: black;
+			color: white;
+		}
+	}
+}
+
+
+// -------------------------------------------------
+//
+// Event List Page
+// 
+// -------------------------------------------------
+.admin-events{
+	.new-event-button{
+		background: $key;
+		width: 200px;
+		height: 50px;
+		position: absolute;
+		top: 70px;
+		right: 20px;
+		text-align: center;
+		p{
+			line-height: 50px;
+			margin: 0;
+			padding: 0;
+			vertical-align: middle;
+			color: white;
+		}
+	}
+}
+
+
+// -------------------------------------------------
+//
+// Events Create Page
+// 
+// -------------------------------------------------
+.admin-new-event{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	form{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		padding-top: 100px;
+		border-right: 1px solid black;
+		input{
+			outline: none;
+			border: none;
+			margin-left: 20px;
+			width: 80%;
+			height: 50px;
+			font-size: 1.5em;
+			border-bottom: 1px solid black;
+			margin: 10px 20px;
+		}
+		textarea{
+			width: 80%;
+			margin-left: 20px;
+			height: 150px;
+			resize: none;
+			font-size: 1em;
+			line-height: 1;
+		}
+
+	}
+}
+
+.drop-box {
+    background: #F8F8F8;
+    border: 5px dashed #DDD;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 25px;
+    margin: 20px;
+}
+.dragover {
+    border: 5px dashed blue;
+}

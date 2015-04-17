@@ -15,9 +15,18 @@ angular
     'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'angularFileUpload'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
+    
+
+    // -------------------------------------------------
+    //
+    // Client Routes
+    // 
+    // -------------------------------------------------
+    
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
@@ -45,5 +54,27 @@ angular
       url: '/events',
       templateUrl: 'views/events.html',
       controller: 'EventsCtrl'
-    });
+    })
+    .state('admin', {
+      url: '/admin',
+      templateUrl: 'views/admin.html',
+      controller: 'AdminCtrl'
+    })
+    .state('adminEvents', {
+      url: '/admin/events',
+      templateUrl: 'views/admin.events.html',
+      controller: 'AdminCtrl'
+    })
+    .state('adminEventsNew', {
+      url: '/admin/events/new',
+      templateUrl: 'views/admin.events.new.html',
+      controller: 'AdminCtrl'
+    })
+    ;
+
+
+
+
+
+
   });

@@ -10,18 +10,39 @@
 angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
 
   var events = {
+    baseUrl: 'http://localhost:5000/api/',
+
+    // -------------------------------------------------
+    //
+    // Index
+    // 
+    // -------------------------------------------------
+    
     getData: function(){
+      var self = this;
       var deferred = $q.defer();
 
-      $http.get('events.json').success(function(response){
+      $http.get(self.baseUrl + 'events').success(function(response){
+        console.log(response);
         deferred.resolve(response);
-      }).error(function(err){
-        deferred.reject(err);
+      
+      }).error(function(err, msg){
+        deferred.reject();
       });
 
       return deferred.promise;
+    },
 
-
+    // -------------------------------------------------
+    //
+    // Create
+    // 
+    // -------------------------------------------------
+    
+    postData: function(obj){
+      $http.post(obj).success(function(response){
+        console.log(response);
+      });
     }
   };
 

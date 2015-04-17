@@ -1,0 +1,14 @@
+<div top-nav></div>
+<section class="admin-new-event">
+	<form>
+		<input type="text" ng-model="newEvent.name" placeholder="Title" />
+		<input type="date" ng-model="newEvent.date" placeholder="Date/Time" />
+		<input type="text" ng-model="newEvent.location" placeholder="City/Country" />
+		<textarea ng-model="newEvent.teaser">Teaser test</textarea>
+		<div ng-file-drop ng-file-select ng-model="newEvent.file" class="drop-box" drag-over-class="dragover" accept="image/*">Click here or drag and drop images</div>
+		<div ng-no-file-drop>File Drag/Drop is not supported on this browser</div>
+		<ul>
+			<li ng-repeat="f in newEvent.file" style="font:smaller">{{f.name}}</li>
+		</ul>
+	</form>
+</section>

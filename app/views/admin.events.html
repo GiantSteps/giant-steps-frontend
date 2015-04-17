@@ -1,0 +1,12 @@
+<div top-nav></div>
+
+<section class="admin-events">
+	<a ui-sref="adminEventsNew"><div class="new-event-button">
+		<p>+New Event</p>
+	</div></a>
+	<div class="admin-event-list">
+		<ul>
+			<li ng-repeat="event in events">{{event.title}}</li>
+		</ul>
+	</div>
+</section>
