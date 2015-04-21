@@ -1,14 +1,34 @@
 <div top-nav></div>
 <section class="admin-new-event">
+
+	<!--INPUT-->
 	<form>
 		<input type="text" ng-model="newEvent.name" placeholder="Title" />
 		<input type="date" ng-model="newEvent.date" placeholder="Date/Time" />
 		<input type="text" ng-model="newEvent.location" placeholder="City/Country" />
-		<textarea ng-model="newEvent.teaser">Teaser test</textarea>
-		<div ng-file-drop ng-file-select ng-model="newEvent.file" class="drop-box" drag-over-class="dragover" accept="image/*">Click here or drag and drop images</div>
+
+		
+		<div ng-file-drop ng-file-select ng-model="newEvent.file" class="drop-box" drag-over-class="dragover" accept="image/*">Click here or drag and drop image</div>
 		<div ng-no-file-drop>File Drag/Drop is not supported on this browser</div>
 		<ul>
 			<li ng-repeat="f in newEvent.file" style="font:smaller">{{f.name}}</li>
 		</ul>
+
+
+		<div class="new-event-editor" text-angular ta-toolbar="[['bold', 'italics', 'underline'],['insertLink']]" ng-model="newEvent.teaser"></div>
+
+		
+		<div class="new-event-button">
+			<p>+Save Event</p>
+		</div>
 	</form>
+
+	<!--PREVIEW-->
+	<div class="admin-new-event-preview">
+		<div class="preview-area">
+			<h1 ng-bind-html="newEvent.name"></h1>
+			<h2>{{newEvent.location}}</h2>
+			<p ng-bind-html="newEvent.teaser"></p>
+		</div>
+	</div>
 </section>

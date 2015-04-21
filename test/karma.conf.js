@@ -41,6 +41,13 @@ module.exports = function(config) {
       'bower_components/pickadate/lib/picker.date.js',
       'bower_components/pickadate/lib/picker.time.js',
       'bower_components/angular-schema-form-datepicker/bootstrap-datepicker.min.js',
+      'bower_components/rangy/rangy-core.min.js',
+      'bower_components/rangy/rangy-cssclassapplier.min.js',
+      'bower_components/rangy/rangy-selectionsaverestore.min.js',
+      'bower_components/rangy/rangy-serializer.min.js',
+      'bower_components/textAngular/src/textAngular.js',
+      'bower_components/textAngular/src/textAngular-sanitize.js',
+      'bower_components/textAngular/src/textAngularSetup.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
