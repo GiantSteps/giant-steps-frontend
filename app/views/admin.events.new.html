@@ -1,11 +1,11 @@
-<div top-nav></div>
+<div admin-nav model-name="newEvent" section-name="Events"></div>
 <section class="admin-new-event">
 
 	<!--INPUT-->
-	<form>
-		<input type="text" ng-model="newEvent.name" placeholder="Title" />
-		<input type="date" ng-model="newEvent.date" placeholder="Date/Time" />
-		<input type="text" ng-model="newEvent.location" placeholder="City/Country" />
+	<form name="newEventForm">
+		<input type="text" ng-model="newEvent.name" placeholder="Title" required />
+		<input type="date" ng-model="newEvent.date" placeholder="Date/Time" required/>
+		<input type="text" ng-model="newEvent.location" placeholder="City/Country" required/>
 
 		
 		<div ng-file-drop ng-file-select ng-model="newEvent.file" class="drop-box" drag-over-class="dragover" accept="image/*">Click here or drag and drop image</div>
@@ -18,19 +18,18 @@
 
 		<div class="new-event-editor" text-angular ta-toolbar="[['bold', 'italics', 'underline'],['insertLink']]" ng-model="newEvent.teaser"></div>
 
-		
-		<div class="new-event-button">
-			<p>+Save Event</p>
-		</div>
 	</form>
 
 	<!--PREVIEW-->
 	<div class="admin-new-event-preview">
 		<div class="preview-area">
-			<img ng-src="{{image.url}}" />
-			<h1 ng-bind-html="newEvent.name"></h1>
-			<h2>{{newEvent.location}}</h2>
-			<p ng-bind-html="newEvent.teaser"></p>
+			<img class="preview-image" ng-src="{{image.url}}" />
+			<h2 class="preview-date">{{newEvent.date | date : 'MMMM dd, yyyy'}}</h2>
+			<h2 class="preview-location">{{newEvent.location}}</h2>
+			<h1 class="preview-title" ng-bind-html="newEvent.name"></h1>
+			<div class="preview-paragraph">
+				<p ng-bind-html="newEvent.teaser"></p>
+			</div>
 		</div>
 	</div>
 </section>

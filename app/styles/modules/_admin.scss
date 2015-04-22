@@ -105,6 +105,20 @@
 			line-height: 1;
 			background: #ececec;
 		}
+		.new-event-editor{
+			color: black;
+			width: 90%;
+			margin-left: 20px;
+			p{
+				color: black;
+			}
+			a{
+				&:hover{
+					color: black;
+					text-decoration: none;
+				}
+			}
+		}
 		.drop-box {
 		    background: #F8F8F8;
 		    border: 5px dashed #DDD;
@@ -132,9 +146,59 @@
 	top: 0;
 	width: 50%;
 	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	margin-bottom: 100px;
 	.preview-area{
 		margin-top: 100px;
 		max-width: 90%;
 		margin-left: 5%;
+		text-align: center;
+		h1{
+			text-transform: none;
+			line-height: 1;
+		}
+		h2{
+			@include uppercase();
+			font-weight: lighter;
+			line-height: 1;
+			font-size: 1.5em;
+		}
+
+		.preview-image{
+			max-width: 100%;
+			height: auto;
+		}
+		.preview-date{
+			margin-top: 25px;
+
+		}
+		.preview-location{
+
+		}
+		.preview-title{
+			margin-top: 25px;
+		}
+		.preview-paragraph{
+			margin-top: 25px;
+			text-align: left;
+			margin-bottom: 200px;
+			a{
+				text-decoration: none;
+				&:hover{
+					text-decoration: none;
+					color: black;
+				}
+			}
+			p{
+				a{
+					text-decoration: none;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		
 	}
 }

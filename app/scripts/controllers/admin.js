@@ -23,6 +23,7 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 		});
 
 
+
 		// -------------------------------------------------
 		//
 		// Images
@@ -40,6 +41,22 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 
 		$scope.$watch('newEvent.file', function(){
 			upload($scope.newEvent.file);
+		});
+
+
+
+
+		// -------------------------------------------------
+		//
+		// Watch for when form is valid
+		// 
+		// -------------------------------------------------
+		
+		$scope.$watch(function(){
+			return $scope.newEventForm.$valid && $scope.newEventForm.$dirty;
+		
+		}, function(validity){
+			$scope.$broadcast('validForm', validity);
 		});
 
 
