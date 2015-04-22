@@ -74,8 +74,8 @@ angular
     })
     .state('adminEventsEdit', {
       url: 'admin/events/edit/:eventId',
-      templateUrl: 'views/admin.events.new.html',
-      controller: 'AdminCtrl'
+      templateUrl: 'views/admin.events.edit.html',
+      controller: 'AdminEditCtrl'
     })
     ;
 

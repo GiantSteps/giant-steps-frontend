@@ -8,7 +8,9 @@
 		<h4>{{section}}</h4>
 	</div>
 
-	<button class="save-button" ng-disabled="disabled" ng-click="submit()" value="Submit">Submit</button>
+	<button ng-if="section == 'New Event'" class="save-button" ng-disabled="disabled" ng-click="submit()" value="Submit">Submit</button>
+
+	<button ng-if="section == 'Edit Event'" class="save-button" ng-click="update()" value="Update">Update</button>
 
 
 </section>

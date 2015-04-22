@@ -21,7 +21,7 @@ angular.module('giantSteps2App').controller('AdminIndexCtrl', [
 		// 
 		// -------------------------------------------------
 		
-		eventService.getData().then(function(data){
+		eventService.getAllEvents().then(function(data){
 			$scope.events = data;
 		});
 

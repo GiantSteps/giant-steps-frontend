@@ -6,7 +6,7 @@
  * @description
  * # adminNav
  */
-angular.module('giantSteps2App').directive('adminNav', ['$state', 'eventService', function ($state, eventService) {
+angular.module('giantSteps2App').directive('adminNewNav', ['$state', 'eventService', function ($state, eventService) {
 
 		var link = function(scope, element, attrs){
 
@@ -38,6 +38,27 @@ angular.module('giantSteps2App').directive('adminNav', ['$state', 'eventService'
 					
 					// ------------------------------------------------
 					// On valid entry, redirect back to event index page
+					//
+					$state.go('adminEvents');
+					
+				});
+			};
+
+
+
+			// -------------------------------------------------
+			//
+			// Post update
+			// 
+			// -------------------------------------------------
+			scope.update = function(){
+
+				var id = scope.form._id;
+
+				eventService.putData(id, scope.form).then(function(response){
+
+					// ------------------------------------------------
+					// On valid update, redirect back to event index page
 					//
 					$state.go('adminEvents');
 					

@@ -10,7 +10,12 @@
 angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
 
   var events = {
-    baseUrl: 'http://localhost:5000/api/',
+
+
+
+    baseUrl: 'http://localhost:5000/api/events',
+
+
 
     // -------------------------------------------------
     //
@@ -18,20 +23,50 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
     // 
     // -------------------------------------------------
     
-    getData: function(){
+    getAllEvents: function(){
       var self = this;
       var deferred = $q.defer();
 
-      $http.get(self.baseUrl + 'events').success(function(response){
+      $http.get(self.baseUrl).success(function(response){
         console.log(response);
         deferred.resolve(response);
       
-      }).error(function(err, msg){
+      }).error(function(err){
         deferred.reject(err);
       });
 
       return deferred.promise;
     },
+
+
+    // -------------------------------------------------
+    //
+    // Single
+    // 
+    // -------------------------------------------------
+    
+    getSingleEvent: function(id){
+      var self = this;
+      var deferred = $q.defer();
+
+      $http.get(self.baseUrl + '/' + id).success(function(response){
+        console.log(response);
+        deferred.resolve(response);
+
+      }).error(function(err){
+        console.log(err);
+        deferred.reject(err);
+      });
+
+
+      return deferred.promise;
+    },
+
+    
+
+
+
+
 
     // -------------------------------------------------
     //
@@ -45,7 +80,7 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
       var deferred = $q.defer();
 
 
-      $http.post(self.baseUrl + 'events', form).success(function(response){
+      $http.post(self.baseUrl, form).success(function(response){
         
         console.log(response);
         deferred.resolve(response);
@@ -60,11 +95,48 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
     },
 
 
+
+
+    // -------------------------------------------------
+    //
+    // Update
+    // 
+    // -------------------------------------------------
+    putData: function(id, form){
+      var self = this;
+
+      var deferred = $q.defer();
+
+      $http.put(self.baseUrl + '/' + id, form).success(function(response){
+        console.log(response);
+        deferred.resolve(response);
+      }).error(function(err){
+        console.log(err);
+        deferred.reject(err);
+      });
+
+      return deferred.promise;
+    },
+
+
+
+
+
+
+
+
+
+    // -------------------------------------------------
+    //
+    // Delete
+    // 
+    // -------------------------------------------------
+    
     destroy: function(id){
       var self = this;
       var deferred = $q.defer();
 
-      $http.delete(self.baseUrl + 'events/' + id).success(function(response){
+      $http.delete(self.baseUrl +'/' + id).success(function(response){
         console.log(response);
         deferred.resolve(response);
 
@@ -78,6 +150,12 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
   };
 
 
+
+
+
+
+
+
   // -------------------------------------------------
   //
   // API Returns
@@ -85,9 +163,18 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
   // -------------------------------------------------
   
   return {
-    getData: function () {
-      return events.getData();
+    getAllEvents: function () {
+      return events.getAllEvents();
     },
+
+    getSingleEvent: function(id){
+      return events.getSingleEvent(id);
+    },
+
+    putData: function(id, form){
+      return events.putData(id, form);
+    },
+
     postData: function(form){
       return events.postData(form);
     },
