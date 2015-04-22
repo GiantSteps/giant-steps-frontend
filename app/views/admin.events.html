@@ -4,9 +4,21 @@
 	<a ui-sref="adminEventsNew"><div class="new-event-button">
 		<p>+New Event</p>
 	</div></a>
-	<div class="admin-event-list">
-		<ul>
-			<li ng-repeat="event in events">{{event.title}}</li>
-		</ul>
-	</div>
+
+	<table class="admin-event-list">
+		<tr>
+			<th>Title</th>
+			<th>Event Date</th>
+			<th>Edit</th>
+			<th>Preview</th>
+			<th>Delete</th>
+		</tr>
+		<tr ng-repeat="event in events | orderBy : 'date' : true">
+			<td><a ui-sref="adminEventsEdit({eventId: '{{event._id}}'})">{{event.title}}</a></td>
+			<td>{{event.date | date : 'MM/dd/yy'}}</td>
+			<td class="icon"><a ui-sref="adminEventsEdit({eventId: '{{event._id}}'})"><i class="fa fa-edit"></i></a></td>
+			<td class="icon"><i class="fa fa-eye"></i></td>
+			<td class="trash"><i class="fa fa-trash" ng-click="destroy(event._id)"></i></td>
+		</tr>
+	</table>
 </section>

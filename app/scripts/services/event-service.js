@@ -27,7 +27,7 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
         deferred.resolve(response);
       
       }).error(function(err, msg){
-        deferred.reject();
+        deferred.reject(err);
       });
 
       return deferred.promise;
@@ -39,16 +39,60 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
     // 
     // -------------------------------------------------
     
-    postData: function(obj){
-      $http.post(obj).success(function(response){
+    postData: function(form){
+
+      var self = this;
+      var deferred = $q.defer();
+
+
+      $http.post(self.baseUrl + 'events', form).success(function(response){
+        
         console.log(response);
+        deferred.resolve(response);
+      
+
+      }).error(function(err){
+        console.log(err);
+        deferred.reject(err);
       });
+
+      return deferred.promise;
+    },
+
+
+    destroy: function(id){
+      var self = this;
+      var deferred = $q.defer();
+
+      $http.delete(self.baseUrl + 'events/' + id).success(function(response){
+        console.log(response);
+        deferred.resolve(response);
+
+      }).error(function(err){
+        console.log(err);
+        deferred.reject(err);
+      });
+
+      return deferred.promise;
     }
   };
 
+
+  // -------------------------------------------------
+  //
+  // API Returns
+  // 
+  // -------------------------------------------------
+  
   return {
     getData: function () {
       return events.getData();
+    },
+    postData: function(form){
+      return events.postData(form);
+    },
+    destroy: function(id){
+      return events.destroy(id);
     }
   };
 });

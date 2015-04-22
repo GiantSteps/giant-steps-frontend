@@ -49,6 +49,7 @@ module.exports = function(config) {
       'bower_components/textAngular/src/textAngular-sanitize.js',
       'bower_components/textAngular/src/textAngularSetup.js',
       'bower_components/xml2json/xml2json.js',
+      'bower_components/angular-native-picker/build/angular-datepicker.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

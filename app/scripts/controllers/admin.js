@@ -17,7 +17,15 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 	function ($scope, $location, $rootScope, eventService, $upload, uploadService) {
 
 		$scope.newEvent = {};
+		$scope.events = {};
 
+
+		// -------------------------------------------------
+		//
+		// Get all events
+		// 
+		// -------------------------------------------------
+		
 		eventService.getData().then(function(data){
 			$scope.events = data;
 		});
@@ -31,6 +39,10 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 		// -------------------------------------------------
 		$scope.imageUploads = [];
 		$scope.image = {};
+
+
+		
+
 
 
 		// -------------------------------------------------
@@ -53,13 +65,24 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 		// -------------------------------------------------
 		
 		$scope.$watch(function(){
-			return $scope.newEventForm.$valid && $scope.newEventForm.$dirty;
+			if ($scope.newEventForm){
+				return $scope.newEventForm.$valid && $scope.newEventForm.$dirty;
+			}
+			
 		
 		}, function(validity){
 			$scope.$broadcast('validForm', validity);
 		});
 
 
+
+
+		// -------------------------------------------------
+		//
+		// File upload function
+		// 
+		// -------------------------------------------------
+		
 		var upload = function(file){
 			if (file){
 				file = file[0];
@@ -80,16 +103,43 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 					var awsParams = response;
 
 					uploadService.upload(file, awsParams).then(function(response){
+						
+						//save image to current form model
+						$scope.newEvent.image = response.postresponse.location;
+
+						//use for preview
 						$scope.image.url = response.postresponse.location;
 					});
 					
 				});
 
-
-
-
 			}
 			
+		};
+
+
+		$scope.destroy = function(id){
+
+			//show alert
+			var value = confirm('Are you sure?');
+
+			if (value === true){
+				eventService.destroy(id).then(function(response){
+					
+					// ------------------------------------------------
+					// On delete, remove item from array of events
+					//
+					var position = _.findIndex($scope.events, {'_id': response._id});
+
+					if (position > -1){
+						$scope.events.splice(position, 1);
+					}
+					
+				});
+			}
+			else{
+				return;
+			}
 		};
 
 

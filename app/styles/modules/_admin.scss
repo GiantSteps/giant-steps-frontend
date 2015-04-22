@@ -46,6 +46,17 @@
 // Event List Page
 // 
 // -------------------------------------------------
+
+.admin-events{
+	position: relative;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+
 .new-event-button{
 	background: $key;
 	width: 100px;
@@ -62,6 +73,33 @@
 		color: white;
 	}
 }
+
+.admin-event-list{
+	margin-top: 150px;
+	width: 90%;
+	margin-left: 5%;
+	tr{
+		width: 100%;
+		padding: 10px 0;
+		border-bottom: 1px solid black;
+		line-height: 40px;
+		&:first-child{
+			&:hover{
+				background: white;
+			}
+		}
+		&:hover{
+			background: #ececec;
+		}
+		a{
+			border-bottom: 0;
+		}
+	}
+}
+
+
+
+
 
 
 // -------------------------------------------------
@@ -94,15 +132,6 @@
 			font-size: 1em;
 			border-bottom: 1px solid black;
 			margin: 10px 20px;
-			background: #ececec;
-		}
-		textarea{
-			width: 80%;
-			margin-left: 20px;
-			height: 150px;
-			resize: none;
-			font-size: 1em;
-			line-height: 1;
 			background: #ececec;
 		}
 		.new-event-editor{

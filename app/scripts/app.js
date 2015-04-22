@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'angularFileUpload',
-    'textAngular'
+    'textAngular',
+    'angular-datepicker'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     
@@ -68,6 +69,11 @@ angular
     })
     .state('adminEventsNew', {
       url: '/admin/events/new',
+      templateUrl: 'views/admin.events.new.html',
+      controller: 'AdminCtrl'
+    })
+    .state('adminEventsEdit', {
+      url: 'admin/events/edit/:eventId',
       templateUrl: 'views/admin.events.new.html',
       controller: 'AdminCtrl'
     })

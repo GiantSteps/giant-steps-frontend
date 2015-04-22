@@ -163,6 +163,9 @@ a{
     color: $text;
     border-bottom: 3px solid $text;
     text-decoration: none;
+    &:hover{
+        color: $text;
+    }
 }
 
 p{
