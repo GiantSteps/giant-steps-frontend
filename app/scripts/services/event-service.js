@@ -28,7 +28,6 @@ angular.module('giantSteps2App').factory('eventService', function ($q, $http) {
       var deferred = $q.defer();
 
       $http.get(self.baseUrl).success(function(response){
-        console.log(response);
         deferred.resolve(response);
       
       }).error(function(err){
