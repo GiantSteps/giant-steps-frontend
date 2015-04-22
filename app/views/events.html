@@ -4,28 +4,30 @@
 
 		<section class="events-container">
 
-			<div class="event" ng-repeat="event in events" ng-click="goToEvent()">
-				<div class="event-image" ng-style="{background: 'url(' + event.image + ')' }">
-					<div class="event-image-overlay"></div>
-				</div>
+				<div class="event" ng-repeat="event in events" ng-click="goToEvent(event._id)">
+					<div class="event-image" ng-style="{background: 'url(' + event.image + ')' }">
+						<div class="event-image-overlay"></div>
+					</div>
 
-				<div class="event-date">
-					<h3>{{event.date}}</h3>
-					<h3>{{event.location}}</h3>
-				</div>
 
-				<div class="event-title">
-					<h2>{{event.title}}</h2>
-				</div>
+					<div class="event-date">
+						<h3>{{event.date | date : 'MMM dd, yyyy'}}</h3>
+						<h3>{{event.location}}</h3>
+					</div>
 
-				<div class="event-teaser">
-					<p>{{event.teaser | limitTo: 100}}{{event.teaser.length > 20 ? '...' : ''}}</p>
-				</div>
+					<div class="event-title">
+						<h2>{{event.title}}</h2>
+					</div>
 
-				<div class="event-more">
-					<p>Read More</p>
+					<div class="event-teaser">
+						<p ng-bind-html="event.teaser | limitTo: 100">{{event.teaser.length > 20 ? '...' : ''}}</p>
+					</div>
+
+					<div class="event-more">
+						<p>Read More</p>
+					</div>
 				</div>
-			</div>
+			
 		
 			<nav-bar></nav-bar>
 	</section>
