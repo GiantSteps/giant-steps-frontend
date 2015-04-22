@@ -9,8 +9,12 @@
  */
 angular.module('giantSteps2App').controller('AdminCtrl', [
 	'$scope',
+	'$location',
+	'$rootScope',
 	'eventService',
-	function ($scope, eventService, $upload) {
+	'$upload',
+	'uploadService',
+	function ($scope, $location, $rootScope, eventService, $upload, uploadService) {
 
 		$scope.newEvent = {};
 
@@ -18,6 +22,14 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 			$scope.events = data;
 		});
 
+
+		// -------------------------------------------------
+		//
+		// Images
+		// 
+		// -------------------------------------------------
+		$scope.imageUploads = [];
+		$scope.image = {};
 
 
 		// -------------------------------------------------
@@ -27,9 +39,44 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 		// -------------------------------------------------
 
 		$scope.$watch('newEvent.file', function(){
-			$scope.upload($scope.newEvent.file);
-			console.log('change');
+			upload($scope.newEvent.file);
 		});
+
+
+		var upload = function(file){
+			if (file){
+				file = file[0];
+				$scope.file = file;
+				$scope.upload = [];
+
+				file.progress = parseInt(0, 10);
+
+				// ------------------------------------------------
+				// First, get signature
+				//
+				
+				uploadService.getPolicy(file).then(function(response){
+					console.log(response);
+					// ------------------------------------------------
+					// Take signature and use for upload
+					//
+					var awsParams = response;
+
+					uploadService.upload(file, awsParams).then(function(response){
+						$scope.image.url = response.postresponse.location;
+					});
+					
+				});
+
+
+
+
+			}
+			
+		};
+
+
+		
 
 		// ------------------------------------------------
 		// Populate Fields with saved entry
@@ -37,22 +84,5 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 		
 		$scope.newEvent.teaser = 'Yo';
 
-		$scope.upload = function(file){
-			if (file && file.length){
-				$upload.upload({
-					url: '*',
-					fields: {
-						'username': 'Admin'
-					},
-					file: file
-				}).progress(function(evt){
-					var progressPercentage = parseInt(100.0 * evt.loaded / evt.total, 10);
-					console.log('Progress: ' + progressPercentage + '% ' + evt.file.name);
-
-				}).success(function(data, status, headers, config){
-					console.log('file ' + config.file.name + 'uploaded. Response: ' + JSON.stringify(data));
-				});
-			}
-		};
 	}
 ]);
