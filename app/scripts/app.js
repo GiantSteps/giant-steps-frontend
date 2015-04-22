@@ -60,17 +60,17 @@ angular
     .state('admin', {
       url: '/admin',
       templateUrl: 'views/admin.html',
-      controller: 'AdminCtrl'
+      controller: 'AdminIndexCtrl'
     })
     .state('adminEvents', {
       url: '/admin/events',
       templateUrl: 'views/admin.events.html',
-      controller: 'AdminCtrl'
+      controller: 'AdminIndexCtrl'
     })
     .state('adminEventsNew', {
       url: '/admin/events/new',
       templateUrl: 'views/admin.events.new.html',
-      controller: 'AdminCtrl'
+      controller: 'AdminNewCtrl'
     })
     .state('adminEventsEdit', {
       url: 'admin/events/edit/:eventId',

@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: AdminCtrl', function () {
+describe('Controller: AdminEditCtrl', function () {
 
   // load the controller's module
   beforeEach(module('giantSteps2App'));
 
-  var AdminCtrl,
+  var AdminEditCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AdminCtrl = $controller('AdminCtrl', {
+    AdminEditCtrl = $controller('AdminEditCtrl', {
       $scope: scope
     });
   }));

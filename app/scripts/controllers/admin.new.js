@@ -2,30 +2,33 @@
 
 /**
  * @ngdoc function
- * @name giantSteps2App.controller:AdminCtrl
+ * @name giantSteps2App.controller:AdminNewCtrl
  * @description
- * # AdminCtrl
+ * # AdminNewCtrl
  * Controller of the giantSteps2App
  */
-angular.module('giantSteps2App').controller('AdminCtrl', [
+angular.module('giantSteps2App').controller('AdminNewCtrl', [
 	'$scope',
 	'eventService',
 	'uploadService',
 	function ($scope, eventService, uploadService) {
 
+
+
 		$scope.newEvent = {};
-		
 
-
-		
-		
-		
-
+		// -------------------------------------------------
+		//
+		// Images
+		// 
+		// -------------------------------------------------
+		$scope.imageUploads = [];
+		$scope.image = {};
 
 
 		// -------------------------------------------------
 		//
-		// New event schema
+		// Watch for file upload, and pass to aws once selected
 		// 
 		// -------------------------------------------------
 
@@ -55,9 +58,11 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 
 
 
+
+
 		// -------------------------------------------------
 		//
-		// File upload function
+		// File Uploads
 		// 
 		// -------------------------------------------------
 		
@@ -96,15 +101,13 @@ angular.module('giantSteps2App').controller('AdminCtrl', [
 		};
 
 
-
-
-		
-
 		// ------------------------------------------------
 		// Populate Fields with saved entry
 		//
 		
 		$scope.newEvent.teaser = 'Yo';
+
+
 
 	}
 ]);

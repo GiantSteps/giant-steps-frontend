@@ -4,6 +4,7 @@
 	<!--INPUT-->
 	<form name="newEventForm">
 		<input type="text" ng-model="newEvent.title" placeholder="Title" required />
+		<input type="text" ng-model="newEvent.url" placeholder="Dash separated URL (i.e. some-url-you-want)" required />
 		<input type="text" pick-a-date="date" ng-model="newEvent.date" placeholder="Date" required />
 		<input type="text" pick-a-time="time" ng-model="newEvent.time" placeholder="Time" required />
 		<input type="text" ng-model="newEvent.location" placeholder="City/Country" required/>
