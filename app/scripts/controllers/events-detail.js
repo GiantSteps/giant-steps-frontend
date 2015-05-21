@@ -17,6 +17,8 @@ angular.module('giantSteps2App').controller('EventsDetailCtrl', [
 
 		var id = $state.params.eventId;
 
+		$scope.loading = true;
+
 
 		$scope.event = {};
 
@@ -29,6 +31,7 @@ angular.module('giantSteps2App').controller('EventsDetailCtrl', [
 				// $scope.event.fields.content[i].fields.body = response;
 
 				$scope.event.fields.text = response;
+				$scope.loading = false;
 
 			});
 			

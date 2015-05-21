@@ -23,9 +23,7 @@
 
 			<!--RESULTS. NO ORDERING ATM -->
 			<li ng-repeat="result in topNavCtrl.search.criteria | filter : topNavCtrl.search.input">
-				<a ng-if="result.type == 'news'" ng-href="{{result.link}}"><span class="fa fa-newspaper-o"></span>{{result.title}}</a>
-				<a ng-if="result.type == 'paper'" ng-href="{{result.link}}"><span class="fa fa-file"></span>{{result.title}}</a>
-				<a ng-if="result.type == 'event'" ng-href="{{result.link}}"><span class="fa fa-globe"></span>{{result.title}}</a>
+				<a ng-href="{{result.link}}"><span class="fa fa-newspaper-o"></span>{{result.fields.title}}</a>
 			</li>
 		</ul>
 	</div>
