@@ -1,0 +1,34 @@
+// -------------------------------------------------
+//
+// Site Animations
+// 
+// -------------------------------------------------
+
+
+
+@include keyframes(vibe1){
+	from{
+		@include transform(translateX(0) translateY(0) translateZ(0));
+	}
+	to{
+		@include transform(translateX(2px) translateY(-2px) translateZ(1px));
+	}
+}
+
+@include keyframes(vibe2){
+	from{
+		@include transform(translateX(0) translateY(0) translateZ(0));
+	}
+	to{
+		@include transform(translateX(-2px) translateY(2px) translateZ(1px));
+	}
+}
+
+@include keyframes(drop1){
+	from{
+		@include transform(translateY(20px));
+	}
+	to{
+		@include transform(translateY(0));
+	}
+}

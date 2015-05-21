@@ -53,6 +53,21 @@ angular.module('giantSteps2App')
       restrict: 'EA',
       replace: true,
       controllerAs: 'topNavCtrl',
-      controller: controller
+      controller: controller,
+      link: function(scope, element, attrs){
+        
+        if (attrs.color){
+            var color = attrs.color;
+
+            element.css({
+                color: color
+            });
+
+            element.find('.nav-logo').css({
+                background: 'url(images/logo-white.svg)'
+            });
+
+        }
+      }
     };
   });

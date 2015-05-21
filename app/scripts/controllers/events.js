@@ -7,29 +7,34 @@
  * # EventsCtrl
  * Controller of the giantSteps2App
  */
-angular.module('giantSteps2App').controller('EventsCtrl', ['$scope', '$state', 'eventService', function ($scope, $state, eventService) {
+angular.module('giantSteps2App').controller('EventsCtrl', [
+	'$scope',
+	'$state',
+	'contentFarm',
+	function ($scope, $state, contentFarm) {
 
 	
-	$scope.events = [];
-	// -------------------------------------------------
-	//
-	// Get events
-	// 
-	// -------------------------------------------------
-	
-	eventService.getAllEvents().then(function(response){
-		$scope.events = response;
-	});
+		$scope.events = [];
+		// -------------------------------------------------
+		//
+		// Get events
+		// 
+		// -------------------------------------------------
+		
+		contentFarm.eventsIndex().then(function(response){
+			$scope.events = response;
+		});
 
 
-	// -------------------------------------------------
-	//
-	// Go to event
-	// 
-	// -------------------------------------------------
-	$scope.goToEvent = function(id){
-		$state.go('eventDetail', {'eventId': id});
-	};
+		// -------------------------------------------------
+		//
+		// Go to event
+		// 
+		// -------------------------------------------------
+		$scope.goToEvent = function(id){
+			$state.go('eventDetail', {'eventId': id});
+		};
 
 
-}]);
+	}
+]);

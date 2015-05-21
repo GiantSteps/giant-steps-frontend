@@ -1,0 +1,20 @@
+<div top-nav color="white"></div>
+
+<section class="event-detail">
+
+	<div class="event-detail-info">
+		<h1>{{event.fields.title}}</h1>
+		<h2>{{event.fields.dateTime | date : 'EEEE dd MMM yyyy, HH:mm'}}</h2>
+		<h2>{{event.fields.cityCountry}}</h2>
+	</div>
+	
+	<div class="event-detail-image" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }"></div>
+
+
+	<div class="event-detail-text">
+		<div ng-if="event.fields.text" ng-bind-html="trust(event.fields.text)" wrap-iframes></div>
+	</div>
+
+
+	<nav-bar display="fixed" color="white"></nav-bar>
+</section>

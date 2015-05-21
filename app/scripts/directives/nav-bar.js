@@ -38,6 +38,9 @@ angular.module('giantSteps2App')
       if (attrs.display === 'fixed'){
         element.addClass('stick');
       }
+      if (attrs.color){
+        element.addClass('white');
+      }
     };
 
     return {

@@ -16,11 +16,9 @@ angular
     'ui.router',
     'ngSanitize',
     'ngTouch',
-    'angularFileUpload',
-    'textAngular',
-    'angular-datepicker'
+    'ng-contentful'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, contentfulClientProvider) {
     
 
     // -------------------------------------------------
@@ -76,36 +74,12 @@ angular
     .state('eventDetail', {
       url: '/events/:eventId',
       templateUrl: 'views/event-detail.html',
-      controller: 'EventsCtrl'
-    })
-
-
-    .state('admin', {
-      url: '/admin',
-      templateUrl: 'views/admin.html',
-      controller: 'AdminIndexCtrl'
-    })
-
-
-    .state('adminEvents', {
-      url: '/admin/events',
-      templateUrl: 'views/admin.events.html',
-      controller: 'AdminIndexCtrl'
-    })
-
-
-    .state('adminEventsNew', {
-      url: '/admin/events/new',
-      templateUrl: 'views/admin.events.new.html',
-      controller: 'AdminNewCtrl'
-    })
-
-
-    .state('adminEventsEdit', {
-      url: 'admin/events/edit/:eventId',
-      templateUrl: 'views/admin.events.edit.html',
-      controller: 'AdminEditCtrl'
+      controller: 'EventsDetailCtrl'
     });
+
+
+    contentfulClientProvider.setSpaceId('xrzr1u3na612');
+    contentfulClientProvider.setAccessToken('a46fb11be216be4733826fad592b065889332f3d8d30d2aa49ea084d9e3632fc');
 
 
 

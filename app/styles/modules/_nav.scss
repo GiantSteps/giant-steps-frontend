@@ -15,7 +15,6 @@ $adminnavheight: 70px;
 	left: 0;
 	width: 100%;
 	height: $topnavheight;
-	background: transparent;
 	@include fast();
 	.nav-logo{
 		position: absolute;
@@ -24,9 +23,9 @@ $adminnavheight: 70px;
 		width: 150px;
 		height: 100%;
 		background: url(../images/logo.svg);
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: contain;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		background-size: contain !important;
 	}
 	.nav-mission{
 		width: 100%;
@@ -48,7 +47,7 @@ $adminnavheight: 70px;
 		top: 0;
 		height: 25px;
 		right: 20px;
-		width: 150px;
+		width: 200px;
 		margin-top: 12.5px;
 		border-bottom: 1px solid $text;
 		display: none;
@@ -124,6 +123,15 @@ nav{
 	color: $key;
 	&.stick{
 		position: absolute;
+	}
+	&.white{
+		ul{
+			li{
+				a{
+					color: white;
+				}
+			}
+		}
 	}
 	ul{
 		display: inline-block;

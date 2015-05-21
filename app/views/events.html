@@ -4,23 +4,23 @@
 
 		<section class="events-container">
 
-				<div class="event" ng-repeat="event in events" ng-click="goToEvent(event._id)">
-					<div class="event-image" ng-style="{background: 'url(' + event.image + ')' }">
+				<div class="event" ng-repeat="event in events | orderBy : 'fields.dateTime' : false" ng-click="goToEvent(event.fields.slug)">
+					<div class="event-image" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }">
 						<div class="event-image-overlay"></div>
 					</div>
 
 
 					<div class="event-date">
-						<h3>{{event.date | date : 'MMM dd, yyyy'}}</h3>
-						<h3>{{event.location}}</h3>
+						<h3>{{event.fields.dateTime | date : 'dd MMM, yyyy'}}</h3>
+						<h3>{{event.fields.cityCountry}}</h3>
 					</div>
 
 					<div class="event-title">
-						<h2>{{event.title}}</h2>
+						<h2>{{event.fields.title}}</h2>
 					</div>
 
 					<div class="event-teaser">
-						<p ng-bind-html="event.teaser | limitTo: 100">{{event.teaser.length > 20 ? '...' : ''}}</p>
+						<p ng-bind-html="event.fields.teaser | limitTo: 100">{{event.fields.teaser.length > 20 ? '...' : ''}}</p>
 					</div>
 
 					<div class="event-more">

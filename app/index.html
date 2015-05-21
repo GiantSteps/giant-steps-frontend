@@ -13,15 +13,7 @@ RDS.Zone Official Websites
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.css" />
-    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.date.css" />
-    <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.time.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
-    <link rel="stylesheet" href="bower_components/textAngular/src/textAngular.css" />
-    <link rel="stylesheet" href="bower_components/angular-native-picker/build/themes/default.css" />
-    <link rel="stylesheet" href="bower_components/angular-native-picker/build/themes/default.date.css" />
-    <link rel="stylesheet" href="bower_components/angular-native-picker/build/themes/default.time.css" />
+    <link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -64,32 +56,13 @@ RDS.Zone Official Websites
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/jquery.transit/jquery.transit.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
-    <script src="bower_components/lodash/lodash.js"></script>
-    <script src="bower_components/restangular/dist/restangular.js"></script>
-    <script src="bower_components/tv4/tv4.js"></script>
-    <script src="bower_components/objectpath/lib/ObjectPath.js"></script>
-    <script src="bower_components/angular-schema-form/dist/schema-form.js"></script>
-    <script src="bower_components/angular-schema-form/dist/bootstrap-decorator.js"></script>
-    <script src="bower_components/ng-file-upload/angular-file-upload.js"></script>
-    <script src="bower_components/pickadate/lib/picker.js"></script>
-    <script src="bower_components/pickadate/lib/picker.date.js"></script>
-    <script src="bower_components/pickadate/lib/picker.time.js"></script>
-    <script src="bower_components/angular-schema-form-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="bower_components/rangy/rangy-core.min.js"></script>
-    <script src="bower_components/rangy/rangy-cssclassapplier.min.js"></script>
-    <script src="bower_components/rangy/rangy-selectionsaverestore.min.js"></script>
-    <script src="bower_components/rangy/rangy-serializer.min.js"></script>
-    <script src="bower_components/textAngular/src/textAngular.js"></script>
-    <script src="bower_components/textAngular/src/textAngular-sanitize.js"></script>
-    <script src="bower_components/textAngular/src/textAngularSetup.js"></script>
-    <script src="bower_components/xml2json/xml2json.js"></script>
-    <script src="bower_components/angular-native-picker/build/angular-datepicker.js"></script>
+    <script src="bower_components/contentful/dist/contentful.min.js"></script>
+    <script src="bower_components/ng-contentful/ng-contentful.js"></script>
+    <script src="bower_components/angularjs-viewhead/angularjs-viewhead.js"></script>
+    <script src="bower_components/showdown/src/showdown.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script src="library/audio.js"></script>
-    <script src="library/jsfx.js"></script>
-    <script src="library/jsfxlib.js"></script>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
@@ -103,11 +76,11 @@ RDS.Zone Official Websites
         <script src="scripts/directives/make-intro.js"></script>
         <script src="scripts/services/event-service.js"></script>
         <script src="scripts/directives/modify-cols.js"></script>
-        <script src="scripts/services/upload-service.js"></script>
-        <script src="scripts/directives/admin-nav.js"></script>
-        <script src="scripts/controllers/admin.index.js"></script>
-        <script src="scripts/controllers/admin.edit.js"></script>
-        <script src="scripts/controllers/admin.new.js"></script>
+        <script src="scripts/services/content-farm.js"></script>
+        <script src="scripts/services/markdown-service.js"></script>
+        <script src="scripts/services/cache-service.js"></script>
+        <script src="scripts/controllers/events-detail.js"></script>
+        <script src="scripts/directives/wrap-iframes.js"></script>
         <!-- endbuild -->
 </body>
 </html>

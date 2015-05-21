@@ -5,6 +5,7 @@
 	overflow: hidden;
 	display: block;
 	overflow-y: scroll;
+	@include animation(drop1 0.5s ease-out);
 	@include mq("large"){
 		overflow-y: hidden;
 		@include flex();
@@ -22,7 +23,10 @@
 		p{
 			font-weight: lighter;
 			font-weight: bold;
-			@include uppercase();
+			strong{
+				@include uppercase();
+			}
+			
 		}
 		ul{
 			font-weight: lighter;
@@ -30,8 +34,14 @@
 			li{
 				font-weight: lighter;
 				margin: 20px 0;
-				strong{
-					color: $key;
+				p{
+					font-weight: lighter;
+					text-transform: none;
+					em{
+						color: $key;
+						font-weight: bold;
+						font-style: normal;
+					}
 				}
 			}
 		}
