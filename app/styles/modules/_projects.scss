@@ -20,6 +20,7 @@
 			display: inline-block;
 			width: 31.5%;
 			margin: 1% 0 1% 1%;
+			padding-bottom: 100px;
 			height: 95%;
 			position: relative;
 			overflow: hidden;
@@ -32,6 +33,12 @@
 				color: $key;
 				font-weight: normal;
 				margin-bottom: 20px;
+			}
+			.consortium{
+				img{
+					max-width: 50%;
+					margin-left: 25%;
+				}
 			}
 			img{
 				max-width: 90%;

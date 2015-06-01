@@ -15,6 +15,7 @@ angular.module('giantSteps2App').controller('AboutCtrl', [
 	function ($scope, $sce, contentFarm, markdownService) {
 
 		$scope.about = '';
+		$scope.loading = true;
 
 		contentFarm.textIndex().then(function(response){
 			// ------------------------------------------------
@@ -26,6 +27,7 @@ angular.module('giantSteps2App').controller('AboutCtrl', [
 
 
 				$scope.about = response;
+				$scope.loading = false;
 			});
 			
 		});

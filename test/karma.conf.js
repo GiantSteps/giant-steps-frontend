@@ -34,6 +34,7 @@ module.exports = function(config) {
       'bower_components/ng-contentful/ng-contentful.js',
       'bower_components/angularjs-viewhead/angularjs-viewhead.js',
       'bower_components/showdown/src/showdown.js',
+      'bower_components/pixi/bin/pixi.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

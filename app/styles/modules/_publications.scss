@@ -9,12 +9,11 @@
 		padding: 0 50px;
 		overflow: hidden;
 		.item{
-			background: red;
+			border: 1px solid $text;
 			width: 19%;
 			display: inline-block;
 			vertical-align: middle;
-			padding: 0 1%;
-			margin: 1% 0;
+			margin: 1% 1%;
 			text-align: center;
 			position: relative;
 			overflow: hidden;

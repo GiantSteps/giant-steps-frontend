@@ -181,8 +181,9 @@ angular.module('giantSteps2App').factory('contentFarm', [
                 deferred.reject(err);
               });
 
-              return deferred.promise;
+              
             }
+            return deferred.promise;
           }
         }
     };

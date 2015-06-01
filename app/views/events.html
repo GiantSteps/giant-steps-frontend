@@ -3,7 +3,7 @@
 	
 
 		<section class="events-container">
-
+			<section class="loading" ng-if="loading" loading></section>
 				<div class="event" ng-repeat="event in events | orderBy : 'fields.dateTime' : false" ng-click="goToEvent(event.fields.slug)">
 					<div class="event-image" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }">
 						<div class="event-image-overlay"></div>

@@ -13,7 +13,7 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 	'contentFarm',
 	function ($scope, $state, contentFarm) {
 
-	
+		$scope.loading = true;
 		$scope.events = [];
 		// -------------------------------------------------
 		//
@@ -23,6 +23,7 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 		
 		contentFarm.eventsIndex().then(function(response){
 			$scope.events = response;
+			$scope.loading = false;
 		});
 
 

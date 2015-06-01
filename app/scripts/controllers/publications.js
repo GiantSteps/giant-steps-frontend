@@ -14,8 +14,11 @@ angular.module('giantSteps2App').controller('PublicationsCtrl', [
 
 		$scope.downloads = [];
 
+		$scope.loading = true;
+
 		contentFarm.downloadsIndex().then(function(response){
 			console.log(response);
+			$scope.loading = false;
 		});
 
 	}
