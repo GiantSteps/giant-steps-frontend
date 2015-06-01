@@ -17,15 +17,21 @@
 	overflow: hidden;
 
 
-
-	h1{
-		font-weight: lighter;
-		color: $key;
-		margin-left: 20px;
-		&:first-child{
-			margin-top: 100px;
+	.titles{
+		display: block;
+		position: absolute;
+		top: 100px;
+		left: 20px;
+		h1{
+			font-weight: lighter;
+			color: $key;
+			margin-left: 20px;
+			&:first-child{
+				margin-top: 100px;
+			}
 		}
 	}
+	
 
 	.main-container{
 		position: relative;

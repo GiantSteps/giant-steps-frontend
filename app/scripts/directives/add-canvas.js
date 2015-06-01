@@ -47,7 +47,7 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 			    requestAnimationFrame(animate);
 
 			    // just for fun, let's rotate mr rabbit a little
-			    grid.rotation += 0.01;
+			    grid.rotation += 0.005;
 
 			    // render the container
 			    renderer.render(stage);
@@ -55,89 +55,119 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 
 
 
-			// function draw(){
+			//strength between -1 and 1
 
-			// 	// ------------------------------------------------
-			// 	// Erase canvas
-			// 	//
-				
-			// 	ctx.clearRect(0, 0, width, height);
+// function BulgePinchFilter()
+// {
+//     PIXI.filters.AbstractFilter.call(this,
+//         // vertex shader
+//         null,
+//         // fragment shader
+//         [
+//             'precision mediump float;',
+//             'uniform float radius;',
+//             'uniform float strength;',
+//             'uniform vec2 center;',
+//             'uniform sampler2D uSampler;',
+//             'uniform vec4 dimensions;',
+//             'varying vec2 vTextureCoord;',
+            
+//             'void main()',
+//             '{',
+//                 'vec2 coord = vTextureCoord * dimensions.xy;',
+//                 'coord -= center;',
+//                 'float distance = length(coord);',
+//                 'if (distance < radius) {',
+//                     'float percent = distance / radius;',
+//                     'if (strength > 0.0) {',
+//                         'coord *= mix(1.0, smoothstep(0.0, radius /     distance, percent), strength * 0.75);',
+//                     '} else {',
+//                         'coord *= mix(1.0, pow(percent, 1.0 + strength * 0.75) * radius / distance, 1.0 - percent);',
+//                     '}',
+//                 '}',
+//                 'coord += center;',
+//                 'gl_FragColor = texture2D(uSampler, coord / dimensions.xy);',
+//                 'vec2 clampedCoord = clamp(coord, vec2(0.0), dimensions.xy);',
+//                 'if (coord != clampedCoord) {',
+//                     'gl_FragColor.a *= max(0.0, 1.0 - length(coord - clampedCoord));',
+//                 '}',
+//             '}'
+//         ].join('\n'),
+//         // custom uniforms
+//         {
+//             dimensions: { type: '4f', value: [0,0,0,0] },
+//             radius: { type: '1f', value: 100 },
+//             strength: { type: '1f', value: 0.8 },
+//             center: { type: 'v2', value: {x: 150, y: 150} }
+//         }
+//     );
+// };
 
+// BulgePinchFilter.prototype = Object.create(PIXI.filters.AbstractFilter.prototype);
+// BulgePinchFilter.prototype.constructor = BulgePinchFilter;
 
-			// 	// ------------------------------------------------
-			// 	// Place dots horizontal
-			// 	//
-				
-			// 	for (var hPos = 0; hPos < width; hPos += (padding + radius) + 1){
-			// 		// ------------------------------------------------
-			// 		// Vertical
-			// 		//
-					
-			// 		for (var vPos = 0; vPos < height; vPos += (padding + radius) + 1){
+// Object.defineProperties(BulgePinchFilter.prototype, {
+//     radius: {
+//         get: function ()
+//         {
+//             return this.uniforms.radius.value;
+//         },
+//         set: function (value)
+//         {
+//             this.uniforms.radius.value = value;
+//         }
+//     },
+//     strength: {
+//         get: function ()
+//         {
+//             return this.uniforms.strength.value;
+//         },
+//         set: function (value)
+//         {
+//             this.uniforms.strength.value = value;
+//         }
+//     }
+// });
 
+// var renderer = PIXI.autoDetectRenderer(300, 300);
+// document.body.appendChild(renderer.view);
 
-			// 			ctx.fillStyle = '#000000';
+// var stage = new PIXI.Container();
+// stage.interactive = true;
 
-			// 			// ------------------------------------------------
-			// 			// One
-			// 			//
-						
-			// 			ctx.beginPath();
-			// 			ctx.arc(hPos + counter * 2, vPos + counter, radius, 0, (Math.PI / 180) * 360, false);
-			// 			ctx.fill();
-			// 			ctx.closePath();
+// var bg = PIXI.Sprite.fromImage("http://i.imgur.com/NGr3yaz.jpg");
+// bg.anchor.set(0.5);
+// bg.position.x = bg.position.y = 0;
 
-			// 			// ------------------------------------------------
-			// 			// Two
-			// 			//
-						
-			// 			ctx.beginPath();
-			// 			ctx.arc(hPos - counter, vPos - counter, radius, 0, (Math.PI / 180) * 360, false);
-			// 			ctx.fill();
-			// 			ctx.closePath();
+// var container = new PIXI.Container();
+// container.position.x = renderer.width / 2;
+// container.position.y = renderer.height / 2;
 
-			// 			// ------------------------------------------------
-			// 			// Three
-			// 			//
-						
-			// 			ctx.beginPath();
-			// 			ctx.arc(hPos - counter * 1.3, vPos + counter, radius, 0, (Math.PI / 180) * 360, false);
-			// 			ctx.fill();
-			// 			ctx.closePath();
+// var filter = new BulgePinchFilter();
 
-			// 			// ------------------------------------------------
-			// 			// Four
-			// 			//
-	
-			// 			ctx.beginPath();
-			// 			ctx.arc(hPos + counter, vPos - counter, radius, 0, (Math.PI / 180) * 360, false);
-			// 			ctx.fill();
-			// 			ctx.closePath();
-			// 		}
-			// 	}
+// container.addChild(bg);
+// stage.addChild(container);
 
+// window.requestAnimFrame = function(){
+//     return (
+//         window.requestAnimationFrame       || 
+//         window.webkitRequestAnimationFrame || 
+//         window.mozRequestAnimationFrame    || 
+//         window.oRequestAnimationFrame      || 
+//         window.msRequestAnimationFrame     || 
+//         function(callback){
+//             window.setTimeout(callback, 1000 / 60);
+//         }
+//     );
+// }();
 
-			// 	counter += 0.05;
-			// 	if (counter >= halfWidth){
-			// 		counter = 0;
-			// 	}
-			// }
+// container.filters = [filter];
 
-
-			// // function onMouseMove(ev){
-			// // 	x = ev.clientX / 2;
-			// // 	y = ev.clientY / 2;
-			// // 	draw();
-			// // }
-
-			// function render(){
-			// 	draw();
-			// 	requestAnimationFrame(render);
-			// }
-
-			// render();
-
-			// document.addEventListener('mousemove', onMouseMove, false);
+// function animate() {
+//     renderer.render(stage);
+//     requestAnimFrame(animate);
+// }
+// requestAnimFrame(animate);
 			
 
 
