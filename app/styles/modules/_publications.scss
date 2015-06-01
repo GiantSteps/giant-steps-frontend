@@ -1,0 +1,26 @@
+.publications{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 200px;
+	top: 100px;
+	.pub-grid{
+		width: 100%;
+		padding: 0 50px;
+		overflow: hidden;
+		.item{
+			background: red;
+			width: 19%;
+			display: inline-block;
+			vertical-align: middle;
+			padding: 0 1%;
+			margin: 1% 0;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			height: 200px;
+			max-height: 600px;
+		}
+	}
+
+}

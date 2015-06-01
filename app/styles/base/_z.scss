@@ -20,9 +20,6 @@
 	z-index: 2;
 }
 
-nav{
-	z-index: 99;
-}
 .events{
 	z-index: 4;
 }
@@ -33,4 +30,12 @@ nav{
 
 .admin-nav{
 	z-index: 9;
+}
+
+nav{
+	z-index: 99;
+}
+
+.open-nav{
+	z-index: 99;
 }

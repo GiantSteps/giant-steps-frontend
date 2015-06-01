@@ -75,6 +75,12 @@ angular
       url: '/events/:eventId',
       templateUrl: 'views/event-detail.html',
       controller: 'EventsDetailCtrl'
+    })
+
+    .state('publications', {
+      url: '/publications',
+      templateUrl: 'views/publications.html',
+      controller: 'PublicationsCtrl'
     });
 
 

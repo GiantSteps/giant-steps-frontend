@@ -24,6 +24,10 @@ angular.module('giantSteps2App').directive('navBar', function () {
         state: 'project'
       },
       {
+        name: 'Publications',
+        state: 'publications'
+      },
+      {
         name: 'Contact',
         state: 'contact'
       }

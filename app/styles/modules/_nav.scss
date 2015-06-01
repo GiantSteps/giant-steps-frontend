@@ -42,6 +42,24 @@ $adminnavheight: 70px;
 		}
 	}
 
+	.nav-burger{
+		position: absolute;
+		top: 12px;
+		right: 20px;
+		background: url(../images/close-black.svg) no-repeat center center;
+		width: 25px;
+		height: 25px;
+		@include transition(transform .5s ease);
+		@include transform(rotate(45deg));
+		display: block;
+		@include mq("large"){
+			display: none;
+		}
+		&.opening{
+			@include transform(rotate(0deg));
+		}
+	}
+
 	.nav-search{
 		position: absolute;
 		top: 0;
@@ -121,6 +139,10 @@ nav{
 	width: 100%;
 	height: 100px;
 	color: $key;
+	display: none;
+	@include mq("large"){
+		display: block;
+	}
 	&.stick{
 		position: absolute;
 	}

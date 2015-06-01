@@ -1,0 +1,45 @@
+.open-nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $key;
+	@include flex("column");
+	color: $background;
+	@include transition(transform .5s cubic-bezier(0.6,0,0.2,1));
+	@include transform(translateX(100%) translateZ(0));
+	@include mq("large"){
+		display: none;
+	}
+	&.open{
+		@include transform(translateX(0) translateZ(0));
+		.open-nav-exit{
+			@include transform(rotate(0deg));
+		}
+	}
+	.open-nav-exit{
+		position: absolute;
+		top: 12px;
+		right: 20px;
+		background: url(../images/close.svg) no-repeat center center;
+		width: 25px;
+		height: 25px;
+		@include transform(rotate(45deg));
+		@include transition(transform .5s ease);
+	}
+	img{
+		width: 250px;
+		height: auto;
+	}
+	ul{
+		text-align: center;
+		font-size: 1.5em;
+		margin-top: 0;
+		line-height: 1;
+		@include uppercase();
+		li{
+			margin: 20px;
+		}
+	}
+}

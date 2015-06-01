@@ -39,9 +39,12 @@
 		position: relative;
 		color: $background;
 		h1{
-			font-size: 5em;
+			font-size: 3em;
 			margin-left: 20px;
 			font-weight: bold;
+			@include mq("large"){
+				font-size: 5em;
+			}
 		}
 		h2{
 			margin-top: 20px;
@@ -52,7 +55,7 @@
 	.event-detail-image{
 		position: absolute;
 		width: 60%;
-		height: 400px;
+		height: 200px;
 		right: 0;
 		float: right;
 		top: 100px;
@@ -60,6 +63,12 @@
 		background-repeat: no-repeat !important;
 		background-size: cover !important;
 		background-position: center center !important;
+		@include mq("medium"){
+			height: 300px;
+		}
+		@include mq("large"){
+			height: 400px;
+		}
 	}
 
 	.event-detail-text{
@@ -67,9 +76,13 @@
 		float: left;
 		margin-left: 20px;
 		color: $background;
-		width: 60%;
-		font-size: 1.2em;
+		width: 90%;
+		font-size: 1em;
 		z-index: 3;
+		@include mq("large"){
+			width: 60%;
+			font-size: 1.2em;
+		}
 		.embed{
 			position: relative;
 			height: 0;

@@ -1,4 +1,5 @@
 <section class="top-nav">
+
 	
 	<!--HOME LOGO-->
 	<a ui-sref="home"><div class="nav-logo"></div></a>
@@ -14,6 +15,8 @@
 		<input ng-model="topNavCtrl.search.input" placeholder="Search" ng-focus="topNavCtrl.search.toggleResults()" ng-blur="topNavCtrl.search.toggleResults()">
 
 	</div>
+
+	<div class="nav-burger" id="burger" ng-click="toggleOpen()"></div>
 
 	<!--SEARCH RESULTS-->
 	<div class="nav-results" ng-show="topNavCtrl.search.showResults">

@@ -18,11 +18,13 @@ angular.module('giantSteps2App').factory('contentFarm', [
 
     var ids = {
       eventsId: '5SOxrPbANq4gQ8W6MUeW6g',
-      textsId: '5DFddAHe80y2EsG6gewGmi'
+      textsId: '5DFddAHe80y2EsG6gewGmi',
+      downloadsId: '4aver57i6AEmyaQ4SYSSio'
     };
 
     var textCache = cacheService.text();
     var eventsCache = cacheService.events();
+    var downloadsCache = cacheService.downloads();
 
 
 
@@ -42,7 +44,6 @@ angular.module('giantSteps2App').factory('contentFarm', [
           var deferred = $q.defer();
 
           if (eventsCache.get('events')){
-            
             deferred.resolve(eventsCache.get('events'));
           }
 
@@ -144,10 +145,46 @@ angular.module('giantSteps2App').factory('contentFarm', [
           
 
           return deferred.promise;
+        },
+      },
+
+      // -------------------------------------------------
+        //
+        // Downloads
+        // 
+        // -------------------------------------------------
+        
+        downloads: {
+          
+          index: function(){
+            var deferred = $q.defer();
+
+            if (downloadsCache.get('downloads')){
+              deferred.resolve(downloadsCache.get('downloads'));
+            }
+
+            else{
+              contentfulClient.entries({
+                'content_type': ids.downloadsId
+              }).then(function(response){
+
+                // ------------------------------------------------
+                // Add to cache
+                //
+                downloadsCache.put('downloads', response);
+
+
+                deferred.resolve(downloadsCache.get('downloads'));
+
+              }, function(err){
+                console.log(err);
+                deferred.reject(err);
+              });
+
+              return deferred.promise;
+            }
+          }
         }
-      }
-
-
     };
 
     // Public API here
@@ -160,6 +197,9 @@ angular.module('giantSteps2App').factory('contentFarm', [
       },
       textIndex: function(){
         return content.text.index();
+      },
+      downloadsIndex: function(){
+        return content.downloads.index();
       }
     };
   }
