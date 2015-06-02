@@ -29,13 +29,13 @@
 				
 				<!--EVENTS-->
 				<a ng-click="topNavCtrl.go('event', result.fields.slug)"  ng-if="result.type == 'event'">
-					<span ng-if="result.type == 'event'" class="fa fa-suitcase"></span>
+					<span class="fa fa-suitcase"></span>
 					{{result.fields.title}}
 				</a>
 
 				<!--DOWNLOADS-->
-				<a ng-href="{{result.link}}" ng-if="result.type == 'download'">
-					<span ng-if="result.type == 'download'" class="fa fa-file-text-o"></span>
+				<a ng-click="topNavCtrl.go('download', result.fields.slug)" ng-if="result.type == 'download'">
+					<span class="fa fa-file-text-o"></span>
 					{{result.fields.title}}
 				</a>
 

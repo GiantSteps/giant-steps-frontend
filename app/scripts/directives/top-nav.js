@@ -25,7 +25,7 @@ angular.module('giantSteps2App').directive('topNav', function ($state, contentFa
                     }
 
                     contentFarm.downloadsIndex().then(function(response){
-                      console.log(response);
+
                       for (var e = 0; e < response.length; e++ ){
                         response[e].type = 'download';
 
@@ -33,7 +33,6 @@ angular.module('giantSteps2App').directive('topNav', function ($state, contentFa
                       }
                     });
 
-                    console.log(self.criteria);
 
 
                   });
@@ -50,6 +49,9 @@ angular.module('giantSteps2App').directive('topNav', function ($state, contentFa
         this.go = function(type, slug){
           if (type === 'event'){
             $state.go('eventDetail', {eventId: slug});
+          }
+          if (type === 'download'){
+            $state.go('publicationDetail', {pubId: slug});
           }
         };
 

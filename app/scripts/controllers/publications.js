@@ -12,12 +12,24 @@ angular.module('giantSteps2App').controller('PublicationsCtrl', [
 	'contentFarm',
 	function ($scope, contentFarm) {
 
-		$scope.downloads = [];
+		$scope.downloads2015 = [];
+		$scope.downloads2014 = [];
 
 		$scope.loading = true;
 
 		contentFarm.downloadsIndex().then(function(response){
+
 			console.log(response);
+
+			for (var i = 0; i < response.length; i++ ){
+				if (response[i].fields.yearPublished === '2015'){
+					$scope.downloads2015.push(response[i]);
+				}
+
+				else if (response[i].fields.yearPublished === '2014'){
+					$scope.downloads2014.push(response[i]);
+				}
+			}
 			$scope.loading = false;
 		});
 

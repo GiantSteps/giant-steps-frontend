@@ -1,9 +1,14 @@
 .publications{
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: auto;
-	margin-bottom: 200px;
-	top: 100px;
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	background: $key;
+	color: $background;
 	.pub-grid{
 		width: 100%;
 		padding: 0 50px;
@@ -19,6 +24,27 @@
 			overflow: hidden;
 			height: 200px;
 			max-height: 600px;
+		}
+	}
+	.pub-list{
+		width: 80%;
+		margin: 100px auto 200px 20px;
+		li{
+			margin-bottom: 50px;
+			a{
+				border-bottom: 0;
+				text-decoration: none;
+			}
+			img{
+				display: inline-block;
+				width: 50px;
+				height: auto;
+				vertical-align: top;
+				&.smaller{
+					width: 40px;
+					margin-top: 5px;
+				}
+			}
 		}
 	}
 
