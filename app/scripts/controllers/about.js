@@ -12,7 +12,15 @@ angular.module('giantSteps2App').controller('AboutCtrl', [
 	'$sce',
 	'contentFarm',
 	'markdownService',
-	function ($scope, $sce, contentFarm, markdownService) {
+	'canvasService',
+	function ($scope, $sce, contentFarm, markdownService, canvasService) {
+
+
+		// ------------------------------------------------
+		// Make sure GL is cleaned up
+		//
+		canvasService.destroy();
+		
 
 		$scope.about = '';
 		$scope.loading = true;

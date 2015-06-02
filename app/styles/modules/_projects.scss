@@ -8,61 +8,77 @@
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 	@include flex();
+	.project-menu{
+		position: absolute;
+		color: $key;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+		margin-bottom: 50px;
+		width: 100%;
+		@include mq("large"){
+			left: 50%;
+			top: 25%;
+			width: auto;
+
+		}
+		a{
+			color: $key;
+			border: none;
+			h1{
+				border-bottom: 2px solid transparent;
+				display: inline-block;
+				font-size: 1em;
+				text-align: center;
+				margin: 0 5px;
+				@include mq("large"){
+					display: block;
+					font-size:3em;
+
+				}
+			}
+			&.active{
+				h1{
+					border-bottom: 2px solid $key;	
+				}
+			}
+		}
+
+	}
+
 	.project-container{
 		position: absolute;
+		bottom: 100px;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height:auto;
 		overflow: hidden;
 		top: 50px;
-		//background: url(../images/grid.png) no-repeat center center;
+		background: url(../images/grid.png) no-repeat center center;
 		background-size: cover;
 		@include perspective(1000);
-		@include mq("large"){
-			position: absolute;
-			bottom: 100px;
-		}
 
-		.project-menu{
-			position: absolute;
-			top: 0;
-			left: 50%;
-			color: $key;
-			top: 25%;
-			a{
-				color: $key;
-				h1{
-					border-bottom: 2px solid transparent;	
-				}
-				&.active{
-					h1{
-						border-bottom: 2px solid $key;	
-					}
-				}
-			}
-
-		}
 		.project-col{
 			display: block;
-			width: 90%;
-			margin-left: 5%;
 			padding-bottom: 100px;
 			height: auto;
 			position: relative;
 			overflow: hidden;
 			overflow-y: auto;
 			background: white;
+			width: 50%;
+			margin: 1% 25% 1% 25%;
+			height: 90%;
+			border: 1px solid black;
+			display: inline-block;
 			@include backface-visibility(hidden);
-			//@include transform(rotateX(-20deg) rotateY(0deg) translate3d(0,0,0));
+			@include smallboxy();
+			@include transform(rotateX(-2deg) rotateY(-5deg) translate3d(0,0,0));
 			@include transform-origin(50%);
-			box-shadow: 2px 5px 10px $text;
 			@include mq("large"){
 				width: 30%;
 				margin: 1% 0 1% 10%;
-				height:90%;
-				border: 1px solid black;
-				display: inline-block;
 			}
 			.project-title{
 				margin-top: 10px;

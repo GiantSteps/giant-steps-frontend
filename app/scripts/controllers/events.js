@@ -14,12 +14,18 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 	'$scope',
 	'$state',
 	'contentFarm',
-	function ($scope, $state, contentFarm) {
+	'canvasService',
+	function ($scope, $state, contentFarm, canvasService) {
 
 		$scope.loading = true;
 		$scope.futureEvents = [];
 		$scope.pastEvents = [];
 		$scope.showPast = false;
+
+		// ------------------------------------------------
+		// Make sure GL is cleaned up
+		//
+		canvasService.destroy();
 
 
 		$scope.togglePast = function(){

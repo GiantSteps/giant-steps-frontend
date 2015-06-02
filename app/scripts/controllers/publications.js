@@ -10,7 +10,14 @@
 angular.module('giantSteps2App').controller('PublicationsCtrl', [
 	'$scope',
 	'contentFarm',
-	function ($scope, contentFarm) {
+	'canvasService',
+	function ($scope, contentFarm, canvasService) {
+
+		// ------------------------------------------------
+		// Make sure GL is cleaned up
+		//
+		canvasService.destroy();
+		
 
 		$scope.downloads2015 = [];
 		$scope.downloads2014 = [];

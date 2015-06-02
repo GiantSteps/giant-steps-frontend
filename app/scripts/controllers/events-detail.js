@@ -13,9 +13,15 @@ angular.module('giantSteps2App').controller('EventsDetailCtrl', [
 	'$sce',
 	'contentFarm',
 	'markdownService',
-	function ($scope, $state, $sce, contentFarm, markdownService) {
+	'canvasService',
+	function ($scope, $state, $sce, contentFarm, markdownService, canvasService) {
 
 		var id = $state.params.eventId;
+
+		// ------------------------------------------------
+		// Make sure GL is cleaned up
+		//
+		canvasService.destroy();
 
 		$scope.loading = true;
 

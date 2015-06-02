@@ -12,32 +12,18 @@
 			</h1>
 			<div ng-bind-html="trust(current)"></div>
 		</div>
-		
-
-		<div class="project-menu">
-			<a ng-class="{active: objActive}" ng-click="switch('objectives')">
-				<h1>Objectives</h1>
-			</a>
-			<a ng-class="{active: workActive}" ng-click="switch('workplan')">
-				<h1>Work Plan</h1>
-			</a>
-			<a ng-class="{active: consortActive}" ng-click="switch('consortium')">
-				<h1>Consortium</h1>
-			</a>
-
-		</div>
-
-		<!-- <div class="project-col">
-			<h1 class="project-title">Work Plan</h1>
-			<div ng-bind-html="trust(projects.fields.workPlan)"></div>
-		</div>
-
-
-
-		<div class="project-col consortium">
-			<h1 class="project-title">Consortium</h1>
-			<div ng-bind-html="trust(projects.fields.consortium)"></div>
-		</div> -->
-
 	</div>
+
+	<div class="project-menu">
+		<a ng-class="{active: objActive}" ng-click="switch('objectives')">
+			<h1>Objectives</h1>
+		</a>
+		<a ng-class="{active: workActive}" ng-click="switch('workplan')">
+			<h1>Work Plan</h1>
+		</a>
+		<a ng-class="{active: consortActive}" ng-click="switch('consortium')">
+			<h1>Consortium</h1>
+		</a>
+	</div>
+		
 </section>
