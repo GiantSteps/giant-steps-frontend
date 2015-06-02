@@ -13,25 +13,34 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 
 	return {
 		restrict: 'A',
-		link: function() {
+		link: function(scope) {
 
+
+			// ------------------------------------------------
+			// Top level vars
+			//
+			
 			var width = window.innerWidth;
 			var height = window.innerHeight;
 			var parent = document.getElementById('canvas-container');
+			var canvas;
+
 			var renderer = PIXI.autoDetectRenderer(width, height,{backgroundColor : 0xffffff});
-			var stage = new PIXI.Container();
-			var texture = PIXI.Texture.fromImage('images/grid.png');
-			var grid = new PIXI.Sprite(texture);
+			
+			var stage;
+			var texture;
+			var grid;
+			var bulge;
 
 			var mouseX = 0;
 			var mouseY = 0;
 
 
-			function onMouseMove(event){
-				mouseX = event.clientX;
-				mouseY = event.clientY;
-			}
-			
+			var images = [
+				'images/grid.png',
+				'images/grid2.png'
+			];
+
 
 
 			// ------------------------------------------------
@@ -92,6 +101,11 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 			BulgePinchFilter.prototype = Object.create(PIXI.filters.AbstractFilter.prototype);
 			BulgePinchFilter.prototype.constructor = BulgePinchFilter;
 
+
+			// ------------------------------------------------
+			// Filter methods
+			//
+			
 			Object.defineProperty(BulgePinchFilter.prototype, 'radius', {
 				get: function(){
 					return this.uniforms.radius.value;
@@ -123,16 +137,42 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 
 
 			// ------------------------------------------------
-			// Call filters
+			// Call filter
+			//		
+			bulge = new BulgePinchFilter();
+			bulge.radius = 500;
+			bulge.strength = 0.5;
+			bulge.center.x = width / 2;
+			bulge.center.y = height / 2;
+
+
+			// ------------------------------------------------
+			// Basic setup
 			//
-
-
-			var blurFilter = new PIXI.filters.BlurFilter();
-
 			
-			
-			
+			function init(image){
+				stage = new PIXI.Container();
+				texture = PIXI.Texture.fromImage(image);
+				grid = new PIXI.Sprite(texture);
 
+				// center the sprite's anchor point
+				grid.anchor.x = 0.5;
+				grid.anchor.y = 0.5;
+
+				grid.scale.x = 0.25;
+				grid.scale.y = 0.25;
+
+				// move the image to the center of the screen
+				grid.position.x = width / 2;
+				grid.position.y = height / 2;
+
+
+				grid.filters = [bulge];
+
+				stage.addChild(grid);
+				parent.appendChild(renderer.view);
+				renderer.view.setAttribute('id', 'bulge-canvas');
+			}
 
 
 
@@ -141,7 +181,7 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 			//
 			
 			function animate() {
-				grid.rotation += 0.005;
+				grid.rotation += 0.001;
 				renderer.render(stage);
 
 				bulge.center.x = mouseX;
@@ -152,40 +192,60 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 				
 			}
 
- 
-			var bulge = new BulgePinchFilter();
+
+
+			// ------------------------------------------------
+			// Mouse listener
+			//
 			
-			bulge.radius = 500;
-			bulge.strength = 0.5;
+			function onMouseMove(event){
+				mouseX = event.clientX;
+				mouseY = event.clientY;
+			}
+
+
+			// ------------------------------------------------
+			// Resize listener
+			//
+
+			function onWindowResize(){
+				canvas = document.getElementById('bulge-canvas');
+
+				canvas.style.height = window.innerHeight;
+				canvas.style.width = window.innerWidth;
+
+				renderer.view.style.width = window.innerWidth;
+				renderer.view.style.height = window.innerHeight;
+
+				grid.anchor.x = 0.5;
+				grid.anchor.y = 0.5;
+
+
+				renderer.resize(window.innerWidth, window.innerHeight);
+			}
 			
-			// bulge.radius.set = 40;
-			bulge.center.x = width / 2;
-			bulge.center.y = height / 2;
 
-			grid.filters = [bulge];
-
-			// center the sprite's anchor point
-			grid.anchor.x = 0.5;
-			grid.anchor.y = 0.5;
-
-			grid.scale.x = 0.5;
-			grid.scale.y = 0.5;
-
-			// move the sprite to the center of the screen
-			grid.position.x = width / 2;
-			grid.position.y = height / 2;
-
-			stage.addChild(grid);
-			parent.appendChild(renderer.view);
-
-			// start animating
-			animate();
 
 
 			// ------------------------------------------------
 			// Mouse changes
 			//
 			document.body.addEventListener('mousemove', onMouseMove, false);
+			window.addEventListener('resize', onWindowResize, false);
+
+
+			// ------------------------------------------------
+			// Yo
+			//
+			
+			init(images[0]);
+			animate();
+
+
+
+			scope.swap1 = function(){
+				init(images[1]);
+			};
 			
 		
 

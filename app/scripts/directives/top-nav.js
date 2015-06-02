@@ -6,7 +6,7 @@
  * @description
  * # topNav
  */
-angular.module('giantSteps2App').directive('topNav', function (contentFarm) {
+angular.module('giantSteps2App').directive('topNav', function ($state, contentFarm) {
 
     var controller = function(){
         this.search = {
@@ -17,7 +17,25 @@ angular.module('giantSteps2App').directive('topNav', function (contentFarm) {
             getData: function(){
                 var self = this;
                 contentFarm.eventsIndex().then(function(response){
-                    self.criteria = response;
+                    for (var i = 0; i < response.length; i++ ){
+
+                      response[i].type = 'event';
+
+                      self.criteria.push(response[i]);
+                    }
+
+                    contentFarm.downloadsIndex().then(function(response){
+                      console.log(response);
+                      for (var e = 0; e < response.length; e++ ){
+                        response[e].type = 'download';
+
+                        self.criteria.push(response[e]);
+                      }
+                    });
+
+                    console.log(self.criteria);
+
+
                   });
               },
 
@@ -29,8 +47,10 @@ angular.module('giantSteps2App').directive('topNav', function (contentFarm) {
 
         this.search.getData();
 
-        this.toggleOpen = function(){
-          alert('hi');
+        this.go = function(type, slug){
+          if (type === 'event'){
+            $state.go('eventDetail', {eventId: slug});
+          }
         };
 
 

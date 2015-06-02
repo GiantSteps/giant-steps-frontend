@@ -25,8 +25,21 @@
 			<li class="no-results" ng-show="(topNavCtrl.search.criteria | filter : topNavCtrl.search.input).length == 0"><strong>Sorry, no results</strong></li>
 
 			<!--RESULTS. NO ORDERING ATM -->
-			<li ng-repeat="result in topNavCtrl.search.criteria | filter : topNavCtrl.search.input">
-				<a ng-href="{{result.link}}"><span class="fa fa-newspaper-o"></span>{{result.fields.title}}</a>
+			<li ng-repeat="result in topNavCtrl.search.criteria | filter : topNavCtrl.search.input | orderBy: 'fields.title'">
+				
+				<!--EVENTS-->
+				<a ng-click="topNavCtrl.go('event', result.fields.slug)"  ng-if="result.type == 'event'">
+					<span ng-if="result.type == 'event'" class="fa fa-suitcase"></span>
+					{{result.fields.title}}
+				</a>
+
+				<!--DOWNLOADS-->
+				<a ng-href="{{result.link}}" ng-if="result.type == 'download'">
+					<span ng-if="result.type == 'download'" class="fa fa-file-text-o"></span>
+					{{result.fields.title}}
+				</a>
+
+
 			</li>
 		</ul>
 	</div>

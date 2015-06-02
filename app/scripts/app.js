@@ -81,7 +81,15 @@ angular
       url: '/publications',
       templateUrl: 'views/publications.html',
       controller: 'PublicationsCtrl'
-    });
+    })
+
+    .state('publicationDetail', {
+      url: '/publications/:pubId',
+      templateUrl: 'views/publication-detail.html',
+      controller: 'PublicationsDetailCtrl'
+    })
+
+    ;
 
 
     contentfulClientProvider.setSpaceId('xrzr1u3na612');
