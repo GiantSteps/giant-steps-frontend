@@ -32,11 +32,7 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       var mouseY = 0;
 
 
-      var images = [
-        'images/grid.png',
-        'images/grid2.png'
-      ];
-
+      
 
       // ------------------------------------------------
       // Bulge Filter Shader
@@ -168,11 +164,6 @@ angular.module('giantSteps2App').factory('canvasService', function () {
         mouseY = 0;
 
 
-        images = [
-          'images/grid.png',
-          'images/grid2.png'
-        ];
-
 
         stage = new PIXI.Container();
         texture = PIXI.Texture.fromImage(image);
@@ -182,8 +173,8 @@ angular.module('giantSteps2App').factory('canvasService', function () {
         grid.anchor.x = 0.5;
         grid.anchor.y = 0.5;
 
-        grid.scale.x = 0.25;
-        grid.scale.y = 0.25;
+        grid.scale.x = 0.5;
+        grid.scale.y = 0.5;
 
         // move the image to the center of the screen
         grid.position.x = width / 2;
@@ -247,8 +238,8 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       window.addEventListener('resize', onWindowResize, false);
 
       return {
-        init: function () {
-          return init(images[0]);
+        init: function (image) {
+          return init(image);
         },
         destroy: function(){
           return destroy();

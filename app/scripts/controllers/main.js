@@ -8,5 +8,18 @@
  * Controller of the giantSteps2App
  */
 angular.module('giantSteps2App').controller('MainCtrl', function ($scope, canvasService) {
-	canvasService.init();
+	
+
+
+
+	var images = [
+		'images/grid.png',
+		'images/grid2.png',
+		'images/patterns8.png'
+	];
+
+	canvasService.init(images[0]);
+
+
+
 });
