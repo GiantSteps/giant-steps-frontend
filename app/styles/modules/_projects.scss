@@ -55,8 +55,8 @@
 		height:auto;
 		overflow: hidden;
 		top: 50px;
-		background: url(../images/grid.png) no-repeat center center;
-		background-size: cover;
+		// background: url(../images/grid.png) no-repeat center center;
+		// background-size: contain;
 		@include perspective(1000);
 
 		.project-col{
@@ -69,7 +69,7 @@
 			background: white;
 			width: 50%;
 			margin: 1% 25% 1% 25%;
-			height: 90%;
+			height: 92%;
 			border: 1px solid black;
 			display: inline-block;
 			@include backface-visibility(hidden);

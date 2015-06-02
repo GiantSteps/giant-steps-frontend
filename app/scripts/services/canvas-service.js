@@ -234,7 +234,7 @@ angular.module('giantSteps2App').factory('canvasService', function () {
 
       function destroy(){
         Object.keys(PIXI.utils.TextureCache).forEach(function(texture) {
-          // PIXI.utils.TextureCache[texture].destroy(true);
+          PIXI.utils.TextureCache[texture].destroy(true);
           console.log(texture);
         });
       }

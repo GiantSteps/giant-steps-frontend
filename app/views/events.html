@@ -29,7 +29,7 @@
 				</div>
 
 
-				<div ng-if="showPast == true" class="event" ng-repeat="event in pastEvents | orderBy : 'fields.dateTime' : true" ng-click="goToEvent(event.fields.slug)">
+				<div class="event" ng-repeat="event in pastEvents | orderBy : 'fields.dateTime' : true" ng-click="goToEvent(event.fields.slug)">
 					<div class="event-image" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }">
 						<div class="event-image-overlay"></div>
 					</div>
@@ -54,11 +54,11 @@
 				</div>
 
 
-				<div class="event loadmore" ng-click="togglePast()" ng-if="!showPast">
+				<!-- <div class="event loadmore" ng-click="togglePast()" ng-if="!showPast">
 					<div class="load-more-wrapper">
 						<h3>+Past Events</h3>
 					</div>
-				</div>
+				</div> -->
 			
 		
 			

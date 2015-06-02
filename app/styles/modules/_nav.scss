@@ -15,7 +15,6 @@ $adminnavheight: 70px;
 	left: 0;
 	width: 100%;
 	height: $topnavheight;
-
 	@include fast();
 	.nav-logo{
 		position: absolute;
@@ -33,7 +32,6 @@ $adminnavheight: 70px;
 		height: 100%;
 		text-align: center;
 		display: none;
-		color: $key;
 		@include mq("large"){
 			display: block;
 		}
@@ -141,11 +139,14 @@ nav{
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 100px;
+	height: 70px;
 	color: $key;
 	display: none;
 	@include mq("large"){
-		display: block;
+		@include display(flex);
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
 	}
 	&.stick{
 		position: absolute;

@@ -67,6 +67,7 @@
 			border: 1px solid transparent;
 			h3{
 				border-bottom: 2px solid $text;
+				font-size: 1em;
 			}
 			&:hover{
 				background: $background;
@@ -76,7 +77,6 @@
 				width: 23.8%;
 				margin: 1% 0 1% 1%;
 				height: 450px;
-				border: 1px solid black;
 			}
 			.load-more-wrapper{
 				@include display(flex);
