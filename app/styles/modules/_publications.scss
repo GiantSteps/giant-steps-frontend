@@ -7,8 +7,6 @@
 	overflow: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
-	background: $key;
-	color: $background;
 	.pub-grid{
 		width: 100%;
 		padding: 0 50px;
@@ -40,10 +38,10 @@
 				width: 50px;
 				height: auto;
 				vertical-align: top;
-				&.smaller{
-					width: 40px;
-					margin-top: 5px;
-				}
+				// &.smaller{
+				// 	width: 40px;
+				// 	margin-top: 5px;
+				// }
 			}
 		}
 	}

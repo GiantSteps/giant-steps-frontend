@@ -1,11 +1,12 @@
 .about{
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 	display: block;
 	overflow-y: scroll;
-	@include animation(drop1 0.5s ease-out);
+	-webkit-overflow-scrolling: touch;
+	// @include animation(drop1 0.5s ease-out);
 	@include mq("large"){
 		overflow-y: hidden;
 		@include flex();
@@ -15,6 +16,7 @@
 		margin-left: 10%;
 		position: relative;
 		top: 100px;
+		margin-bottom: 100px;
 		@include mq("large"){
 			margin-top: 0;
 			margin: 0;

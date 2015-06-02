@@ -9,7 +9,7 @@
  * @description
  * # addCanvas
  */
-angular.module('giantSteps2App').directive('addCanvas', function () {
+angular.module('giantSteps2App').directive('addCanvas', function ($rootScope) {
 
 	return {
 		restrict: 'A',
@@ -239,13 +239,10 @@ angular.module('giantSteps2App').directive('addCanvas', function () {
 			//
 			
 			init(images[0]);
+			
 			animate();
 
 
-
-			scope.swap1 = function(){
-				init(images[1]);
-			};
 			
 		
 

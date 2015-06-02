@@ -27,9 +27,41 @@
 						<p>Read More</p>
 					</div>
 				</div>
+
+
+				<div ng-if="showPast == true" class="event" ng-repeat="event in pastEvents | orderBy : 'fields.dateTime' : true" ng-click="goToEvent(event.fields.slug)">
+					<div class="event-image" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }">
+						<div class="event-image-overlay"></div>
+					</div>
+
+
+					<div class="event-date">
+						<h3>{{event.fields.dateTime | date : 'dd MMM, yyyy'}}</h3>
+						<h3>{{event.fields.cityCountry}}</h3>
+					</div>
+
+					<div class="event-title">
+						<h2>{{event.fields.title}}</h2>
+					</div>
+
+					<div class="event-teaser">
+						<p ng-bind-html="event.fields.teaser | limitTo: 100">{{event.fields.teaser.length > 20 ? '...' : ''}}</p>
+					</div>
+
+					<div class="event-more">
+						<p>Read More</p>
+					</div>
+				</div>
+
+
+				<div class="event loadmore" ng-click="togglePast()" ng-if="!showPast">
+					<div class="load-more-wrapper">
+						<h3>+Past Events</h3>
+					</div>
+				</div>
 			
 		
-			<nav-bar></nav-bar>
+			
 	</section>
 
 </section>

@@ -1,4 +1,4 @@
-<div top-nav color="white"></div>
+<div top-nav></div>
 
 <section class="publications">
 	<!-- <div class="pub-grid">
@@ -27,7 +27,7 @@
 
 			<a ng-if="download.fields.files.length > 0" ng-href="{{download.fields.files[0].fields.file.url}}" download><img src="images/download.svg" /></a>
 
-			<a ng-if="!download.fields.files.length" ng-href="{{download.fields.externalUrl}}" target="self"><img class="smaller" src="images/paper.svg" /></a>
+			<a ng-if="!download.fields.files.length" ng-href="{{download.fields.externalUrl}}" target="self"><img class="smaller" src="images/eye.svg" /></a>
 		</li>
 
 		<li ng-if="downloads2014.length"><h2>2014</h2></li>
@@ -40,9 +40,7 @@
 
 			<a ng-if="download.fields.files.length > 0" ng-href="{{download.fields.files[0].fields.file.url}}" download><img src="images/download.svg" /></a>
 
-			<a ng-if="!download.fields.files.length" ng-href="{{download.fields.externalUrl}}" target="self"><img class="smaller" src="images/paper.svg" /></a>
+			<a ng-if="!download.fields.files.length" ng-href="{{download.fields.externalUrl}}" target="self"><img class="smaller" src="images/eye.svg" /></a>
 		</li>
 	</ul>
 </section>
-
-<nav-bar display="fixed" color="white"></nav-bar>

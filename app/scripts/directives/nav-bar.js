@@ -6,8 +6,7 @@
  * @description
  * # navBar
  */
-angular.module('giantSteps2App').directive('navBar', function () {
-
+angular.module('giantSteps2App').directive('navBar', function ($rootScope, $state) {
 
   var controller = function(){
     this.navItems = [
@@ -31,16 +30,26 @@ angular.module('giantSteps2App').directive('navBar', function () {
         name: 'Contact',
         state: 'contact'
       }
+
+
     ];
+
+
   };
 
-  var link = function($scope, element, attrs){
+  var link = function(scope, element, attrs){
     if (attrs.display === 'fixed'){
       element.addClass('stick');
     }
     if (attrs.color){
       element.addClass('white');
     }
+
+    // if (current === '')
+
+    scope.open = false;
+
+
   };
 
   return {

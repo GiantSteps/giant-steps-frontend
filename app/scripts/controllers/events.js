@@ -17,9 +17,15 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 	function ($scope, $state, contentFarm) {
 
 		$scope.loading = true;
-		$scope.events = [];
 		$scope.futureEvents = [];
 		$scope.pastEvents = [];
+		$scope.showPast = false;
+
+
+		$scope.togglePast = function(){
+			$scope.showPast = !$scope.showPast;
+			return $scope.showPast;
+		};
 
 
 		var now = moment();
@@ -43,15 +49,16 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 
 
 				if (now > response[i].fields.dateTime){
+					response[i].fields.dateTime = new Date(moment(response[i].fields.dateTime));
 					$scope.pastEvents.push(response[i]);
 				}
 				else{
+					response[i].fields.dateTime = new Date(moment(response[i].fields.dateTime));
 					$scope.futureEvents.push(response[i]);
 				}
 			}
 
 			
-			$scope.events = response;
 			$scope.loading = false;
 		});
 
