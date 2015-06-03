@@ -18,6 +18,7 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 		$scope.objActive = true;
 		$scope.workActive = false;
 		$scope.consortActive = false;
+		$scope.imprintActive = false;
 		$scope.current = '';
 
 		$scope.loading = true;
@@ -27,7 +28,6 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 			// Convert markdown for about text
 			//
 			$scope.projects = response[0];
-			console.log($scope.projects);
 
 
 			markdownService.convert($scope.projects.fields.consortium).then(function (response){
@@ -38,9 +38,15 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 
 					markdownService.convert($scope.projects.fields.workPlan).then(function (response){
 						$scope.projects.fields.workPlan = response;
-						$scope.loading = false;
 
-						$scope.current = $scope.projects.fields.projectObjectives;
+						markdownService.convert($scope.projects.fields.imprint).then(function(response){
+							$scope.projects.fields.imprint = response;
+
+							$scope.loading = false;
+
+							$scope.current = $scope.projects.fields.projectObjectives;
+						});
+						
 					});
 
 				});
@@ -61,6 +67,7 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 			$scope.objActive = false;
 			$scope.workActive = false;
 			$scope.consortActive = false;
+			$scope.imprintActive = false;
 
 
 
@@ -79,6 +86,12 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 				$scope.consortActive = true;
 				$scope.current = 'consortium';
 				$scope.current = $scope.projects.fields.consortium;
+			}
+
+			else if (topic === 'imprint'){
+				$scope.imprintActive = true;
+				$scope.current = 'imprint';
+				$scope.current = $scope.projects.fields.imprint;
 			}
 		};
 

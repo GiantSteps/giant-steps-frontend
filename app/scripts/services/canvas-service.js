@@ -1,6 +1,6 @@
 'use strict';
 
-/* global PIXI:false */
+/* global PIXI:false, Modernizr:false */
 
 /**
  * @ngdoc service
@@ -20,8 +20,17 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       var height = window.innerHeight;
       var parent = document.getElementById('canvas-container');
       var canvas;
+      var renderer;
 
-      var renderer = PIXI.autoDetectRenderer(width, height,{backgroundColor : 0xffffff});
+      if (Modernizr.webgl){
+        renderer = new PIXI.WebGLRenderer(width, height,{backgroundColor : 0xffffff}, {antialias: true});
+      }
+
+      else{
+        renderer = new PIXI.CanvasRenderer(width, height,{backgroundColor : 0xffffff}, {antialias: true});
+      }
+
+      
       
       var stage;
       var texture;
@@ -149,6 +158,52 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       }
 
 
+
+      // ------------------------------------------------
+      // Mouse listener
+      //
+      
+      function onMouseMove(event){
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+      }
+
+      function onTouch(event){
+        // event.preventDefault();
+
+        for (var i = 0; i < event.touches.length; i++ ){
+          mouseX = event.touches[i].pageX;
+          mouseY = event.touches[i].pageY;
+        }
+      }
+
+
+      // ------------------------------------------------
+      // Resize listener
+      //
+
+      function onWindowResize(){
+        canvas = document.getElementById('bulge-canvas');
+
+        canvas.style.height = window.innerHeight;
+        canvas.style.width = window.innerWidth;
+
+        renderer.view.style.width = window.innerWidth;
+        renderer.view.style.height = window.innerHeight;
+
+        grid.anchor.x = 0.5;
+        grid.anchor.y = 0.5;
+
+
+        renderer.resize(window.innerWidth, window.innerHeight);
+      }
+
+
+
+
+
+
+
       // ------------------------------------------------
       // Basic setup
       //
@@ -187,40 +242,20 @@ angular.module('giantSteps2App').factory('canvasService', function () {
         parent.appendChild(renderer.view);
         renderer.view.setAttribute('id', 'bulge-canvas');
 
+
+        // ------------------------------------------------
+        // Listeners
+        //
+        document.addEventListener('mousemove', onMouseMove, false);
+        document.addEventListener('touchstart', onTouch, false);
+        document.addEventListener('touchmove', onTouch, false);
+        window.addEventListener('resize', onWindowResize, false);
+
         animate();
       }
 
       
 
-      // ------------------------------------------------
-      // Mouse listener
-      //
-      
-      function onMouseMove(event){
-        mouseX = event.clientX;
-        mouseY = event.clientY;
-      }
-
-
-      // ------------------------------------------------
-      // Resize listener
-      //
-
-      function onWindowResize(){
-        canvas = document.getElementById('bulge-canvas');
-
-        canvas.style.height = window.innerHeight;
-        canvas.style.width = window.innerWidth;
-
-        renderer.view.style.width = window.innerWidth;
-        renderer.view.style.height = window.innerHeight;
-
-        grid.anchor.x = 0.5;
-        grid.anchor.y = 0.5;
-
-
-        renderer.resize(window.innerWidth, window.innerHeight);
-      }
 
 
       function destroy(){
@@ -228,14 +263,15 @@ angular.module('giantSteps2App').factory('canvasService', function () {
           PIXI.utils.TextureCache[texture].destroy(true);
           console.log(texture);
         });
+
+        document.removeEventListener('mousemove', onMouseMove, false);
+        document.removeEventListener('touchstart', onTouch, false);
+        document.removeEventListener('touchmove', onTouch, false);
+        window.removeEventListener('resize', onWindowResize, false);
       }
 
 
-      // ------------------------------------------------
-      // Mouse changes
-      //
-      document.body.addEventListener('mousemove', onMouseMove, false);
-      window.addEventListener('resize', onWindowResize, false);
+      
 
       return {
         init: function (image) {

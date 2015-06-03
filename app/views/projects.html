@@ -1,6 +1,6 @@
-<div top-nav></div>
+<div top-nav color="white"></div>
 
-<section class="projects">
+<section class="projects" nav-color color="white">
 	<section class="loading" ng-if="loading" loading></section>
 	<div class="project-container">
 		
@@ -9,6 +9,7 @@
 				<span ng-show="objActive">Objectives</span>
 				<span ng-show="workActive">Work Plan</span>
 				<span ng-show="consortActive">Consortium</span>
+				<span ng-show="imprintActive">Imprint</span>
 			</h1>
 			<div ng-bind-html="trust(current)"></div>
 		</div>
@@ -23,6 +24,9 @@
 		</a>
 		<a ng-class="{active: consortActive}" ng-click="switch('consortium')">
 			<h1>Consortium</h1>
+		</a>
+		<a ng-class="{active: imprintActive}" ng-click="switch('imprint')">
+			<h1>Imprint</h1>
 		</a>
 	</div>
 		

@@ -36,8 +36,6 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 
 		var now = moment();
 
-
-		console.log(now);
 		// -------------------------------------------------
 		//
 		// Get events

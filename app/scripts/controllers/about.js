@@ -22,8 +22,15 @@ angular.module('giantSteps2App').controller('AboutCtrl', [
 		canvasService.destroy();
 		
 
+		// ------------------------------------------------
+		// Defaults
+		//
+		
 		$scope.about = '';
 		$scope.loading = true;
+
+
+
 
 		contentFarm.textIndex().then(function(response){
 			// ------------------------------------------------

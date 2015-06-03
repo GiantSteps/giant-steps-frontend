@@ -24,7 +24,7 @@ angular.module('giantSteps2App').directive('topNav', function ($state, contentFa
                       self.criteria.push(response[i]);
                     }
 
-                    contentFarm.downloadsIndex().then(function(response){
+                    contentFarm.publicationsIndex().then(function(response){
 
                       for (var e = 0; e < response.length; e++ ){
                         response[e].type = 'download';
@@ -44,14 +44,11 @@ angular.module('giantSteps2App').directive('topNav', function ($state, contentFa
               }
           };
 
-        this.search.getData();
+        // this.search.getData();
 
         this.go = function(type, slug){
           if (type === 'event'){
             $state.go('eventDetail', {eventId: slug});
-          }
-          if (type === 'download'){
-            $state.go('publicationDetail', {pubId: slug});
           }
         };
 

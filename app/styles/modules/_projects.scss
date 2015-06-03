@@ -8,22 +8,29 @@
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 	@include flex();
+	background: $key;
+	color: $background;
 	.project-menu{
 		position: absolute;
 		color: $key;
 		bottom: 0;
 		left: 0;
 		text-align: center;
-		margin-bottom: 50px;
+		height: 50px;
+		@include display(flex);
+		@include flex-direction(row);
+		@include align-items(center);
+		@include justify-content(center);
 		width: 100%;
 		@include mq("large"){
 			left: 50%;
 			top: 25%;
 			width: auto;
+			display: block;
 
 		}
 		a{
-			color: $key;
+			color: $background;
 			border: none;
 			h1{
 				border-bottom: 2px solid transparent;
@@ -40,7 +47,7 @@
 			}
 			&.active{
 				h1{
-					border-bottom: 2px solid $key;	
+					border-bottom: 2px solid $background;	
 				}
 			}
 		}
@@ -49,17 +56,15 @@
 
 	.project-container{
 		position: absolute;
-		bottom: 100px;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height:auto;
+		height:80%;
 		overflow: hidden;
 		top: 50px;
 		background: url(../images/grid.png) no-repeat center center;
 		background-size: 50%;
 		@include perspective(1000);
-
 		.project-col{
 			display: block;
 			padding-bottom: 100px;
@@ -68,8 +73,9 @@
 			overflow: hidden;
 			overflow-y: auto;
 			background: white;
-			width: 50%;
-			margin: 1% 25% 1% 25%;
+			color: $text;
+			width: 70%;
+			margin: 5% 15% 1% 15%;
 			height: 92%;
 			border: 1px solid black;
 			display: inline-block;

@@ -78,18 +78,10 @@ angular
     })
 
     .state('publications', {
-      url: '/publications',
-      templateUrl: 'views/publications.html',
+      url: '/downloads',
+      templateUrl: 'views/downloads.html',
       controller: 'PublicationsCtrl'
-    })
-
-    .state('publicationDetail', {
-      url: '/publications/:pubId',
-      templateUrl: 'views/publication-detail.html',
-      controller: 'PublicationsDetailCtrl'
-    })
-
-    ;
+    });
 
 
     contentfulClientProvider.setSpaceId('xrzr1u3na612');

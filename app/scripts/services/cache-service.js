@@ -17,8 +17,11 @@ angular.module('giantSteps2App').factory('cacheService', function ($cacheFactory
       events: function(){
         return $cacheFactory('events');
       },
-      downloads: function(){
-        return $cacheFactory('downloads');
+      publications: function(){
+        return $cacheFactory('publications');
+      },
+      deliverables: function(){
+        return $cacheFactory('deliverables');
       }
     };
   });

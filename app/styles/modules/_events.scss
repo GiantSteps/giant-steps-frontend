@@ -16,6 +16,7 @@
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 	background: $background;
+	@include fast();
 	&:after{
 		content: '';
 		display: block;
@@ -26,7 +27,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		padding-top: 100px;
+		padding: 100px 0;
 		&:after{
 			content: '';
 			display: block;
@@ -39,11 +40,11 @@
 
 	}
 	.event{
-		width: 90%;
+		width: 80%;
 		display: inline-block;
 		// float: left;
-		height: 450px;
-		margin: 1% 5% 1% 5%;
+		height: 400px;
+		margin: 3% 10%;
 		position: relative;
 		text-align: center;
 		border: 1px solid black;
@@ -118,12 +119,15 @@
 		
 		.event-image{
 			width: 100%;
-			height: 200px;
+			height: 150px;
 			margin-bottom: 25px;
 			background-size: cover !important;
 			background-repeat: no-repeat !important;
 			background-position: center center !important;
 			position: relative;
+			@include mq("large"){
+				height: 200px;
+			}
 			.event-image-overlay{
 				display: none;
 				position: absolute;

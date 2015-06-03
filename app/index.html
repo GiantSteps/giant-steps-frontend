@@ -27,11 +27,11 @@ RDS.Zone Official Websites
 
 
 
-    <div class="container" id="container" ng-class="{frameopen: frameOpen}" top-back>
+    <div class="container" id="container" ng-class="{frameopen: frameOpen}">
         <div class="open-nav" id="open-nav" open-nav></div>
         <div ui-view="" class="main-view"></div>
     </div>
-    <nav-bar id="top-nav"></nav-bar>
+    <nav-bar id="bottom-nav"></nav-bar>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -49,6 +49,7 @@ RDS.Zone Official Websites
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
@@ -91,9 +92,9 @@ RDS.Zone Official Websites
         <script src="scripts/directives/open-nav.js"></script>
         <script src="scripts/controllers/publications.js"></script>
         <script src="scripts/directives/add-canvas.js"></script>
-        <script src="scripts/controllers/publications-detail.js"></script>
         <script src="scripts/directives/top-back.js"></script>
         <script src="scripts/services/canvas-service.js"></script>
+        <script src="scripts/directives/nav-color.js"></script>
         <!-- endbuild -->
 </body>
 </html>

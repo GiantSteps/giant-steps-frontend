@@ -19,12 +19,14 @@ angular.module('giantSteps2App').factory('contentFarm', [
     var ids = {
       eventsId: '5SOxrPbANq4gQ8W6MUeW6g',
       textsId: '5DFddAHe80y2EsG6gewGmi',
-      downloadsId: '4aver57i6AEmyaQ4SYSSio'
+      publicationsId: '4aver57i6AEmyaQ4SYSSio',
+      deliverablesId: '4LUNA2sqm4WQ0Ue6ewmaOc'
     };
 
     var textCache = cacheService.text();
     var eventsCache = cacheService.events();
-    var downloadsCache = cacheService.downloads();
+    var publicationsCache = cacheService.publications();
+    var deliverablesCache = cacheService.deliverables();
 
 
 
@@ -149,43 +151,86 @@ angular.module('giantSteps2App').factory('contentFarm', [
       },
 
       // -------------------------------------------------
-        //
-        // Downloads
-        // 
-        // -------------------------------------------------
+      //
+      // Downloads
+      // 
+      // -------------------------------------------------
+      
+      publications: {
         
-        downloads: {
-          
-          index: function(){
-            var deferred = $q.defer();
+        index: function(){
+          var deferred = $q.defer();
 
-            if (downloadsCache.get('downloads')){
-              deferred.resolve(downloadsCache.get('downloads'));
-            }
-
-            else{
-              contentfulClient.entries({
-                'content_type': ids.downloadsId
-              }).then(function(response){
-
-                // ------------------------------------------------
-                // Add to cache
-                //
-                downloadsCache.put('downloads', response);
-
-
-                deferred.resolve(downloadsCache.get('downloads'));
-
-              }, function(err){
-                console.log(err);
-                deferred.reject(err);
-              });
-
-              
-            }
-            return deferred.promise;
+          if (publicationsCache.get('publications')){
+            deferred.resolve(publicationsCache.get('publications'));
           }
+
+          else{
+            contentfulClient.entries({
+              'content_type': ids.publicationsId
+            }).then(function(response){
+
+              // ------------------------------------------------
+              // Add to cache
+              //
+              publicationsCache.put('publications', response);
+
+
+              deferred.resolve(publicationsCache.get('publications'));
+
+            }, function(err){
+              console.log(err);
+              deferred.reject(err);
+            });
+
+            
+          }
+          return deferred.promise;
         }
+      },
+
+
+      // ------------------------------------------------
+      // Deliverables
+      //
+      deliverables: {
+        index: function(){
+          var deferred = $q.defer();
+
+
+
+          if (deliverablesCache.get('deliverables')){
+            console.log('cached and called');
+            var devs = deliverablesCache.get('deliverables');
+            console.log(devs);
+            deferred.resolve(devs);
+          }
+
+          else{
+            contentfulClient.entries({
+              'content_type': ids.deliverablesId
+            }).then(function(response){
+
+              // ------------------------------------------------
+              // Add to cache
+              //
+              deliverablesCache.put('deliverables', response);
+
+              // ------------------------------------------------
+              // Retrieve and fulfill promise
+              //
+              deferred.resolve(deliverablesCache.get('deliverables'));
+              
+            }, function(err){
+              console.log(err);
+              deferred.reject(err);
+            });
+          }
+
+          return deferred.promise;
+        }
+      }
+      
     };
 
     // Public API here
@@ -199,8 +244,11 @@ angular.module('giantSteps2App').factory('contentFarm', [
       textIndex: function(){
         return content.text.index();
       },
-      downloadsIndex: function(){
-        return content.downloads.index();
+      publicationsIndex: function(){
+        return content.publications.index();
+      },
+      deliverablesIndex: function(){
+        return content.deliverables.index();
       }
     };
   }
