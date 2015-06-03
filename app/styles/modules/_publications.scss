@@ -79,7 +79,7 @@
 			display: inline-block;
 			@include backface-visibility(hidden);
 			@include smallboxy();
-			//@include transform(rotateX(-2deg) rotateY(-5deg) translate3d(0,0,0));
+			@include transform(rotateX(-2deg) rotateY(5deg) translate3d(0,0,0));
 			@include transform-origin(50%);
 			@include mq("large"){
 				width: 30%;
