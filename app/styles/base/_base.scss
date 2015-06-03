@@ -28,9 +28,6 @@ html, body {
   left: 0;
 }
 
-body{
-  @include perspective(1000);
-}
 
 
 div,section,article{
