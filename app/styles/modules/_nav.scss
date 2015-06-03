@@ -6,7 +6,7 @@
 // -------------------------------------------------
 
 
-$topnavheight: 50px;
+$topnavheight: 70px;
 $adminnavheight: 70px;
 
 .top-nav{
@@ -14,8 +14,14 @@ $adminnavheight: 70px;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: $topnavheight;
+	height: 50px;
 	@include fast();
+	@include mq("medium"){
+		height: $topnavheight;
+	}
+	@include mq("large"){
+		height: 50px;
+	}
 	.nav-logo{
 		position: absolute;
 		top: 0;
@@ -26,6 +32,22 @@ $adminnavheight: 70px;
 		background-repeat: no-repeat !important;
 		background-position: center center !important;
 		background-size: contain !important;
+		@include mq("medium"){
+			width: 200px;
+			height: 100%;
+			background: url(../images/logo-blue.svg);
+			background-repeat: no-repeat !important;
+			background-position: center center !important;
+			background-size: contain !important;
+		}
+		@include mq("large"){
+			width: 150px;
+			height: 100%;
+			background: url(../images/logo-blue.svg);
+			background-repeat: no-repeat !important;
+			background-position: center center !important;
+			background-size: contain !important;
+		}
 	}
 	.nav-mission{
 		width: 100%;
@@ -52,6 +74,10 @@ $adminnavheight: 70px;
 		@include transition(transform .5s ease);
 		@include transform(rotate(45deg));
 		display: block;
+		@include mq("medium"){
+			width: 35px;
+			height: 35px;
+		}
 		@include mq("large"){
 			display: none;
 		}

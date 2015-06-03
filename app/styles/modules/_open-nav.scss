@@ -29,6 +29,10 @@
 		height: 25px;
 		@include transform(rotate(45deg));
 		@include transition(transform .5s ease);
+		@include mq("medium"){
+			width: 35px;
+			height: 35px;
+		}
 	}
 	img{
 		width: 150px;
