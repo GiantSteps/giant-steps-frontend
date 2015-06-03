@@ -22,6 +22,7 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       var parent = document.getElementById('canvas-container');
       var canvas;
       var renderer;
+      var isDestroyed;
 
       var mobile = false;
       if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
@@ -219,6 +220,7 @@ angular.module('giantSteps2App').factory('canvasService', function () {
         width = window.innerWidth;
         height = window.innerHeight;
         parent = document.getElementById('canvas-container');
+        isDestroyed = false;
 
         renderer = PIXI.autoDetectRenderer(width, height,{backgroundColor : 0xffffff});
 
@@ -271,15 +273,17 @@ angular.module('giantSteps2App').factory('canvasService', function () {
 
 
       function destroy(){
+        
         Object.keys(PIXI.utils.TextureCache).forEach(function(texture) {
           PIXI.utils.TextureCache[texture].destroy(true);
-          console.log(texture);
         });
 
         document.removeEventListener('mousemove', onMouseMove, false);
         document.removeEventListener('touchstart', onTouch, false);
         document.removeEventListener('touchmove', onTouch, false);
         window.removeEventListener('resize', onWindowResize, false);
+
+
       }
 
 

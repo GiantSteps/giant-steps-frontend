@@ -12,7 +12,13 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 	'$sce',
 	'contentFarm',
 	'markdownService',
-	function ($scope, $sce, contentFarm, markdownService) {
+	'canvasService',
+	function ($scope, $sce, contentFarm, markdownService, canvasService) {
+
+		// ------------------------------------------------
+		// Make sure GL is cleaned up
+		//
+		canvasService.destroy();
 
 		$scope.projects = {};
 		$scope.objActive = true;

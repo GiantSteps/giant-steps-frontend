@@ -64,7 +64,7 @@
 		top: 50px;
 		background: url(../images/grid.png) no-repeat center center;
 		background-size: 50%;
-		@include perspective(1000);
+		
 		.project-col{
 			display: block;
 			padding-bottom: 100px;
@@ -79,14 +79,14 @@
 			height: 92%;
 			border: 1px solid black;
 			display: inline-block;
-			@include backface-visibility(hidden);
 			@include smallboxywhite();
-			
 			@include mq("large"){
 				width: 30%;
 				margin: 1% 0 1% 10%;
+				@include perspective(1000);
 				@include transform(rotateX(-2deg) rotateY(5deg) translate3d(0,0,0));
 				@include transform-origin(50%);
+				@include backface-visibility(hidden);
 			}
 			.project-title{
 				margin-top: 10px;

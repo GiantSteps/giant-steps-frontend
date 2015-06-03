@@ -200,9 +200,7 @@ angular.module('giantSteps2App').factory('contentFarm', [
 
 
           if (deliverablesCache.get('deliverables')){
-            console.log('cached and called');
             var devs = deliverablesCache.get('deliverables');
-            console.log(devs);
             deferred.resolve(devs);
           }
 

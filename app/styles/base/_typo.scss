@@ -6,6 +6,55 @@
 
 @import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
 
+/* Webfont: Akkurat-Italic2 */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Italic2.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Italic2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Italic2.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Italic2.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Italic2.svg#Akkurat-Italic2') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* Webfont: Akkurat-Regular */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Regular.svg#Akkurat-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: lighter;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Akkurat-Regular2 */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Regular2.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Regular2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Regular2.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Regular2.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Regular2.svg#Akkurat-Regular2') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Akkurat */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat.svg#Akkurat') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 
 // -------------------------------------------------
 //
@@ -14,7 +63,7 @@
 // -------------------------------------------------
 
 body{
-    font-family:'Karla', Helvetica, sans-serif;
+    font-family:'Akkurat', 'Karla', Helvetica, sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;

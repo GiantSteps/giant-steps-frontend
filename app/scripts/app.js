@@ -12,10 +12,8 @@ angular
   .module('giantSteps2App', [
     'ngAnimate',
     'ngCookies',
-    'ngResource',
     'ui.router',
     'ngSanitize',
-    'ngTouch',
     'ng-contentful'
   ])
   .config(function ($stateProvider, $urlRouterProvider, contentfulClientProvider) {
