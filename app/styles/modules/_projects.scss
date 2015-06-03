@@ -30,6 +30,7 @@
 				display: inline-block;
 				font-size: 1em;
 				text-align: center;
+				font-weight: lighter;
 				margin: 0 5px;
 				@include mq("large"){
 					display: block;
@@ -55,8 +56,8 @@
 		height:auto;
 		overflow: hidden;
 		top: 50px;
-		// background: url(../images/grid.png) no-repeat center center;
-		// background-size: contain;
+		background: url(../images/grid.png) no-repeat center center;
+		background-size: 50%;
 		@include perspective(1000);
 
 		.project-col{
@@ -74,7 +75,7 @@
 			display: inline-block;
 			@include backface-visibility(hidden);
 			@include smallboxy();
-			@include transform(rotateX(-2deg) rotateY(-5deg) translate3d(0,0,0));
+			//@include transform(rotateX(-2deg) rotateY(-5deg) translate3d(0,0,0));
 			@include transform-origin(50%);
 			@include mq("large"){
 				width: 30%;
@@ -125,7 +126,7 @@
 				margin-left: 5%;
 				line-height: 1.5em;
 				list-style-type: disc;
-				// padding-left: 5%;
+				padding-left: 5%;
 				li{
 					margin: 10px 0;
 				}
