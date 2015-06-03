@@ -15,12 +15,19 @@ angular.module('giantSteps2App').factory('canvasService', function () {
     // ------------------------------------------------
     // Top level vars
     //
+
       
       var width = window.innerWidth;
       var height = window.innerHeight;
       var parent = document.getElementById('canvas-container');
       var canvas;
       var renderer;
+
+      var mobile = false;
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        mobile = true;
+      }
+
 
       if (Modernizr.webgl){
         renderer = new PIXI.WebGLRenderer(width, height,{backgroundColor : 0xffffff}, {antialias: true});
@@ -230,6 +237,11 @@ angular.module('giantSteps2App').factory('canvasService', function () {
 
         grid.scale.x = 0.5;
         grid.scale.y = 0.5;
+
+        if (mobile){
+          grid.scale.x = 0.25;
+          grid.scale.y = 0.25;
+        }
 
         // move the image to the center of the screen
         grid.position.x = width / 2;

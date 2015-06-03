@@ -1,17 +1,24 @@
 .contact{
-	position: relative;
+	position: fixed;
+	@include fast();
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	overflow-y: auto;
 	.contact-container{
 		width: 100%;
 		height: 100%;
-		position: absolute;
+		position: relative;
 		top: 0;
 		left: 0;
-		@include flex();
+		display: block;
+		margin: 50px 0 200px 0;
+		@include mq("medium"){
+			@include flex('row');
+			margin: 0 0 0 0;
+		}
 		.contact-person{
 			display: block;
 			margin: 25px;
@@ -28,7 +35,7 @@
 					a{
 						border-bottom: 0;
 						text-decoration: underline;
-						color: $background;
+						color: $key;
 					}
 				}
 			}
