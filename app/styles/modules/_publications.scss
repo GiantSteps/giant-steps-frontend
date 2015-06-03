@@ -33,10 +33,13 @@
 			h1{
 				border-bottom: 2px solid transparent;
 				display: inline-block;
-				font-size: 1em;
+				font-size: 0.8em;
 				text-align: center;
 				font-weight: lighter;
 				margin: 0 5px;
+				@include mq("medium"){
+					font-size: 1em;
+				}
 				@include mq("large"){
 					display: block;
 					font-size:3em;
@@ -79,11 +82,11 @@
 			display: inline-block;
 			@include backface-visibility(hidden);
 			@include smallboxy();
-			@include transform(rotateX(-2deg) rotateY(5deg) translate3d(0,0,0));
-			@include transform-origin(50%);
 			@include mq("large"){
 				width: 30%;
 				margin: 1% 0 1% 10%;
+				@include transform(rotateX(-2deg) rotateY(5deg) translate3d(0,0,0));
+				@include transform-origin(50%);
 			}
 			.project-title{
 				margin-top: 10px;

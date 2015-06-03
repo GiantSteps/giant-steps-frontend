@@ -8,7 +8,9 @@
 	@include flex("column");
 	color: $background;
 	@include transition(transform .5s cubic-bezier(0.6,0,0.2,1));
-	@include transform(translateX(100%) translateZ(0));
+	@include transform(translateX(100.5%) translateZ(0));
+	border-left: 2px solid $background;
+
 	@include mq("large"){
 		display: none;
 	}
@@ -29,15 +31,21 @@
 		@include transition(transform .5s ease);
 	}
 	img{
-		width: 250px;
+		width: 150px;
 		height: auto;
+		@include mq("medium"){
+			width: 250px;
+		}
 	}
 	ul{
 		text-align: center;
-		font-size: 1.5em;
+		font-size: 1em;
 		margin-top: 0;
 		line-height: 1;
 		@include uppercase();
+		@include mq("medium"){
+			font-size: 1.5em;
+		}
 		li{
 			margin: 20px;
 			font-weight: lighter;
