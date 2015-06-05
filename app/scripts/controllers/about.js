@@ -37,12 +37,15 @@ angular.module('giantSteps2App').controller('AboutCtrl', [
 			// Convert markdown for about text
 			//
 
+			var res = response;
 
-			markdownService.convert(response[0].fields.about).then(function (response){
 
-
+			markdownService.convert(res[0].fields.about).then(function (response){
 				$scope.about = response;
-				$scope.loading = false;
+				markdownService.convert(res[0].fields.aboutIntro).then(function (response){
+					$scope.intro = response;
+					$scope.loading = false;
+				});
 			});
 			
 		});

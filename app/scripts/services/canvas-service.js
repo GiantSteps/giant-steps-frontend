@@ -146,7 +146,7 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       // Call filter
       //    
       bulge = new BulgePinchFilter();
-      bulge.radius = 500;
+      bulge.radius = 300;
       bulge.strength = 0.5;
       bulge.center.x = width / 2;
       bulge.center.y = height / 2;

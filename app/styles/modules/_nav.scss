@@ -15,6 +15,7 @@ $adminnavheight: 70px;
 	left: 0;
 	width: 100%;
 	height: 50px;
+	color: $key;
 	@include fast();
 	@include mq("medium"){
 		height: $topnavheight;
@@ -24,49 +25,38 @@ $adminnavheight: 70px;
 	}
 	.nav-logo{
 		position: absolute;
-		top: 0;
+		top: 10px;
 		left: 20px;
-		width: 150px;
+		width: 200px;
 		height: 100%;
 		background: url(../images/logo-blue.svg);
 		background-repeat: no-repeat !important;
 		background-position: center center !important;
 		background-size: contain !important;
-		@include mq("medium"){
-			width: 200px;
-			height: 100%;
-			background: url(../images/logo-blue.svg);
-			background-repeat: no-repeat !important;
-			background-position: center center !important;
-			background-size: contain !important;
-		}
-		@include mq("large"){
-			width: 150px;
-			height: 100%;
-			background: url(../images/logo-blue.svg);
-			background-repeat: no-repeat !important;
-			background-position: center center !important;
-			background-size: contain !important;
-		}
 	}
 	.nav-mission{
 		width: 100%;
-		height: 100%;
-		text-align: center;
+		height: $topnavheight;
+		margin-left:50%;
+		text-align: left;
 		display: none;
 		@include mq("large"){
-			display: block;
+			display: inline-block;
+			@include display(flex);
+			@include flex-direction(column);
+			@include justify-content(center);
 		}
-		h4{
+		h3{
+			line-height: 1.1;
 			font-weight: lighter;
+			
 			@include uppercase();
-			line-height: $topnavheight;
 		}
 	}
 
 	.nav-burger{
 		position: absolute;
-		top: 12px;
+		top: 20px;
 		right: 20px;
 		background: url(../images/close-black.svg) no-repeat center center;
 		width: 25px;
@@ -168,6 +158,8 @@ nav{
 	height: 70px;
 	color: $key;
 	display: none;
+	cursor: url(../images/cursor.png), auto !important;
+
 	@include mq("large"){
 		@include display(flex);
 		@include flex-direction(row);
@@ -182,6 +174,7 @@ nav{
 			li{
 				a{
 					color: white;
+
 				}
 			}
 		}
@@ -205,11 +198,16 @@ nav{
 			@include mq("large"){
 				font-size: 1.25em;
 			}
+			[ui-sref]{
+  				cursor: pointer !important;
+  				cursor: url(../images/cursor.png), auto !important;
+			}	
 			a{
 				color: $key;
 				display: block;
 				border-bottom: 0;
 				font-weight: lighter;
+				cursor: url(../images/cursor.png), auto !important;
 				&:hover{
 					text-decoration: underline;
 				}

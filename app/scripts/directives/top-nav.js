@@ -84,6 +84,10 @@ angular.module('giantSteps2App').directive('topNav', function ($state, contentFa
             background: 'url(images/logo-white.svg)'
           });
 
+          element.find('.nav-burger').css({
+            background: 'url(images/close.svg)'
+          });
+
         }
       }
     };

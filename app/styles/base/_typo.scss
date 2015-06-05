@@ -5,6 +5,8 @@
 // -------------------------------------------------
 
 @import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
 
 /* Webfont: Akkurat-Italic2 */@font-face {
     font-family: 'Akkurat';
@@ -113,10 +115,10 @@ h3{
         font-size: 1em;
     }
     @include mq("large"){
-        font-size: 1.5em;
+        font-size: 1.15em;
     }
     @include mq("widescreen"){
-        font-size: 2.25em;
+        font-size: 2.75em;
     }
 }
 
