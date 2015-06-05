@@ -8,18 +8,49 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 
-/* Webfont: Akkurat-Italic2 */@font-face {
+
+// -------------------------------------------------
+//
+// Font Face
+// 
+// -------------------------------------------------
+
+
+/* Webfont: Akkurat-Bold */@font-face {
     font-family: 'Akkurat';
-    src: url('../fonts/Akkurat-Italic2.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Akkurat-Italic2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Akkurat-Italic2.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Akkurat-Italic2.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/Akkurat-Italic2.svg#Akkurat-Italic2') format('svg'); /* Legacy iOS */
+    src: url('../fonts/Akkurat-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Bold.svg#Akkurat-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Akkurat-BoldItalic */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-BoldItalic.svg#Akkurat-BoldItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Akkurat-Italic */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Italic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Italic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Italic.svg#Akkurat-Italic') format('svg'); /* Legacy iOS */
     font-style: italic;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-
 
 /* Webfont: Akkurat-Regular */@font-face {
     font-family: 'Akkurat';
@@ -29,33 +60,56 @@
          url('../fonts/Akkurat-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/Akkurat-Regular.svg#Akkurat-Regular') format('svg'); /* Legacy iOS */
     font-style: normal;
-    font-weight: lighter;
+    font-weight: normal;
     text-rendering: optimizeLegibility;
 }
 
-/* Webfont: Akkurat-Regular2 */@font-face {
-    font-family: 'Akkurat';
-    src: url('../fonts/Akkurat-Regular2.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Akkurat-Regular2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Akkurat-Regular2.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Akkurat-Regular2.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/Akkurat-Regular2.svg#Akkurat-Regular2') format('svg'); /* Legacy iOS */
-    font-style: normal;
-    font-weight: bold;
-    text-rendering: optimizeLegibility;
-}
 
-/* Webfont: Akkurat */@font-face {
-    font-family: 'Akkurat';
-    src: url('../fonts/Akkurat.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Akkurat.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Akkurat.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Akkurat.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/Akkurat.svg#Akkurat') format('svg'); /* Legacy iOS */
+/* Webfont: AkkuratMono-Regular */@font-face {
+    font-family: 'AkkuratMono';
+    src: url('../fonts/AkkuratMono-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/AkkuratMono-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/AkkuratMono-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/AkkuratMono-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/AkkuratMono-Regular.svg#AkkuratMono-Regular') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
+
+/* Webfont: Akkurat-Light */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-Light.svg#Akkurat-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: lighter;
+    text-rendering: optimizeLegibility;
+}
+
+/* Webfont: Akkurat-LightItalic */@font-face {
+    font-family: 'Akkurat';
+    src: url('../fonts/Akkurat-LightItalic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Akkurat-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Akkurat-LightItalic.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Akkurat-LightItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Akkurat-LightItalic.svg#Akkurat-LightItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: lighter;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+
+
+
+
+
+
 
 
 // -------------------------------------------------

@@ -20,6 +20,19 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 		//
 		canvasService.destroy();
 
+
+		// ------------------------------------------------
+		// Start again
+		//
+		var images = [
+			'images/grid.png',
+			'images/grid2.png',
+			'images/patterns8.png'
+		];
+
+		canvasService.init(images[0], window.innerWidth / 2, 0.25, 0.25);
+		
+
 		$scope.projects = {};
 		$scope.objActive = true;
 		$scope.workActive = false;

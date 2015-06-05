@@ -20,6 +20,18 @@ angular.module('giantSteps2App').controller('PublicationsCtrl', [
 		//
 		canvasService.destroy();
 
+
+		// ------------------------------------------------
+		// Start again
+		//
+		var images = [
+			'images/grid.png',
+			'images/grid2.png',
+			'images/patterns8.png'
+		];
+
+		canvasService.init(images[0], window.innerWidth / 2, 0.25, 0.25);
+
 		$scope.loading = true;
 		
 

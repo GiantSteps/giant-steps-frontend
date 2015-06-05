@@ -1,7 +1,26 @@
-<div top-nav color="white"></div>
+<div top-nav></div>
 
-<section class="projects" nav-color color="white">
+<section class="projects" nav-color color="blue" slide="false">
 	<section class="loading" ng-if="loading" loading></section>
+
+	<div id="canvas-container"></div>
+
+	<div class="project-menu">
+		<a ng-class="{active: objActive}" ng-click="switch('objectives')">
+			<h2>Objectives</h2>
+		</a>
+		<a ng-class="{active: workActive}" ng-click="switch('workplan')">
+			<h2>Work Plan</h2>
+		</a>
+		<a ng-class="{active: consortActive}" ng-click="switch('consortium')">
+			<h2>Consortium</h2>
+		</a>
+		<a ng-class="{active: imprintActive}" ng-click="switch('imprint')">
+			<h2>Imprint</h2>
+		</a>
+	</div>
+
+
 	<div class="project-container">
 		
 		<div class="project-col">
@@ -15,19 +34,6 @@
 		</div>
 	</div>
 
-	<div class="project-menu">
-		<a ng-class="{active: objActive}" ng-click="switch('objectives')">
-			<h1>Objectives</h1>
-		</a>
-		<a ng-class="{active: workActive}" ng-click="switch('workplan')">
-			<h1>Work Plan</h1>
-		</a>
-		<a ng-class="{active: consortActive}" ng-click="switch('consortium')">
-			<h1>Consortium</h1>
-		</a>
-		<a ng-class="{active: imprintActive}" ng-click="switch('imprint')">
-			<h1>Imprint</h1>
-		</a>
-	</div>
+	
 		
 </section>

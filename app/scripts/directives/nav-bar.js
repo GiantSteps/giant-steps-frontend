@@ -45,7 +45,6 @@ angular.module('giantSteps2App').directive('navBar', function ($rootScope, $stat
       element.addClass('white');
     }
 
-    // if (current === '')
 
     scope.open = false;
 

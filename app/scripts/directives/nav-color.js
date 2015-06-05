@@ -13,12 +13,23 @@ angular.module('giantSteps2App').directive('navColor', function () {
 			
 			var target = document.getElementById('bottom-nav');
 
+
+			target.classList.remove('slide');
+			target.classList.remove('white');
+			target.classList.remove('reverse');
+
 			if (attrs.color === 'white'){
 				target.classList.add('white');
+				if (attrs.slide === 'true'){
+					target.classList.add('slide');
+				}
 			}
 
 			else{
-				target.classList.remove('white');
+				if (attrs.slide === 'true'){
+					target.classList.add('slide');
+					target.classList.add('reverse');
+				}
 			}
 		}
 	};

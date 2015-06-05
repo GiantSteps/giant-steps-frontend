@@ -158,8 +158,6 @@ nav{
 	height: 70px;
 	color: $key;
 	display: none;
-	cursor: url(../images/cursor.png), auto !important;
-
 	@include mq("large"){
 		@include display(flex);
 		@include flex-direction(row);
@@ -179,6 +177,18 @@ nav{
 			}
 		}
 	}
+	&.slide{
+		background: $key;
+		@include transform(translateY(45px) translateZ(0));
+		@include transition(transform .3s ease-out);
+		&:hover{
+			@include transform(translateY(0) translateZ(0));
+		}
+	}
+	&.reverse{
+		background: $background;
+		color: $key;
+	}
 	ul{
 		display: inline-block;
 		position: relative;
@@ -193,21 +203,15 @@ nav{
 			width: 25%;
 			font-size: 0.9em;
 			text-align: center;
-			font-weight: lighter;
 			@include uppercase();
 			@include mq("large"){
-				font-size: 1.25em;
+				font-size: 1em;
 			}
-			[ui-sref]{
-  				cursor: pointer !important;
-  				cursor: url(../images/cursor.png), auto !important;
-			}	
 			a{
 				color: $key;
 				display: block;
 				border-bottom: 0;
-				font-weight: lighter;
-				cursor: url(../images/cursor.png), auto !important;
+				font-weight: normal;
 				&:hover{
 					text-decoration: underline;
 				}

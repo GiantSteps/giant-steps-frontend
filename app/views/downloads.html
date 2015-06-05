@@ -3,6 +3,26 @@
 <section class="publications" nav-color color="blue">
 
 	<section class="loading" ng-if="loading" loading></section>
+
+	<div id="canvas-container"></div>
+
+	<!--MENU-->
+	<div class="project-menu">
+		<a ng-class="{active: deliverablesActive}" ng-click="switch('deliverables')">
+			<h2>Deliverables</h2>
+		</a>
+		<a ng-class="{active: publicationsActive}" ng-click="switch('publications')">
+			<h2>Publications</h2>
+		</a>
+		<a ng-class="{active: softwareActive}" ng-click="switch('software')">
+			<h2>Software</h2>
+		</a>
+		<a ng-class="{active: dataActive}" ng-click="switch('data')">
+			<h2>Data Sets</h2>
+		</a>
+	</div>
+
+
 	<div class="project-container">
 		
 		<div class="project-col">
@@ -24,7 +44,7 @@
 						<p>{{del.fields.descriptions}}</p>
 						<a ng-href="{{del.fields.download.fields.file.url}}" download>
 							<p class="file-download">
-								<strong><i class="fa fa-download"></i> Download</strong>
+								<strong><i class="fa fa-cloud-download"></i> Download</strong>
 							</p>
 						</a>
 					</li>
@@ -39,7 +59,7 @@
 						<p>{{pub.fields.text}}</p>
 						<a ng-if="pub.fields.files" ng-href="{{pub.fields.files[0].fields.file.url}}" download>
 							<p class="file-download">
-								<strong><i class="fa fa-download"></i> Download</strong>
+								<strong><i class="fa fa-cloud-download"></i> Download</strong>
 							</p>
 						</a>
 						<a ng-if="!pub.fields.files" ng-href="{{pub.fields.externalUrl}}" target="self">
@@ -56,20 +76,5 @@
 				<p>{{dataSets}}</p>
 			</div>
 		</div>
-	</div>
-
-	<div class="project-menu">
-		<a ng-class="{active: deliverablesActive}" ng-click="switch('deliverables')">
-			<h1>Deliverables</h1>
-		</a>
-		<a ng-class="{active: publicationsActive}" ng-click="switch('publications')">
-			<h1>Publications</h1>
-		</a>
-		<a ng-class="{active: softwareActive}" ng-click="switch('software')">
-			<h1>Software</h1>
-		</a>
-		<a ng-class="{active: dataActive}" ng-click="switch('data')">
-			<h1>Data Sets</h1>
-		</a>
 	</div>
 </section>

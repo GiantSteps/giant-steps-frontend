@@ -1,6 +1,6 @@
 'use strict';
 
-/* global PIXI:false, Modernizr:false */
+/* global PIXI:false, Modernizr:false, requestAnimationFrame:false */
 
 /**
  * @ngdoc service
@@ -216,8 +216,8 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       // Basic setup
       //
       
-      function init(image){
-        width = window.innerWidth;
+      function init(image, width, scaleX, scaleY){
+        width = width || window.innerWidth;
         height = window.innerHeight;
         parent = document.getElementById('canvas-container');
         isDestroyed = false;
@@ -237,8 +237,8 @@ angular.module('giantSteps2App').factory('canvasService', function () {
         grid.anchor.x = 0.5;
         grid.anchor.y = 0.5;
 
-        grid.scale.x = 0.5;
-        grid.scale.y = 0.5;
+        grid.scale.x = scaleX || 0.5;
+        grid.scale.y = scaleY || 0.5;
 
         if (mobile){
           grid.scale.x = 0.25;
@@ -290,8 +290,8 @@ angular.module('giantSteps2App').factory('canvasService', function () {
       
 
       return {
-        init: function (image) {
-          return init(image);
+        init: function (image, width, scaleX, scaleY) {
+          return init(image, width, scaleX, scaleY);
         },
         destroy: function(){
           return destroy();
