@@ -143,9 +143,6 @@ h1{
     @include mq("large"){
         font-size: 3.375em;
     }
-    @include mq("widescreen"){
-        font-size: 5.063em;
-    }
 }
 
 h2{
@@ -156,9 +153,6 @@ h2{
     }
     @include mq("large"){
         font-size: 2.25em;
-    }
-    @include mq("widescreen"){
-        font-size: 3.375em;
     }
 }
 
@@ -171,9 +165,6 @@ h3{
     @include mq("large"){
         font-size: 1.15em;
     }
-    @include mq("widescreen"){
-        font-size: 2.75em;
-    }
 }
 
 h4{
@@ -185,9 +176,6 @@ h4{
     @include mq("large"){
         font-size: 0.8em;
     }
-    @include mq("widescreen"){
-        font-size: 1em;
-    }
 }
 
 p{
@@ -198,9 +186,6 @@ p{
     }
     @include mq("large"){
         font-size: 1.5em;
-    }
-    @include mq("widescreen"){
-        font-size: 2.25em;
     }
 }
 
