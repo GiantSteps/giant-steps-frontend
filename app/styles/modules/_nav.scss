@@ -171,14 +171,16 @@ nav{
 		ul{
 			li{
 				a{
-					color: white;
+					color: $key;
 
 				}
 			}
 		}
 	}
 	&.slide{
-		background: $key;
+		background: $background;
+		border-top: 1px solid $key;
+		color: $key;
 		@include transform(translateY(45px) translateZ(0));
 		@include transition(transform .3s ease-out);
 		&:hover{

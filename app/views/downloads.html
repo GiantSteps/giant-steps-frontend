@@ -1,10 +1,9 @@
 <div top-nav></div>
 
-<section class="publications" nav-color color="blue">
+<section class="downloads" nav-color color="blue">
 
 	<section class="loading" ng-if="loading" loading></section>
 
-	<div id="canvas-container"></div>
 
 	<!--MENU-->
 	<div class="project-menu">
@@ -26,55 +25,9 @@
 	<div class="project-container">
 		
 		<div class="project-col">
-			<h1 class="project-title">
-				<span ng-show="deliverablesActive">Deliverables</span>
-				<span ng-show="publicationsActive">Publications</span>
-				<span ng-show="softwareActive">Software</span>
-				<span ng-show="dataActive">Data Sets</span>
-			</h1>
-			
-			<!--SOFTWARE-->
-			<div ng-show="softwareActive" class="software" ng-bind-html="trust(statics.fields.software)"></div>
-			
-			<!--DELIVERABLES-->
-			<div ng-show="deliverablesActive">
-				<ul>
-					<li ng-repeat="del in deliverables">
-						<p><strong>{{del.fields.title}}</strong></p>
-						<p>{{del.fields.descriptions}}</p>
-						<a ng-href="{{del.fields.download.fields.file.url}}" download>
-							<p class="file-download">
-								<strong><i class="fa fa-cloud-download"></i> Download</strong>
-							</p>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<!--PUBLICATIONS-->
-			<div ng-show="publicationsActive">
-				<ul>
-					<li ng-repeat="pub in publications">
-						<p><strong>{{pub.fields.title}}</strong></p>
-						<p>{{pub.fields.text}}</p>
-						<a ng-if="pub.fields.files" ng-href="{{pub.fields.files[0].fields.file.url}}" download>
-							<p class="file-download">
-								<strong><i class="fa fa-cloud-download"></i> Download</strong>
-							</p>
-						</a>
-						<a ng-if="!pub.fields.files" ng-href="{{pub.fields.externalUrl}}" target="self">
-							<p class="file-download">
-								<strong><i class="fa fa-eye"></i> View</strong>
-							</p>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<!--DATA SETS-->
-			<div ng-show="dataActive">
-				<p>{{dataSets}}</p>
-			</div>
+			<div ui-view></div>	
 		</div>
+
+		
 	</div>
 </section>

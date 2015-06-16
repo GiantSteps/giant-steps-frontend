@@ -15,16 +15,20 @@ angular.module('giantSteps2App').directive('navBar', function ($rootScope, $stat
         state: 'about'
       },
       {
-        name: 'Workshops &\xA0Events',
+        name: 'Events',
         state: 'events'
       },
       {
-        name: 'Project',
-        state: 'project'
+        name: 'News',
+        state: 'news'
       },
       {
-        name: 'Publications',
-        state: 'publications'
+        name: 'Project',
+        state: 'project.objectives'
+      },
+      {
+        name: 'Downloads',
+        state: 'downloads.deliverables'
       },
       {
         name: 'Contact',

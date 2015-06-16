@@ -1,6 +1,6 @@
-<div top-nav color="white"></div>
+<div top-nav></div>
 
-<section class="event-detail" nav-color color="white" slide="false">
+<section class="event-detail" nav-color color="white" slide="true">
 	<section class="loading" ng-if="loading" loading>
 	</section>
 
@@ -12,13 +12,8 @@
 
 	<section class="event-detail-image-container">
 		<div class="event-detail-image" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }">
-			<div class="event-detail-image-overlay"></div>
+			<!-- <div class="event-detail-image-overlay"></div> -->
 		</div>
-		<!-- <div class="event-detail-image-triplets">
-			<div class="triplet" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }"></div>
-			<div class="triplet" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }"></div>
-			<div class="triplet" ng-style="{background: 'url(' + event.fields.images[0].fields.file.url + ')' }"></div>
-		</div> -->
 	</section>
 	
 	

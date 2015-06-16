@@ -11,7 +11,6 @@
 	overflow: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
-	background: $key;
 	padding: 100px 0;
 	@include fast();
 
@@ -21,7 +20,7 @@
 		left: 0;
 		width: 50%;
 		position: relative;
-		color: $background;
+		color: $key;
 		h1{
 			font-size: 3em;
 			margin-left: 20px;
@@ -36,7 +35,7 @@
 			font-family: 'AkkuratMono', 'Inconsolata';
 			font-size: 1em;
 			font-weight: bold;
-			line-height: 0.5;
+			line-height: 1;
 		}
 	}
 	
@@ -66,6 +65,7 @@
 			background-repeat: no-repeat !important;
 			background-size: cover !important;
 			background-position: center center !important;
+			opacity: 0.4;
 			.event-detail-image-overlay{
 				position: absolute;
 				top: 0;
@@ -75,43 +75,29 @@
 				background: $keytrans;
 			}
 		}
-		.event-detail-image-triplets{
-			width: 100%;
-			height: 20%;
-			position: absolute;
-			left: 0;
-			top: 80%;
-			bottom: 0;
-			overflow: hidden;
-			background: yellow;
-			text-align: left;
-			@include display(flex);
-			@include flex-direction(row);
-			@include align-items(flex-start);
-			@include justify-content(flex-start);
-			.triplet{
-				width: 33%;
-				height: 100%;
-				background-size: contain !important;
-				background-repeat: no-repeat !important;
-				background-position: center center !important;
-			}
-		}
 	}
 	
 
 	.event-detail-text{
 		position: relative;
 		float: left;
-		margin: 50px auto 150px 20px;
-		color: $background;
+		margin: 25px auto 150px 20px;
+		color: $key;
 		width: 90%;
 		font-size: 1em;
 		z-index: 3;
-		font-weight: normal;
+		font-weight: bold;
+
+		@include mq("medium"){
+			width: 80%;
+			font-size: 1em;
+			margin: 10px auto 150px 20px;
+		}
+
 		@include mq("large"){
 			width: 60%;
 			font-size: 1.2em;
+			margin: 150px auto 150px 20px;
 		}
 		.embed{
 			position: relative;

@@ -14,7 +14,8 @@ angular
     'ngCookies',
     'ui.router',
     'ngSanitize',
-    'ng-contentful'
+    'ng-contentful',
+    'headroom'
   ])
   .config(function ($stateProvider, $urlRouterProvider, contentfulClientProvider) {
     
@@ -54,6 +55,25 @@ angular
       controller: 'ProjectsCtrl'
     })
 
+    .state('project.objectives', {
+      url: '/objectives',
+      templateUrl: 'views/projects.objectives.html'
+    })
+
+    .state('project.workplan', {
+      url: '/workplan',
+      templateUrl: 'views/projects.workplan.html'
+    })
+
+    .state('project.consortium', {
+      url: '/consortium',
+      templateUrl: 'views/projects.consortium.html'
+    })
+
+    .state('project.imprint', {
+      url: '/imprint',
+      templateUrl: 'views/projects.imprint.html'
+    })
 
     .state('contact', {
       url: '/contact',
@@ -75,10 +95,30 @@ angular
       controller: 'EventsDetailCtrl'
     })
 
-    .state('publications', {
+    .state('downloads', {
       url: '/downloads',
       templateUrl: 'views/downloads.html',
-      controller: 'PublicationsCtrl'
+      controller: 'DownloadsCtrl'
+    })
+
+    .state('downloads.software', {
+      url: '/software',
+      templateUrl: 'views/downloads.software.html'
+    })
+
+    .state('downloads.deliverables', {
+      url: '/deliverables',
+      templateUrl: 'views/downloads.deliverables.html'
+    })
+
+    .state('downloads.publications', {
+      url: '/publications',
+      templateUrl: 'views/downloads.publications.html'
+    })
+
+    .state('downloads.data', {
+      url: '/data',
+      templateUrl: 'views/downloads.data.html'
     });
 
 

@@ -1,0 +1,30 @@
+<!--PUBLICATIONS-->
+<div class="publications">
+	<h1 class="project-title">Publications</h1>
+	<ul>
+		<li ng-repeat="pub in publications">
+			<p><strong>{{pub.fields.title}}</strong></p>
+			<p>{{pub.fields.text}}</p>
+
+			<a ng-if="pub.fields.files" ng-href="{{pub.fields.files[0].fields.file.url}}" download>
+				<p class="file-download">
+					<strong><i class="fa fa-cloud-download"></i> Download</strong>
+				</p>
+			</a>
+			<a ng-if="!pub.fields.files && pub.fields.externalUrl" ng-href="{{pub.fields.externalUrl}}" target="self">
+				<p class="file-download">
+					<strong><i class="fa fa-eye"></i> View</strong>
+				</p>
+			</a>
+
+			<a ng-click="showAbstract = ! showAbstract">[Abstract]</a>
+			<a ng-click="showBibtex = ! showBibtex">[BibTeX]</a>
+			
+			<p class="abstract" ng-show="showAbstract">{{pub.fields.abstract}}</p>
+			
+			<pre ng-if="pub.fields.bibTeX" ng-show="showBibtex">
+				<code>{{pub.fields.bibTeX}}</code>
+			</pre>
+		</li>
+	</ul>
+</div>

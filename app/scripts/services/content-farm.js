@@ -20,13 +20,15 @@ angular.module('giantSteps2App').factory('contentFarm', [
       eventsId: '5SOxrPbANq4gQ8W6MUeW6g',
       textsId: '5DFddAHe80y2EsG6gewGmi',
       publicationsId: '4aver57i6AEmyaQ4SYSSio',
-      deliverablesId: '4LUNA2sqm4WQ0Ue6ewmaOc'
+      deliverablesId: '4LUNA2sqm4WQ0Ue6ewmaOc',
+      softwareId: '3yd4wfWccgcaQW24oagWKC'
     };
 
     var textCache = cacheService.text();
     var eventsCache = cacheService.events();
     var publicationsCache = cacheService.publications();
     var deliverablesCache = cacheService.deliverables();
+    var softwareCache = cacheService.software();
 
 
 
@@ -227,7 +229,47 @@ angular.module('giantSteps2App').factory('contentFarm', [
 
           return deferred.promise;
         }
+      },
+
+
+      // ------------------------------------------------
+      // Software
+      //
+      software: {
+        index: function(){
+          var deferred = $q.defer();
+
+          if (softwareCache.get('software')){
+            var softwares = softwareCache.get('software');
+            deferred.resolve(softwares);
+          }
+
+          else{
+            contentfulClient.entries({
+              'content_type': ids.softwareId
+            }).then(function(response){
+
+              // ------------------------------------------------
+              // Add to cache
+              //
+              
+              softwareCache.put('software', response);
+
+              // ------------------------------------------------
+              // Retrieve and fulfill promise
+              //
+              deferred.resolve(softwareCache.get('software'));
+              
+            }, function(err){
+              deferred.reject(err);
+              console.log(err);
+            });
+          }
+
+          return deferred.promise;
+        }
       }
+      
       
     };
 
@@ -247,6 +289,9 @@ angular.module('giantSteps2App').factory('contentFarm', [
       },
       deliverablesIndex: function(){
         return content.deliverables.index();
+      },
+      softwareIndex: function(){
+        return content.software.index();
       }
     };
   }

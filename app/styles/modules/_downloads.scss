@@ -1,4 +1,4 @@
-.publications{
+.downloads{
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -7,23 +7,20 @@
 	overflow: hidden;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
-	#canvas-container{
-		z-index: 1;
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 50%;
-		height: 100%;
-		display: none;
-		@include mq("large"){
-			display: block;
-		}
-	}
 	.project-menu{
 		position: relative;
 		top: 70px;
 		left: 20px;
 		z-index: 2;
+		@include mq("medium"){
+			position: fixed;
+			left: 20px;
+			top: 100px;
+			text-align: left;
+			height: auto;
+			width: 20%;
+			@include fast();
+		}
 		@include mq("large"){
 			position: absolute;
 			left: 20px;
@@ -44,6 +41,9 @@
 				margin: 0 5px;
 				line-height: 1.5;
 				@include uppercase();
+				@include mq("medium"){
+					font-size: 1em;
+				}
 				@include mq("large"){
 					font-size: 1.5em;
 				}
@@ -62,15 +62,35 @@
 		width: 90%;
 		margin: 100px auto 100px 20px;
 		z-index: 2;
+		@include mq("medium"){
+			position: absolute;
+			top: 0;
+			right: 20px;
+			width: 75%;
+			height:auto;
+			overflow: hidden;
+			top: 100px;
+			padding: 0 0 100px 0;
+			margin: 0;
+			@include display(flex);
+			@include flex-direction(column);
+			@include align-items(center);
+			@include justify-content(center);
+		}
 		@include mq("large"){
 			position: absolute;
 			top: 0;
 			right: 20px;
-			width: 50%;
+			width: 80%;
 			height:80%;
 			overflow: hidden;
 			top: 50px;
 			margin: 0;
+			padding: 0 20px;
+			@include display(flex);
+			@include flex-direction(column);
+			@include align-items(center);
+			@include justify-content(center);
 		}
 		
 		.project-col{
@@ -79,17 +99,20 @@
 			position: relative;
 			width: 100%;
 			margin: 0;
+			z-index: 2;
 			border: 2px solid black;
 			@include mq("large"){
 				display: block;
 				height: auto;
 				position: relative;
+				top: 0;
+				left: 0;
 				overflow: hidden;
 				overflow-y: auto;
-				background: white;
 				color: $text;
-				width: 80%;
-				margin: 50px 10%;
+				width: 90%;
+				margin: 0 5%;
+				padding: 50px 0;
 				height: 85%;
 				display: inline-block;
 			}
@@ -99,8 +122,8 @@
 				font-weight: bold;
 				margin: 10px 5% 20px 5%;
 			}
-			.software{
-				margin-top: 50px;
+			.data-text{
+				margin-left: 5%;
 			}
 			img{
 				max-width: 90%;
@@ -108,16 +131,38 @@
 				height: auto;
 				margin-left: 5%;
 			}
+			pre{
+				width: 100%;
+				overflow: scroll !important;
+
+				code{
+					width: 100%;
+					overflow: scroll !important;
+					display: block;
+				}
+			}
+
+
 			p{
-				max-width: 90%;
-				margin-left: 5%;
+				max-width: 100%;
 				font-size: 1em;
+				&.abstract{
+					font-style: italic;
+				}
 				.project-header{
 					@include uppercase();
 					font-size: 1.2em
 				}
 				strong{
 					@include uppercase();
+				}
+			}
+
+			.software{
+				p{
+					strong{
+						text-transform: none;
+					}
 				}
 			}
 			h3{
@@ -135,13 +180,16 @@
 				list-style-type: none;
 				padding-left: 0;
 				li{
-					margin: 50px 0;
+					margin: 50px 5%;
+
 					a{
 						border-bottom: none;
 						font-weight: normal;
+						color: $key;
+						margin: 0 3px;
 					}
 					.file-download{
-						margin: -10px 5% 0 5%;
+						margin: -10px 0 0 0;
 						display: inline-block;
 						font-family: 'AkkuratMono', 'Inconsolata';
 						font-size: 0.8em;

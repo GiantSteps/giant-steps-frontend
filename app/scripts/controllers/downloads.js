@@ -7,13 +7,14 @@
  * # PublicationsCtrl
  * Controller of the giantSteps2App
  */
-angular.module('giantSteps2App').controller('PublicationsCtrl', [
+angular.module('giantSteps2App').controller('DownloadsCtrl', [
 	'$scope',
 	'$sce',
+	'$state',
 	'contentFarm',
 	'canvasService',
 	'markdownService',
-	function ($scope, $sce, contentFarm, canvasService, markdownService) {
+	function ($scope, $sce, $state, contentFarm, canvasService, markdownService) {
 
 		// ------------------------------------------------
 		// Make sure GL is cleaned up
@@ -21,23 +22,11 @@ angular.module('giantSteps2App').controller('PublicationsCtrl', [
 		canvasService.destroy();
 
 
-		// ------------------------------------------------
-		// Start again
-		//
-		var images = [
-			'images/grid.png',
-			'images/grid2.png',
-			'images/patterns8.png'
-		];
-
-		canvasService.init(images[0], window.innerWidth / 2, 0.25, 0.25);
 
 		$scope.loading = true;
 		
 
-		$scope.downloads2015 = [];
-		$scope.downloads2014 = [];
-		$scope.statics = {};
+		$scope.softwares = {};
 		$scope.deliverables = {};
 		$scope.publications = {};
 		$scope.dataSets = 'Coming Soon.';
@@ -71,12 +60,17 @@ angular.module('giantSteps2App').controller('PublicationsCtrl', [
 				// ------------------------------------------------
 				// Get static GH repos
 				//
-				contentFarm.textIndex().then(function(response){
-					$scope.statics = response[0];
+				contentFarm.softwareIndex().then(function(response){
+					$scope.softwares = response;
 
-					markdownService.convert($scope.statics.fields.software).then(function(response){
-						$scope.statics.fields.software = response;
-					});
+					for (var i = 0; i < $scope.softwares.length; i++ ){
+						var soft = $scope.softwares[i].fields.text;
+						markdownService.convert($scope.softwares[i].fields.text).then(function(response){
+							soft = response;
+							console.log(soft);
+						});
+					}
+
 					$scope.loading = false;
 					
 				});
@@ -94,23 +88,25 @@ angular.module('giantSteps2App').controller('PublicationsCtrl', [
 			$scope.softwareActive = false;
 			$scope.dataActive = false;
 
+			
+
 			if (topic === 'deliverables'){
 				$scope.deliverablesActive = true;
-				$scope.current = $scope.deliverables;
+				$state.go('downloads.deliverables');
 			}
 			else if (topic === 'publications'){
 				$scope.publicationsActive = true;
-				$scope.current = $scope.publications;
+				$state.go('downloads.publications');
 			}
 
 			else if (topic === 'software'){
 				$scope.softwareActive = true;
-				$scope.current = $scope.statics.fields.software;
+				$state.go('downloads.software');
 			}
 
 			else if (topic === 'data'){
 				$scope.dataActive = true;
-				$scope.current = $scope.dataSets;
+				$state.go('downloads.data');
 			}
 		};
 

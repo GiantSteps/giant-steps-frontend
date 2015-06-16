@@ -3,7 +3,6 @@
 <section class="projects" nav-color color="blue" slide="false">
 	<section class="loading" ng-if="loading" loading></section>
 
-	<div id="canvas-container"></div>
 
 	<div class="project-menu">
 		<a ng-class="{active: objActive}" ng-click="switch('objectives')">
@@ -24,14 +23,10 @@
 	<div class="project-container">
 		
 		<div class="project-col">
-			<h1 class="project-title">
-				<span ng-show="objActive">Objectives</span>
-				<span ng-show="workActive">Work Plan</span>
-				<span ng-show="consortActive">Consortium</span>
-				<span ng-show="imprintActive">Imprint</span>
-			</h1>
-			<div ng-bind-html="trust(current)"></div>
+			<div ui-view></div>
 		</div>
+
+		
 	</div>
 
 	

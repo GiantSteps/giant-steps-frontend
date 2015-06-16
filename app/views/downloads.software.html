@@ -1,0 +1,11 @@
+<!--SOFTWARE-->
+<div class="software">
+	<h1 class="project-title">Software</h1>
+	<ul>
+		<li ng-repeat="software in softwares">
+			<p><strong>{{software.fields.title}}</strong></p>
+			<div ng-bind-html="software.fields.text"></div>
+			<a ng-href="{{software.fields.url}}" target="self"><strong>Link</strong></a>
+		</li>
+	</ul>
+</div>

@@ -10,35 +10,29 @@
 angular.module('giantSteps2App').controller('ProjectsCtrl', [
 	'$scope',
 	'$sce',
+	'$state',
 	'contentFarm',
 	'markdownService',
 	'canvasService',
-	function ($scope, $sce, contentFarm, markdownService, canvasService) {
+	function ($scope, $sce, $state, contentFarm, markdownService, canvasService) {
 
 		// ------------------------------------------------
 		// Make sure GL is cleaned up
 		//
 		canvasService.destroy();
 
+		$scope.objectives = {};
+		$scope.workplan = {};
+		$scope.consortium = {};
+		$scope.imprint = 'Coming Soon.';
 
-		// ------------------------------------------------
-		// Start again
-		//
-		var images = [
-			'images/grid.png',
-			'images/grid2.png',
-			'images/patterns8.png'
-		];
 
-		canvasService.init(images[0], window.innerWidth / 2, 0.25, 0.25);
-		
 
 		$scope.projects = {};
 		$scope.objActive = true;
 		$scope.workActive = false;
 		$scope.consortActive = false;
 		$scope.imprintActive = false;
-		$scope.current = '';
 
 		$scope.loading = true;
 
@@ -50,16 +44,16 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 
 
 			markdownService.convert($scope.projects.fields.consortium).then(function (response){
-				$scope.projects.fields.consortium = response;
+				$scope.consortium = response;
 
 				markdownService.convert($scope.projects.fields.projectObjectives).then(function (response){
-					$scope.projects.fields.projectObjectives = response;
+					$scope.objectives = response;
 
 					markdownService.convert($scope.projects.fields.workPlan).then(function (response){
-						$scope.projects.fields.workPlan = response;
+						$scope.workplan = response;
 
 						markdownService.convert($scope.projects.fields.imprint).then(function(response){
-							$scope.projects.fields.imprint = response;
+							$scope.imprint = response;
 
 							$scope.loading = false;
 
@@ -90,27 +84,23 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 
 
 
-
-
 			if (topic === 'objectives'){
 				$scope.objActive = true;
-				$scope.current = $scope.projects.fields.projectObjectives;
+				$state.go('project.objectives');
 			}
 			else if (topic === 'workplan'){
 				$scope.workActive = true;
-				$scope.current = $scope.projects.fields.workPlan;
+				$state.go('project.workplan');
 			}
 
 			else if (topic === 'consortium'){
 				$scope.consortActive = true;
-				$scope.current = 'consortium';
-				$scope.current = $scope.projects.fields.consortium;
+				$state.go('project.consortium');
 			}
 
 			else if (topic === 'imprint'){
 				$scope.imprintActive = true;
-				$scope.current = 'imprint';
-				$scope.current = $scope.projects.fields.imprint;
+				$state.go('project.imprint');
 			}
 		};
 

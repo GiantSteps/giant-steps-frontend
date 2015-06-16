@@ -1,0 +1,15 @@
+<!--DELIVERABLES-->
+<div class="deliverables">
+	<h1 class="project-title">Deliverables</h1>
+	<ul>
+		<li ng-repeat="del in deliverables">
+			<p><strong>{{del.fields.title}}</strong></p>
+			<p>{{del.fields.descriptions}}</p>
+			<a ng-href="{{del.fields.download.fields.file.url}}" download>
+				<p class="file-download">
+					<strong><i class="fa fa-cloud-download"></i> Download</strong>
+				</p>
+			</a>
+		</li>
+	</ul>
+</div>

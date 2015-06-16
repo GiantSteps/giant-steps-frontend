@@ -32,6 +32,9 @@ module.exports = function(config) {
       'bower_components/showdown/src/showdown.js',
       'bower_components/pixi/bin/pixi.js',
       'bower_components/moment/moment.js',
+      'bower_components/headroom.js/dist/headroom.js',
+      'bower_components/headroom.js/dist/jQuery.headroom.js',
+      'bower_components/headroom.js/dist/angular.headroom.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
