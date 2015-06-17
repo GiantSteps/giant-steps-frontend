@@ -31,12 +31,15 @@ $adminnavheight: 70px;
 		position: absolute;
 		top: 10px;
 		left: 20px;
-		width: 200px;
+		width: 150px;
 		height: 100%;
 		background: url(../images/logo-blue.svg);
 		background-repeat: no-repeat !important;
 		background-position: center center !important;
 		background-size: contain !important;
+		@include mq("medium"){
+			width: 200px;
+		}
 	}
 	.nav-mission{
 		width: 100%;
