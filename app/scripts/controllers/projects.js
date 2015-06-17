@@ -42,28 +42,14 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 			//
 			$scope.projects = response[0];
 
+			$scope.consortium = markdownService.convert($scope.projects.fields.consortium);
+			$scope.objectives = markdownService.convert($scope.projects.fields.projectObjectives);
+			$scope.workplan = markdownService.convert($scope.projects.fields.workPlan);
+			$scope.imprint = markdownService.convert($scope.projects.fields.imprint);
 
-			markdownService.convert($scope.projects.fields.consortium).then(function (response){
-				$scope.consortium = response;
+			$scope.loading = false;
 
-				markdownService.convert($scope.projects.fields.projectObjectives).then(function (response){
-					$scope.objectives = response;
-
-					markdownService.convert($scope.projects.fields.workPlan).then(function (response){
-						$scope.workplan = response;
-
-						markdownService.convert($scope.projects.fields.imprint).then(function(response){
-							$scope.imprint = response;
-
-							$scope.loading = false;
-
-							$scope.current = $scope.projects.fields.projectObjectives;
-						});
-						
-					});
-
-				});
-			});
+			$scope.current = $scope.projects.fields.projectObjectives;
 			
 		});
 

@@ -47,12 +47,8 @@ angular.module('giantSteps2App').controller('EventsDetailCtrl', [
 			// ------------------------------------------------
 			// Parse markdown to HTML
 			//
-			
-			markdownService.convert($scope.event.fields.text).then(function(response){
-				$scope.event.fields.text = response;
-				$scope.loading = false;
-
-			});
+			$scope.event.fields.text = markdownService.convert($scope.event.fields.text);
+			$scope.loading = false;
 			
 		});
 

@@ -21,7 +21,8 @@ angular.module('giantSteps2App').factory('contentFarm', [
       textsId: '5DFddAHe80y2EsG6gewGmi',
       publicationsId: '4aver57i6AEmyaQ4SYSSio',
       deliverablesId: '4LUNA2sqm4WQ0Ue6ewmaOc',
-      softwareId: '3yd4wfWccgcaQW24oagWKC'
+      softwareId: '3yd4wfWccgcaQW24oagWKC',
+      newsId: 'M3fej7oIGiOImiQwEkoS8'
     };
 
     var textCache = cacheService.text();
@@ -29,6 +30,7 @@ angular.module('giantSteps2App').factory('contentFarm', [
     var publicationsCache = cacheService.publications();
     var deliverablesCache = cacheService.deliverables();
     var softwareCache = cacheService.software();
+    var newsCache = cacheService.news();
 
 
 
@@ -268,7 +270,67 @@ angular.module('giantSteps2App').factory('contentFarm', [
 
           return deferred.promise;
         }
+      },
+
+
+      // ------------------------------------------------
+      // News
+      //
+
+      news: {
+        index: function(){
+          var deferred = $q.defer();
+
+          if (newsCache.get('news')){
+            var news = newsCache.get('news');
+            deferred.resolve(news);
+          }
+
+          else{
+            contentfulClient.entries({
+              'content_type': ids.newsId
+            }).then(function(response){
+
+              // ------------------------------------------------
+              // Add to cache
+              //
+              
+              newsCache.put('news', response);
+
+              // ------------------------------------------------
+              // Retrieve and fulfill promise
+              //
+              deferred.resolve(newsCache.get('news'));
+              
+            }, function(err){
+              deferred.reject(err);
+              console.log(err);
+            });
+          }
+
+          return deferred.promise;
+
+        },
+
+        show: function(id){
+          var deferred = $q.defer();
+
+
+          contentfulClient.entries({
+            'content_type': ids.newsId,
+            'fields.slug': id,
+            limit: 1
+          }).then(function(event){
+            deferred.resolve(event);
+          }, function(err){
+            console.log(err);
+            deferred.reject(err);
+          });
+
+          return deferred.promise;
+        }
       }
+      
       
       
     };
@@ -292,6 +354,12 @@ angular.module('giantSteps2App').factory('contentFarm', [
       },
       softwareIndex: function(){
         return content.software.index();
+      },
+      newsIndex: function(){
+        return content.news.index();
+      },
+      newsShow: function(){
+        return content.news.show();
       }
     };
   }

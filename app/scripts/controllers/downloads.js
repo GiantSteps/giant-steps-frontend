@@ -42,6 +42,8 @@ angular.module('giantSteps2App').controller('DownloadsCtrl', [
 
 
 
+
+
 		// ------------------------------------------------
 		// Get publications
 		//
@@ -61,14 +63,11 @@ angular.module('giantSteps2App').controller('DownloadsCtrl', [
 				// Get static GH repos
 				//
 				contentFarm.softwareIndex().then(function(response){
+
 					$scope.softwares = response;
 
 					for (var i = 0; i < $scope.softwares.length; i++ ){
-						var soft = $scope.softwares[i].fields.text;
-						markdownService.convert($scope.softwares[i].fields.text).then(function(response){
-							soft = response;
-							console.log(soft);
-						});
+						$scope.softwares[i].fields.text = markdownService.convert($scope.softwares[i].fields.text);
 					}
 
 					$scope.loading = false;

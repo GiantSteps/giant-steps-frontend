@@ -25,6 +25,9 @@ angular.module('giantSteps2App').factory('cacheService', function ($cacheFactory
       },
       software: function(){
         return $cacheFactory('software');
+      },
+      news: function(){
+        return $cacheFactory('news');
       }
     };
   });

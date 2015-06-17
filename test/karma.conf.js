@@ -22,7 +22,6 @@ module.exports = function(config) {
       'bower_components/modernizr/modernizr.js',
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
-      'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-cookies/angular-cookies.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
@@ -35,6 +34,8 @@ module.exports = function(config) {
       'bower_components/headroom.js/dist/headroom.js',
       'bower_components/headroom.js/dist/jQuery.headroom.js',
       'bower_components/headroom.js/dist/angular.headroom.js',
+      'bower_components/angular-touch/angular-touch.js',
+      'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

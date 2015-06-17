@@ -1,0 +1,32 @@
+<div top-nav></div>
+
+<section class="news-detail scroll" nav-color color="white" slide="true">
+	<section class="loading" ng-if="loading" loading></section>
+
+	<header class="news-detail-header">
+
+		<section class="news-detail-image-container">
+			<div class="news-detail-image" ng-style="{background: 'url(' + news.fields.images[0].fields.file.url + ')' }">
+				<!-- <div class="event-detail-image-overlay"></div> -->
+			</div>
+		</section>
+
+		<div class="news-detail-info">
+			<h1>{{news.fields.title}}</h1>
+			<div class="scroll-down" ng-click="scrollDown()"></div>
+		</div>
+
+		
+	</header>
+	
+	
+
+
+
+	<div class="news-detail-text">
+		<div ng-if="news.fields.bodyText" ng-bind-html="trust(news.fields.bodyText)" wrap-iframes></div>
+	</div>
+
+
+</section>
+

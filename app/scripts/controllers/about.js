@@ -39,14 +39,10 @@ angular.module('giantSteps2App').controller('AboutCtrl', [
 
 			var res = response;
 
+			$scope.about = markdownService.convert(res[0].fields.about);
+			$scope.intro = markdownService.convert(res[0].fields.aboutIntro);
 
-			markdownService.convert(res[0].fields.about).then(function (response){
-				$scope.about = response;
-				markdownService.convert(res[0].fields.aboutIntro).then(function (response){
-					$scope.intro = response;
-					$scope.loading = false;
-				});
-			});
+			$scope.loading = false;
 			
 		});
 

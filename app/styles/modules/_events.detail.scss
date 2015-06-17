@@ -3,7 +3,7 @@
 // Events Detail Page
 // 
 // -------------------------------------------------
-.event-detail{
+.event-detail, .news-detail{
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -14,13 +14,13 @@
 	padding: 100px 0;
 	@include fast();
 
-	.event-detail-header{
+	.event-detail-header, .news-detail-header{
 		display: block;
 		width: 100%;
 		height: auto;
 	}
 
-	.event-detail-info{
+	.event-detail-info, .news-detail-info{
 		z-index: 2;
 		float: left;
 		left: 0;
@@ -60,7 +60,7 @@
 		}
 	}
 	
-	.event-detail-image-container{
+	.event-detail-image-container, .news-detail-image-container{
 		height: 500px;
 		position: absolute;
 		width: 60%;
@@ -84,7 +84,7 @@
 			z-index: 1;
 			overflow: hidden;
 		}
-		.event-detail-image{
+		.event-detail-image, .news-detail-image{
 			position: relative;
 			display: block;
 			width: 100%;
@@ -97,7 +97,7 @@
 			background-size: cover !important;
 			background-position: center center !important;
 			opacity: 0.4;
-			.event-detail-image-overlay{
+			.event-detail-image-overlay, .news-detail-image-overlay{
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -109,7 +109,7 @@
 	}
 	
 
-	.event-detail-text{
+	.event-detail-text, .news-detail-text{
 		float: left;
 		margin: 25px auto 150px 20px;
 		color: $key;

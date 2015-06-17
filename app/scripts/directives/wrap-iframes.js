@@ -10,7 +10,7 @@ angular.module('giantSteps2App').directive('wrapIframes', function ($timeout) {
 
 	return {
 		restrict: 'A',
-		link: function postLink(scope, element, attrs) {
+		link: function postLink(scope, element) {
 
 			$timeout(function(){
 				var frames = element.find('iframe');

@@ -11,6 +11,7 @@
 angular
   .module('giantSteps2App', [
     'ngAnimate',
+    'ngTouch',
     'ngCookies',
     'ui.router',
     'ngSanitize',
@@ -119,7 +120,24 @@ angular
     .state('downloads.data', {
       url: '/data',
       templateUrl: 'views/downloads.data.html'
-    });
+    })
+
+
+
+    .state('news', {
+      url: '/news',
+      templateUrl: 'views/news.html',
+      controller: 'NewsCtrl'
+    })
+
+    .state('newsDetail', {
+      url: '/news/:newsId',
+      templateUrl: 'views/news.detail.html',
+      controller: 'NewsDetailCtrl'
+    })
+
+
+    ;
 
 
     contentfulClientProvider.setSpaceId('xrzr1u3na612');

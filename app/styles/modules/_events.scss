@@ -5,7 +5,7 @@
 // -------------------------------------------------
 
 
-.events{
+.events, .news{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -21,7 +21,7 @@
 		content: '';
 		display: block;
 	}
-	.events-container{
+	.events-container, .news-container{
 		position: relative;
 		top: 0;
 		left: 0;
@@ -41,7 +41,7 @@
 
 	}
 
-	.event{
+	.event, .news-item{
 		width: 80%;
 		display: inline-block;
 		float: left;
@@ -61,7 +61,7 @@
 			margin: 1% 0 1% 1%;
 		}
 
-		.event-date-time{
+		.event-date-time, .news-date-time{
 			font-family: 'AkkuratMono', 'Inconsolata';
 			text-align: left;
 			margin: 0;
@@ -113,7 +113,7 @@
 			
 		}
 
-		.event-inner{
+		.event-inner, .news-inner{
 			top: 40px;
 			border: 1px solid black;
 			position: absolute;
@@ -126,18 +126,18 @@
 			&:hover{
 				background: $key;
 				color: $background;
-				.event-image{
-					.event-image-overlay{
+				.event-image, .news-image{
+					.event-image-overlay, .news-image-overlay{
 						display: block;
 					}
 				}
-				.event-date, .event-more{
+				.event-date, .event-more, .news-date, .news-more{
 					color: white;
 				}
 			}
 		}
 		
-		.event-image{
+		.event-image, .news-image{
 			width: 100%;
 			height: 125px;
 			margin-bottom: 25px;
@@ -149,7 +149,7 @@
 				height: 200px;
 			}
 
-			.event-image-overlay{
+			.event-image-overlay, .news-image-overlay{
 				display: none;
 				position: absolute;
 				top: 0;
@@ -160,7 +160,7 @@
 			}
 		}
 
-		.event-title{
+		.event-title, .news-title{
 			margin-top: 25px;
 			padding: 0 10px;
 			h2{
@@ -170,12 +170,12 @@
 			}
 
 		}
-		.event-teaser{
+		.event-teaser, .news-teaser{
 			padding: 0 10px;
 			font-size: 0.8em;
 		}
 
-		.event-more{
+		.event-more, .news-more{
 			color: $key;
 			@include uppercase();
 			position: absolute;

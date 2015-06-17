@@ -1,7 +1,7 @@
 <!--PUBLICATIONS-->
-<div class="publications">
+<div class="publications topic">
 	<h1 class="project-title">Publications</h1>
-	<ul>
+	<ul class="topic-list">
 		<li ng-repeat="pub in publications">
 			<p><strong>{{pub.fields.title}}</strong></p>
 			<p>{{pub.fields.text}}</p>
@@ -17,8 +17,8 @@
 				</p>
 			</a>
 
-			<a ng-click="showAbstract = ! showAbstract">[Abstract]</a>
-			<a ng-click="showBibtex = ! showBibtex">[BibTeX]</a>
+			<a class="text-toggle" ng-click="showAbstract = ! showAbstract">[Abstract]</a>
+			<a class="text-toggle" ng-click="showBibtex = ! showBibtex">[BibTeX]</a>
 			
 			<p class="abstract" ng-show="showAbstract">{{pub.fields.abstract}}</p>
 			

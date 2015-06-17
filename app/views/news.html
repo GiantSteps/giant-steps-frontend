@@ -1,0 +1,36 @@
+<div top-nav></div>
+
+<section class="news scroll" nav-color color="white" slide="true">
+	
+
+		<section class="news-container">
+			<section class="loading" ng-if="loading" loading></section>
+				
+				<div class="news-item" ng-repeat="item in news" ng-click="goToItem(item.fields.slug)">
+
+					<div class="news-inner">
+
+						<div class="news-image" ng-style="{background: 'url(' + item.fields.images[0].fields.file.url + ')' }">
+							<div class="news-image-overlay"></div>
+						</div>
+
+						<div class="news-title">
+							<h2>{{item.fields.title}}</h2>
+						</div>
+
+						<div class="news-teaser">
+							<p ng-bind-html="item.fields.teaser | limitTo: 100">{{item.fields.teaser.length > 20 ? '...' : ''}}</p>
+						</div>
+
+						<div class="news-more">
+							<p>Read More</p>
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			
+	</section>
+
+</section>
+
