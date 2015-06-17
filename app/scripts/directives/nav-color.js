@@ -31,6 +31,14 @@ angular.module('giantSteps2App').directive('navColor', function () {
 					target.classList.add('reverse');
 				}
 			}
+
+			scope.scrollDown = function(){
+				var height = window.innerHeight;
+
+				$('.event-detail').animate({
+					scrollTop: height / 2 + 'px'
+				}, 400);
+			};
 		}
 	};
 });
