@@ -64,7 +64,7 @@
 		line-height: 1;
 		@include uppercase();
 		@include mq("medium"){
-			font-size: 1.5em;
+			font-size: 2em;
 		}
 		li{
 			margin: 20px;
