@@ -17,6 +17,11 @@ angular.module('giantSteps2App').directive('navColor', function () {
 			target.classList.remove('slide');
 			target.classList.remove('white');
 			target.classList.remove('reverse');
+			target.classList.remove('main-nav');
+
+			if (attrs.main === 'true'){
+				target.classList.add('main-nav');
+			}
 
 			if (attrs.color === 'white'){
 				target.classList.add('white');

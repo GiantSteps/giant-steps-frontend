@@ -172,6 +172,9 @@ nav{
 		@include align-items(center);
 		@include justify-content(center);
 	}
+	&.main-nav{
+		border-top: 0;
+	}
 	&.stick{
 		position: absolute;
 	}
@@ -229,7 +232,7 @@ nav{
 			text-align: center;
 			@include uppercase();
 			@include mq("large"){
-				font-size: 1em;
+				font-size: 1.2em;
 			}
 			a{
 				color: $key;

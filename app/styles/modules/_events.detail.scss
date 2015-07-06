@@ -29,7 +29,7 @@
 		color: $key;
 		height: auto;
 		h1{
-			font-size: 3em;
+			font-size: 2em;
 			margin-left: 20px;
 			font-weight: bold;
 			@include mq("medium"){
@@ -52,10 +52,11 @@
 			width: 80%;
 			margin: 20px 0 0 0;
 			height: 50px;
-			
+			display: none;
 			@include mq("medium"){
 				background: url(../images/scrolldown.svg) no-repeat center center;
 				background-size: contain;
+				display: block;
 			}
 		}
 	}
@@ -64,7 +65,7 @@
 		height: 500px;
 		position: absolute;
 		width: 60%;
-		height: 300px;
+		height: 200px;
 		right: 0;
 		float: right;
 		top: 100px;
@@ -111,16 +112,21 @@
 
 	.event-detail-text, .news-detail-text{
 		float: left;
-		margin: 25px auto 150px 20px;
+		margin: 25px auto 50px 20px;
 		color: $key;
 		width: 90%;
 		font-size: 1em;
 		z-index: 3;
 
 		@include mq("medium"){
+			width: 80%;
+			font-size: 1.2em;
+			margin: 25px auto 50px 20px;
+		}
+		@include mq("large"){
 			width: 60%;
 			font-size: 1.2em;
-			margin: 100px auto 150px 20px;
+			margin: 25px auto 50px 20px;
 		}
 		.embed{
 			position: relative;
@@ -135,4 +141,22 @@
 			}
 		}
 	}
+
+	.angular-google-map-container{
+		height: 200px;
+		width: 90%;
+		margin: auto auto 150px 20px;
+		box-shadow: 2px 2px 5px black;
+		@include mq("medium"){
+			height: 400px;
+			width: 80%;
+			height: 400px;
+			margin: auto auto 150px 20px;
+		}
+		@include mq("large"){
+			width: 60%;
+			margin: auto auto 150px 20px;
+		}
+	}
+	
 }

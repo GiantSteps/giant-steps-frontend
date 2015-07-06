@@ -17,9 +17,11 @@
 			<h2>{{event.fields.cityCountry}}</h2>
 			<div class="scroll-down" ng-click="scrollDown()"></div>
 		</div>
+		<div style="clear: both;"></div>
 
 		
 	</header>
+
 	
 	
 
@@ -28,6 +30,11 @@
 	<div class="event-detail-text">
 		<div ng-if="event.fields.text" ng-bind-html="trust(event.fields.text)" wrap-iframes></div>
 	</div>
+	<div style="clear: both;"></div>
+
+	<ui-gmap-google-map center="map.center" zoom="map.zoom" options="options">
+		<ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id"></ui-gmap-marker>
+	</ui-gmap-google-map>
 
 
 </section>

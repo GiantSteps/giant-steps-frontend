@@ -15,6 +15,7 @@
 			<h1>{{news.fields.title}}</h1>
 			<div class="scroll-down" ng-click="scrollDown()"></div>
 		</div>
+		<div style="clear: both;"></div>
 
 		
 	</header>
@@ -26,6 +27,7 @@
 	<div class="news-detail-text">
 		<div ng-if="news.fields.bodyText" ng-bind-html="trust(news.fields.bodyText)" wrap-iframes></div>
 	</div>
+	<div style="clear: both;"></div>
 
 
 </section>
