@@ -34,6 +34,7 @@ angular.module('giantSteps2App').controller('NewsDetailCtrl', function ($scope, 
 	
 	contentFarm.newsShow(id).then(function(response){
 		$scope.news = response[0];
+		console.log($scope.news);
 
 
 

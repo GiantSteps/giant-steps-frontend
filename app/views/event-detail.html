@@ -13,7 +13,7 @@
 
 		<div class="event-detail-info">
 			<h1>{{event.fields.title}}</h1>
-			<h2>{{event.fields.dateTime | date : 'EEEE dd MMM yyyy, HH:mm'}}</h2>
+			<h2 ng-if="event.fields.dateTime">{{event.fields.dateTime | date : 'EEEE dd MMM yyyy, HH:mm'}}</h2>
 			<h2>{{event.fields.cityCountry}}</h2>
 			<div class="scroll-down" ng-click="scrollDown()"></div>
 		</div>

@@ -25,6 +25,7 @@
 
 
 	<div class="news-detail-text">
+		<p><strong><small>Published: {{news.fields.dateTime || news.sys.createdAt | date : 'dd MMM, yyyy'}}</small></strong></p>
 		<div ng-if="news.fields.bodyText" ng-bind-html="trust(news.fields.bodyText)" wrap-iframes></div>
 	</div>
 	<div style="clear: both;"></div>

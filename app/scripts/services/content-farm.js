@@ -315,6 +315,8 @@ angular.module('giantSteps2App').factory('contentFarm', [
         show: function(id){
           var deferred = $q.defer();
 
+          console.log(id);
+
 
           contentfulClient.entries({
             'content_type': ids.newsId,
@@ -358,8 +360,8 @@ angular.module('giantSteps2App').factory('contentFarm', [
       newsIndex: function(){
         return content.news.index();
       },
-      newsShow: function(){
-        return content.news.show();
+      newsShow: function(id){
+        return content.news.show(id);
       }
     };
   }
