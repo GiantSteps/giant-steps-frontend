@@ -51,6 +51,8 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 			for (var i = 0; i < response.length; i++ ){
 				response[i].fields.dateTime = moment(response[i].fields.dateTime);
 
+				console.log(response[i].fields);
+
 
 				if (now > response[i].fields.dateTime){
 					response[i].fields.dateTime = new Date(moment(response[i].fields.dateTime));

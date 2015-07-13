@@ -7,7 +7,7 @@
 				
 				<div class="event" ng-repeat="event in futureEvents | orderBy : 'fields.dateTime' : true" ng-click="goToEvent(event.fields.slug)">
 					<div class="event-date-time">
-						<p ng-if="event.fields.dateTime">{{event.fields.dateTime | date : 'dd MMM, yyyy'}}</p>
+						<p ng-if="event.fields.dateVisible != false">{{event.fields.dateTime | date : 'dd MMM, yyyy'}}</p>
 						<p>{{event.fields.cityCountry}}</p>
 					</div>
 
@@ -35,7 +35,7 @@
 				<div class="event" ng-repeat="event in pastEvents | orderBy : 'fields.dateTime' : true" ng-click="goToEvent(event.fields.slug)">
 
 					<div class="event-date-time">
-						<p>{{event.fields.dateTime | date : 'dd MMM, yyyy'}}</p>
+						<p ng-if="event.fields.dateVisible != false">{{event.fields.dateTime | date : 'dd MMM, yyyy'}}</p>
 						<p>{{event.fields.cityCountry}}</p>
 					</div>
 
