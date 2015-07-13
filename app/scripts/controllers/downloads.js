@@ -52,6 +52,8 @@ angular.module('giantSteps2App').controller('DownloadsCtrl', [
 
 			$scope.publications = response;
 
+			console.log($scope.publications);
+
 
 			// ------------------------------------------------
 			// Get deliverables

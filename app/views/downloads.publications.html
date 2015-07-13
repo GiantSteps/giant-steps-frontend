@@ -2,8 +2,9 @@
 <div class="publications topic">
 	<h1 class="project-title">Publications</h1>
 	<ul class="topic-list">
-		<li ng-repeat="pub in publications">
+		<li ng-repeat="pub in publications | orderBy : 'fields.publishedDate' : true">
 			<p><strong>{{pub.fields.title}}</strong></p>
+			<p><small>{{pub.fields.publishedDate | date : 'MMM, yyyy'}}</small></p>
 			<p>{{pub.fields.text}}</p>
 
 			<a ng-if="pub.fields.files" ng-href="{{pub.fields.files[0].fields.file.url}}" download>
