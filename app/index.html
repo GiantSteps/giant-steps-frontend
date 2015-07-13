@@ -18,12 +18,12 @@
 yadastar.de
 rds.zone
 -->
-<html class="no-js">
+<html class="no-js" ng-app="giantSteps2App">
   <head>
     <meta charset="utf-8">
     <meta name="fragment" content="!">
     <base href="/">
-    <title>Giant Steps</title>
+    <title ng-bind-template="GiantSteps | {{viewTitle}}">GiantSteps</title>
     <meta name="description" content="GiantSteps is a European Union research initiative aiming to create the music technologies of the future.">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -38,7 +38,7 @@ rds.zone
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="giantSteps2App">
+  <body>
 
 
     <div class="container" id="container" ng-class="{frameopen: frameOpen}">

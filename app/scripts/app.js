@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ng-contentful',
     'headroom',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
+    'viewhead'
   ])
   .config(function ($stateProvider, $urlRouterProvider, contentfulClientProvider, uiGmapGoogleMapApiProvider) {
     
