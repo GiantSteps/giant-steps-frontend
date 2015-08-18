@@ -9,6 +9,9 @@
 			<section class="loading" ng-if="loading" loading></section>
 				
 				<div class="news-item" ng-repeat="item in news" ng-click="goToItem(item.fields.slug)">
+					<div class="news-date-time">
+						<p> Published: {{item.sys.createdAt | date : 'dd MMM, yyyy'}}</p>
+					</div>
 
 					<div class="news-inner">
 
@@ -37,3 +40,8 @@
 
 </section>
 
+<!-- <p><strong><small>Published: {{news.fields.dateTime || news.sys.createdAt | date : 'dd MMM, yyyy'}}</small></strong></p>
+
+
+
+ -->

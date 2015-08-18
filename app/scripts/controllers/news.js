@@ -33,6 +33,7 @@ angular.module('giantSteps2App').controller('NewsCtrl', function ($scope, $state
 
 		$scope.news = response;
 
+
 		
 		$scope.loading = false;
 	});
