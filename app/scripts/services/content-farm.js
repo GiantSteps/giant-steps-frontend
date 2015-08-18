@@ -315,8 +315,6 @@ angular.module('giantSteps2App').factory('contentFarm', [
         show: function(id){
           var deferred = $q.defer();
 
-          console.log(id);
-
 
           contentfulClient.entries({
             'content_type': ids.newsId,
