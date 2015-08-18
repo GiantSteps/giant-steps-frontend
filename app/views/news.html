@@ -8,9 +8,9 @@
 		<section class="news-container">
 			<section class="loading" ng-if="loading" loading></section>
 				
-				<div class="news-item" ng-repeat="item in news" ng-click="goToItem(item.fields.slug)">
+				<div class="news-item" ng-repeat="item in news | orderBy : 'fields.dateTime' : true" ng-click="goToItem(item.fields.slug)">
 					<div class="news-date-time">
-						<p> Published: {{item.sys.createdAt | date : 'dd MMM, yyyy'}}</p>
+						<p> Published: {{item.fields.dateTime | date : 'dd MMM, yyyy'}}</p>
 					</div>
 
 					<div class="news-inner">
