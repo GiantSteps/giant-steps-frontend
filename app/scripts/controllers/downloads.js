@@ -29,6 +29,7 @@ angular.module('giantSteps2App').controller('DownloadsCtrl', [
 		$scope.softwares = {};
 		$scope.deliverables = {};
 		$scope.publications = {};
+		$scope.dataSets = {};
 		$scope.dataSets = 'Coming Soon.';
 
 		// ------------------------------------------------
@@ -70,8 +71,17 @@ angular.module('giantSteps2App').controller('DownloadsCtrl', [
 						$scope.softwares[i].fields.text = markdownService.convert($scope.softwares[i].fields.text);
 					}
 
-					$scope.loading = false;
-					
+					contentFarm.dataSetsIndex().then(function(response){
+
+						$scope.dataSets = response;
+
+						for (var i = 0; i < $scope.dataSets.length; i++ ){
+
+							$scope.dataSets[i].fields.text = markdownService.convert($scope.dataSets[i].fields.text);
+						}
+
+						$scope.loading = false;
+					});
 				});
 				
 			});

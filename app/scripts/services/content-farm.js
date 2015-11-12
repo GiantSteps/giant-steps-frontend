@@ -22,7 +22,8 @@ angular.module('giantSteps2App').factory('contentFarm', [
       publicationsId: '4aver57i6AEmyaQ4SYSSio',
       deliverablesId: '4LUNA2sqm4WQ0Ue6ewmaOc',
       softwareId: '3yd4wfWccgcaQW24oagWKC',
-      newsId: 'M3fej7oIGiOImiQwEkoS8'
+      newsId: 'M3fej7oIGiOImiQwEkoS8',
+      dataSets: '6Va4POKGt208EmOmiiCoUe'
     };
 
     var textCache = cacheService.text();
@@ -273,6 +274,30 @@ angular.module('giantSteps2App').factory('contentFarm', [
       },
 
 
+      dataSets: {
+
+        index: function(){
+          var deferred = $q.defer();
+
+          contentfulClient.entries({
+            'content_type': ids.dataSets
+          }).then(function(response){
+
+
+            deferred.resolve(response);
+          }, function(err){
+            deferred.reject(err);
+            console.log(err);
+          });
+
+          return deferred.promise;
+        }
+
+
+
+      },
+
+
       // ------------------------------------------------
       // News
       //
@@ -360,6 +385,10 @@ angular.module('giantSteps2App').factory('contentFarm', [
       },
       newsShow: function(id){
         return content.news.show(id);
+      },
+
+      dataSetsIndex: function(){
+        return content.dataSets.index();
       }
     };
   }

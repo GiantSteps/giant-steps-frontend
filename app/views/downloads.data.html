@@ -1,8 +1,15 @@
+
+
 <view-title>Data Sets</view-title>
+
 <!--DATA SETS-->
-<div class="data topic">
+<div class="software topic">
 	<h1 class="project-title">Data Sets</h1>
-	<div class="data-text topic-body">
-		<p>Coming soon.</p>
-	</div>
+	<ul class="topic-list">
+		<li ng-repeat="set in dataSets track by $index">
+			<p><strong>{{set.fields.title}}</strong></p>
+			<div class="software-body" ng-bind-html="set.fields.text"></div>
+			<a ng-href="{{set.fields.url}}" target="self"><strong><i class="fa fa-eye"></i> View</strong></a>
+		</li>
+	</ul>
 </div>
