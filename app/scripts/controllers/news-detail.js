@@ -12,7 +12,7 @@ angular.module('giantSteps2App').controller('NewsDetailCtrl', function ($scope, 
 	// ------------------------------------------------
 	// Slug for specific item
 	//
-	
+
 	var id = $state.params.newsId;
 
 	// ------------------------------------------------
@@ -23,7 +23,7 @@ angular.module('giantSteps2App').controller('NewsDetailCtrl', function ($scope, 
 	// ------------------------------------------------
 	// Defaults
 	//
-	
+
 	$scope.loading = true;
 	$scope.news = {};
 
@@ -31,9 +31,9 @@ angular.module('giantSteps2App').controller('NewsDetailCtrl', function ($scope, 
 	// ------------------------------------------------
 	// Get Data
 	//
-	
-	contentFarm.newsShow(id).then(function(response){
-		$scope.news = response[0];
+
+	contentFarm.newsShow(id).then(function (response) {
+		$scope.news = response;
 
 
 
@@ -42,7 +42,7 @@ angular.module('giantSteps2App').controller('NewsDetailCtrl', function ($scope, 
 		//
 		$scope.news.fields.bodyText = markdownService.convert($scope.news.fields.bodyText);
 		$scope.loading = false;
-		
+
 	});
 
 
@@ -50,7 +50,7 @@ angular.module('giantSteps2App').controller('NewsDetailCtrl', function ($scope, 
 
 	// ------------------------------------------------
 	// Turn on scope.trust
-	$scope.trust = function(text){
+	$scope.trust = function (text) {
 		return $sce.trustAsHtml(text);
 	};
 

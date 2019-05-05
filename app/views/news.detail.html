@@ -8,7 +8,7 @@
 	<header class="news-detail-header">
 
 		<section class="news-detail-image-container">
-			<div class="news-detail-image" ng-style="{background: 'url(' + news.fields.images[0].fields.file.url + ')' }">
+			<div class="news-detail-image" ng-style="{background: 'url(' + news.fields.images[0].url + ')' }">
 				<!-- <div class="event-detail-image-overlay"></div> -->
 			</div>
 		</section>
@@ -19,19 +19,19 @@
 		</div>
 		<div style="clear: both;"></div>
 
-		
+
 	</header>
-	
-	
+
+
 
 
 
 	<div class="news-detail-text">
-		<p><strong><small>Published: {{news.fields.dateTime || news.sys.createdAt | date : 'dd MMM, yyyy'}}</small></strong></p>
+		<p><strong><small>Published: {{news.fields.dateTime || news.sys.createdAt | date : 'dd MMM, yyyy'}}</small></strong>
+		</p>
 		<div ng-if="news.fields.bodyText" ng-bind-html="trust(news.fields.bodyText)" wrap-iframes></div>
 	</div>
 	<div style="clear: both;"></div>
 
 
 </section>
-

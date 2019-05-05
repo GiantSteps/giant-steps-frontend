@@ -28,13 +28,29 @@ angular.module('giantSteps2App').controller('NewsCtrl', function ($scope, $state
 	// Get news
 	// 
 	// -------------------------------------------------
-	
-	contentFarm.newsIndex().then(function(response){
 
-		$scope.news = response;
+	contentFarm.newsIndex().then(function (response) {
 
+		var items = response.items;
+		var assets = response.includes.Asset;
 
-		
+		for (var i = 0; i < items.length; i++) {
+			// see if there are any images
+			if (items[i].fields.images && items[i].fields.images.length) {
+				for (var x = 0; x < items[i].fields.images.length; x++) {
+					var id = items[i].fields.images[x].sys.id;
+					// find in assets
+					var target = assets.find(a => a.sys.id === id);
+					if (target) {
+						console.log('target', target);
+						items[i].fields.images[x].url = target.fields.file.url;
+					}
+				}
+			}
+		}
+
+		$scope.news = items;
+
 		$scope.loading = false;
 	});
 
@@ -44,8 +60,8 @@ angular.module('giantSteps2App').controller('NewsCtrl', function ($scope, $state
 	// Go to event
 	// 
 	// -------------------------------------------------
-	$scope.goToItem = function(id){
-		$state.go('newsDetail', {'newsId': id});
+	$scope.goToItem = function (id) {
+		$state.go('newsDetail', { 'newsId': id });
 	};
 
 });
