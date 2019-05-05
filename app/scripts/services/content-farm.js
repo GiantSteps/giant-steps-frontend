@@ -8277,433 +8277,2060 @@ var eventsText = {
             }
           }
         ],
-        "text": "DIS is an [A-rated ACM conference](http://dis2014.iat.sfu.ca/) on Designing Interactive Systems, and in 2014 it was held in Vancouver Canada, with a focus on exploring the idea that the design of interactive systems is entering a new socio-technical paradigm around the idea of craft. This theme is very closely in line with the methodologies that GiantSteps is making use for in our engagement with users, and Kristina Andersen ([STEIM](http://giant-steps-2.s3-website-us-east-1.amazonaws.com/#/project/consortium)) presented a long paper that outlines some of the theoretical and methodological background for the GiantSteps project.\n\nThe paper is called: The Deliberate Cargo Cult and the abstract reads:  “Taking it’s origin from the notion of the cargo cult as an elaborate misunderstanding, this paper suggests a series of exploratory design methods to support users in generating requirements and scenarios-of-use for technological objects that do not yet exist. Strategies from fields such as art and performance are used to create experiences of user-involvement centered on the making of non-functional mock-ups. These can then act as props through which the participant can express their intuitions and concerns with a given technological notion. The processes described makes use of a broad range of cultural drivers to engage users in playful misunderstandings that facilitate new, out of the ordinary, interpretations of objects. The paper outlines the basis of three projects, discuss the drivers behind each project and suggests guidelines for creating these kinds of exploratory embodied experiences.”\nSee full reference [here](http://dl.acm.org/citation.cfm?id=2598596).\n\nWhile the key reason for participating was to opportunity to engage the design research community in a discussion of these types of methodologies, the other key component of the trip was to build alliances for further publication and dissemination of the results of the GiantSteps project. Both these objectives were successful and meetings and alliances were made that will hopefully inform and facilitate the academic dissemination of our results in the form of future panels and cross-disciplinary workshops.",
-        "slug": "dis2014"
-      }
+        "text": "DIS is an [A-rated ACM conference](http://dis2014.iat.sfu.ca/) on Designing Interactive Systems, and in 2014 it was held in Vancouver Canada, with a focus on exploring the idea that the design of interactive systems is entering a new socio-technical paradigm around the idea of craft. This theme is very closely in line with the methodologies that GiantSteps is making use for in our engagement with users, and Kristina Andersen ([STEIM](http://giant-steps-2.s3-website-us-east-1.amazonaws.com/#/project/consortium)) presented a long paper that outlines some of the theoretical and methodological background for the GiantSteps project.\n\nThe paper is called: The Deliberate Cargo Cult and the abstract reads: “Taking it’s origin from the notion of the cargo cult as an elaborate misunderstanding, this paper suggests a series of exploratory design methods to support users in generating requirements and scenarios-of-use for technological objects that do not yet exist. Strategies from fields such as art and performance are used to create experiences of user-involvement centered on the making of non-functional mock-ups. These can then act as props through which the participant can express their intuitions and concerns with a given technological notion. The processes described makes use of a broad range of cultural drivers to engage users in playful misunderstandings that facilitate new, out of the ordinary, interpretations of objects. The paper outlines the basis of three projects, discuss the drivers behind each project and suggests guidelines for creating these kinds of exploratory embodied experiences.”\nSee full reference [here](http://dl.acm.org/citation.cfm?id=2598596).\n\nWhile the key reason for participating was to opportunity to engage the design research community in a discussion of these types of methodologies, the other key component of the trip was to build alliances for further publication and dissemination of the results of the GiantSteps project. Both these objectives were successful and meetings and alliances were made that will hopefully inform and facilitate the academic dissemination of our results in the form of future panels and cross-disciplinary workshops.",
+        "slug": "dis2014"          
+          
     },
     {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "73Ev8mcxvqYoC4iyyaaaEE",
-        "type": "Entry",
-        "createdAt": "2015-05-21T14:55:37.513Z",
-        "updatedAt": "2015-08-18T22:08:39.264Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 9,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps at the SoMeRA workshop at ACM SIGIR",
-        "dateTime": "2014-07-16",
-        "dateVisible": true,
-        "cityCountry": "Gold Coast, Australia",
-        "map": {
-          "lon": 153.4256987,
-          "lat": -28.0172605
-        },
-        "teaser": "06-11 July - Giant Steps down under.",
-        "images": [
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "73Ev8mcxvqYoC4iyyaaaEE",
+              "type": "Entry",
+              "createdAt": "2015-05-21T14:55:37.513Z",
+              "updatedAt": "2015-08-18T22:08:39.264Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 9,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps at the SoMeRA workshop at ACM SIGIR",
+              "dateTime": "2014-07-16",
+              "dateVisible": true,
+              "cityCountry": "Gold Coast, Australia",
+              "map": {
+                "lon": 153.4256987,
+                "lat": -28.0172605
+                
+              "teaser": "06-11 July - Giant Steps down under.",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "5Rk3YwClzOgKCey4qioco2"
+                    
+                  
+                
+              "text": "In July, for the first time, the [SoMeRA workshop on Social Media Retrieval and Analysis](http://www.cp.jku.at/conferences/SoMeRA2014/) was held to emphasize the growing importance of social media within the Information Retrieval community. To this end, the workshop was collocated with the [37th SIGIR Conference on Research and Development in Information Retrieval](http://sigir.org/sigir2014/) in Gold Coast, Australia.\nThe workshop featured a keynote, 5 talks, and 6 poster presentations selected from 19 high-quality submissions and touched upon topics as diverse as microblog retrieval and classification, expert finding in social media, adverse drug reaction discovery, identification of “selfies” in microblogs, and music listening behaviour modelling and popularity prediction.\n\nGiantSteps was introduced to the workshop and presented with a poster to bring the goals of the project to the community’s attention. The high visibility of the project stimulated insightful talks with SIGIR conference attendees and allowed to discuss the project’s links to knowledge extraction from social media, web analysis, and user experience.",
+              "slug": "giant-steps-gold-coast"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "5Rk3YwClzOgKCey4qioco2"
-            }
-          }
-        ],
-        "text": "In July, for the first time, the [SoMeRA workshop on Social Media Retrieval and Analysis](http://www.cp.jku.at/conferences/SoMeRA2014/) was held to emphasize the growing importance of social media within the Information Retrieval community. To this end, the workshop was collocated with the [37th SIGIR Conference on Research and Development in Information Retrieval](http://sigir.org/sigir2014/) in Gold Coast, Australia.\nThe workshop featured a keynote, 5 talks, and 6 poster presentations selected from 19 high-quality submissions and touched upon topics as diverse as microblog retrieval and classification, expert finding in social media, adverse drug reaction discovery, identification of “selfies” in microblogs, and music listening behaviour modelling and popularity prediction.\n\nGiantSteps was introduced to the workshop and presented with a poster to bring the goals of the project to the community’s attention. The high visibility of the project stimulated insightful talks with SIGIR conference attendees and allowed to discuss the project’s links to knowledge extraction from social media, web analysis, and user experience.",
-        "slug": "giant-steps-gold-coast"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "1oYI68oQVOsAe0WaQ0qaeE",
-        "type": "Entry",
-        "createdAt": "2015-08-11T09:07:08.764Z",
-        "updatedAt": "2015-08-11T09:07:08.764Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "FASCINATE",
-        "dateTime": "2014-08-27",
-        "dateVisible": true,
-        "cityCountry": "Falmouth, United Kingdom",
-        "map": {
-          "lon": -5.066270000000031,
-          "lat": 50.15257099999999
-        },
-        "teaser": "Exploring technology from 27-31 August, 2014",
-        "images": [
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "1oYI68oQVOsAe0WaQ0qaeE",
+              "type": "Entry",
+              "createdAt": "2015-08-11T09:07:08.764Z",
+              "updatedAt": "2015-08-11T09:07:08.764Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "FASCINATE",
+              "dateTime": "2014-08-27",
+              "dateVisible": true,
+              "cityCountry": "Falmouth, United Kingdom",
+              "map": {
+                "lon": -5.066270000000031,
+                "lat": 50.15257099999999
+                
+              "teaser": "Exploring technology from 27-31 August, 2014",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "3nePpqeHYIyugScYMKYEMG"
+                    
+                  
+                
+              "text": "In August 2014, STEIM's Kristina Andersen was invited to be one of the keynotes at the [FASCINATE conference](http://www.fascinateconference.com/) in Falmouth. It is an interdisciplinary conference investigating the current and future applications of ubiquitous computing technologies in visual and performance arts, games, architecture, craft, design and interactive media, addressing technology, design and experience related to ubiquitous computing. Areas of interest include: ambient intelligence; experience design; cognitive environments; augmented performance; pervasive media and the internet of things. During her keynote, Kristina took the opportunity to show aspects of the user work we are doing within the context of the GiantSteps project.",
+              "slug": "fascinate"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "3nePpqeHYIyugScYMKYEMG"
-            }
-          }
-        ],
-        "text": "In August 2014, STEIM's Kristina Andersen was invited to be one of the keynotes at the [FASCINATE conference](http://www.fascinateconference.com/) in Falmouth. It is an interdisciplinary conference investigating the current and future applications of ubiquitous computing technologies in visual and performance arts, games, architecture, craft, design and interactive media, addressing technology, design and experience related to ubiquitous computing. Areas of interest include: ambient intelligence; experience design; cognitive environments; augmented performance; pervasive media and the internet of things. During her keynote, Kristina took the opportunity to show aspects of the user work we are doing within the context of the GiantSteps project.",
-        "slug": "fascinate"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "2oHvSdFDhSKCMkc8kOUM86",
-        "type": "Entry",
-        "createdAt": "2015-05-21T14:29:21.227Z",
-        "updatedAt": "2015-08-18T21:58:53.047Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 4,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Demo session at NEM 2014",
-        "url": null,
-        "dateTime": "2014-09-29T17:00",
-        "dateVisible": true,
-        "cityCountry": "Brussels, Belgium",
-        "map": {
-          "lon": 4.371689999999944,
-          "lat": 50.827754
-        },
-        "teaser": "29-30 September - See us at NEM 2014!",
-        "images": [
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "2oHvSdFDhSKCMkc8kOUM86",
+              "type": "Entry",
+              "createdAt": "2015-05-21T14:29:21.227Z",
+              "updatedAt": "2015-08-18T21:58:53.047Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 4,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "Demo session at NEM 2014",
+              "url": null,
+              "dateTime": "2014-09-29T17:00",
+              "dateVisible": true,
+              "cityCountry": "Brussels, Belgium",
+              "map": {
+                "lon": 4.371689999999944,
+                "lat": 50.827754
+                
+              "teaser": "29-30 September - See us at NEM 2014!",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "1dtR5uRTMyGkIqUi2iu6UO"
+                    
+                  
+                
+              "text": "In collaboration with the CrowdRec and PHENICX project, GiantSteps is co-organizer and participant to the demo and hands-on session that will be part of this years NEM Summit. The Summit will be held September 29, 30th in Brussels. Make sure to pay us a visit in Foyer 3!",
+              "slug": "demo-session-at-nem-2014"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "1dtR5uRTMyGkIqUi2iu6UO"
-            }
-          }
-        ],
-        "text": "In collaboration with the CrowdRec and PHENICX project, GiantSteps is co-organizer and participant to the demo and hands-on session that will be part of this years NEM Summit. The Summit will be held September 29, 30th in Brussels. Make sure to pay us a visit in Foyer 3!",
-        "slug": "demo-session-at-nem-2014"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "6gNyNOUyLCkOy86Q2I6Ggo",
-        "type": "Entry",
-        "createdAt": "2015-08-11T08:43:43.366Z",
-        "updatedAt": "2015-08-19T06:10:31.537Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 7,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "ArcInTex",
-        "dateTime": "2014-10-13T09:00",
-        "dateVisible": true,
-        "cityCountry": "Eindhoven, The Netherlands",
-        "map": {
-          "lon": 5.469722499999989,
-          "lat": 51.44164199999999
-        },
-        "teaser": "13 - 14 October - Notes from the scene",
-        "images": [
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "6gNyNOUyLCkOy86Q2I6Ggo",
+              "type": "Entry",
+              "createdAt": "2015-08-11T08:43:43.366Z",
+              "updatedAt": "2015-08-19T06:10:31.537Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 7,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "ArcInTex",
+              "dateTime": "2014-10-13T09:00",
+              "dateVisible": true,
+              "cityCountry": "Eindhoven, The Netherlands",
+              "map": {
+                "lon": 5.469722499999989,
+                "lat": 51.44164199999999
+                
+              "teaser": "13 - 14 October - Notes from the scene",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "499jyRxiKAIuQEwC6Y8gKu"
+                    
+                  
+                
+              "text": "ArcInTex is a network where Architecture, Interaction Design and Textiles join forces in developing ideas, techniques, methods and programs for new perspectives on design for building, dwelling and living and do so through:\n•    joint research projects,\n•    joint applications for funding larger projects,\n•    exchange programs on the Master and research levels,\n•    joint conferences and workshop on emergent topics.\n\nThe most recent ArcInTex network conference on the 13-17th of October at TUE Eindhoven was called “Shaping (un)common grounds” and was described like this: “The ability to measure and store data, combined with changes on the functionality of smart textiles over time opens a new world of opportunities. However, it requires an eclectic blend of disciplines (e.g. textile developers, fashion designers, software and electrical engineers, interaction designers, architects, and service providers) to work closely together. Often the most interesting new things happen at the edge of what we know. Especially when these edges cross-over to other unknown areas. But what happens when the edges of these areas start to overlap? In ArchInTex we do just that. We explore how the edges of these domains can connect in inspiring and meaningful ways. Within ArchInTex we want to shape a stronger common ground while still exploring the un-common grounds of other disciplines.”\n\nSTEIM's Kristina Andersen was invited to keynote as an example of another adjacent discipline and as such an “uncommon ground”. Her talk was centred on the making of new instruments and the theory and methods that underpin this work, where she took the opportunity to include the GiantSteps work in her talk. The response was very interesting with researcher from the fields of textiles, architecture and technology giving feedback on how their work both differs and resembles the work methods we use.\n\n\n\n![ArcInTex logo](//images.contentful.com/xrzr1u3na612/499jyRxiKAIuQEwC6Y8gKu/3517dfb1435e6a0ae0b18bfa61918161/arcintex_s.png)\n\n",
+              "slug": "arcintex"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "499jyRxiKAIuQEwC6Y8gKu"
-            }
-          }
-        ],
-        "text": "ArcInTex is a network where Architecture, Interaction Design and Textiles join forces in developing ideas, techniques, methods and programs for new perspectives on design for building, dwelling and living and do so through:\n•    joint research projects,\n•    joint applications for funding larger projects,\n•    exchange programs on the Master and research levels,\n•    joint conferences and workshop on emergent topics.\n\nThe most recent ArcInTex network conference on the 13-17th of October at TUE Eindhoven was called “Shaping (un)common grounds” and was described like this: “The ability to measure and store data, combined with changes on the functionality of smart textiles over time opens a new world of opportunities. However, it requires an eclectic blend of disciplines (e.g. textile developers, fashion designers, software and electrical engineers, interaction designers, architects, and service providers) to work closely together. Often the most interesting new things happen at the edge of what we know. Especially when these edges cross-over to other unknown areas. But what happens when the edges of these areas start to overlap? In ArchInTex we do just that. We explore how the edges of these domains can connect in inspiring and meaningful ways. Within ArchInTex we want to shape a stronger common ground while still exploring the un-common grounds of other disciplines.”\n\nSTEIM's Kristina Andersen was invited to keynote as an example of another adjacent discipline and as such an “uncommon ground”. Her talk was centred on the making of new instruments and the theory and methods that underpin this work, where she took the opportunity to include the GiantSteps work in her talk. The response was very interesting with researcher from the fields of textiles, architecture and technology giving feedback on how their work both differs and resembles the work methods we use.\n\n\n\n![ArcInTex logo](//images.contentful.com/xrzr1u3na612/499jyRxiKAIuQEwC6Y8gKu/3517dfb1435e6a0ae0b18bfa61918161/arcintex_s.png)\n\n",
-        "slug": "arcintex"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "6zAynR9PhKcasUGq6YkuUO",
-        "type": "Entry",
-        "createdAt": "2015-08-11T08:57:48.509Z",
-        "updatedAt": "2015-08-18T21:57:24.131Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 3,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Amsterdam Dance Event",
-        "dateTime": "2014-10-15T09:00",
-        "dateVisible": true,
-        "cityCountry": "Amsterdam, The Netherlands",
-        "map": {
-          "lon": 4.895167899999933,
-          "lat": 52.3702157
-        },
-        "teaser": "15-19th of October - Electronic music conference and festival",
-        "images": [
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "6zAynR9PhKcasUGq6YkuUO",
+              "type": "Entry",
+              "createdAt": "2015-08-11T08:57:48.509Z",
+              "updatedAt": "2015-08-18T21:57:24.131Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 3,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "Amsterdam Dance Event",
+              "dateTime": "2014-10-15T09:00",
+              "dateVisible": true,
+              "cityCountry": "Amsterdam, The Netherlands",
+              "map": {
+                "lon": 4.895167899999933,
+                "lat": 52.3702157
+                
+              "teaser": "15-19th of October - Electronic music conference and festival",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "6HOfeW7idUsgAscUuCAQK0"
+                    
+                  
+                
+              "text": "STEIM's Kristina Andersen was invited to this year’s ADE in Amsterdam where she had the opportunity to discuss the GiantSteps project with a view to possible future collaborations. \n\nThe [Amsterdam Dance Event](http://www.amsterdam-dance-event.nl/) (ADE) is a five-day electronic music conference and festival held annually in mid-October. The event is organized by The Amsterdam Dance Event Foundation and offers a full program of daytime conferences at ADE Pro, ADE Tech, HDE, ADE University, ADE Next and ADE Green, alongside the nighttime ADE Festival featuring 300 events and 2,000 DJ’s over five days in 80 clubs and venues.\n\n\n\n![ade](//images.contentful.com/xrzr1u3na612/6HOfeW7idUsgAscUuCAQK0/7c2140cbc60a9790f13cddcc6aa168cf/ade.jpeg)\n",
+              "slug": "ade"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "6HOfeW7idUsgAscUuCAQK0"
-            }
-          }
-        ],
-        "text": "STEIM's Kristina Andersen was invited to this year’s ADE in Amsterdam where she had the opportunity to discuss the GiantSteps project with a view to possible future collaborations. \n\nThe [Amsterdam Dance Event](http://www.amsterdam-dance-event.nl/) (ADE) is a five-day electronic music conference and festival held annually in mid-October. The event is organized by The Amsterdam Dance Event Foundation and offers a full program of daytime conferences at ADE Pro, ADE Tech, HDE, ADE University, ADE Next and ADE Green, alongside the nighttime ADE Festival featuring 300 events and 2,000 DJ’s over five days in 80 clubs and venues.\n\n\n\n![ade](//images.contentful.com/xrzr1u3na612/6HOfeW7idUsgAscUuCAQK0/7c2140cbc60a9790f13cddcc6aa168cf/ade.jpeg)\n",
-        "slug": "ade"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "29AcP5dzc88QuQEw6owwka",
-        "type": "Entry",
-        "createdAt": "2015-05-21T11:25:12.003Z",
-        "updatedAt": "2015-08-19T06:07:50.023Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 6,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "CHI2015 Workshop: Collaborating with Intelligent Machines",
-        "url": "chi2015",
-        "dateTime": "2015-04-18",
-        "cityCountry": "Seoul, South Korea",
-        "map": {
-          "lon": 126.97796919999996,
-          "lat": 37.566535
-        },
-        "teaser": "Exploring how to reframe the way “machines” for creative expression are designed",
-        "images": [
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "29AcP5dzc88QuQEw6owwka",
+              "type": "Entry",
+              "createdAt": "2015-05-21T11:25:12.003Z",
+              "updatedAt": "2015-08-19T06:07:50.023Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 6,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "CHI2015 Workshop: Collaborating with Intelligent Machines",
+              "url": "chi2015",
+              "dateTime": "2015-04-18",
+              "cityCountry": "Seoul, South Korea",
+              "map": {
+                "lon": 126.97796919999996,
+                "lat": 37.566535
+                
+              "teaser": "Exploring how to reframe the way “machines” for creative expression are designed",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "1T1Z1wO6CwSYQ0iOIMEUos"
+                    
+                  
+                
+              "text": "**Call for Participation**\nThis workshop brings together researchers, designers and instrument builders to explore how we can reframe the way we design “machines” for creative expression. For the purpose of this event, we are focussing on the case of music, but no expertise in this field is required, and the outcomes will be useful to the broader field of instruments and interfaces for creative work.\n\nThe following three opportunities/challenges are imminent: The disappearing computer is putting embodiment back at the center of our concerns; intelligent agents are reaching a level of complexity where it is feasible for an interface to provide suggestions based on work practises; and finally, creative work is increasingly done in collaboration reminiscent of the classic image of musicians playing in a group. The workshop is focussed on charting these new possibilities and constraints.\n\nWe invite submissions of true position papers: what is your perspective or experience with these developments, in music or in other areas, which risks and potentials do you see; in short, what is your hunch? Position papers should be short (around 500 words) and could be illustrated by examples, such as existing or conceptualized instruments, images, or pieces of music. We explicitly encourage submissions to use various forms of creative outlets to express a position.\n\n**Submissions**\nPlease send your submissions to collaboratingmachines@yahoo.com by January 19th (extended!), 2015. Submitted papers will be peer-reviewed for suitability to the workshop. Notification of acceptance will be sent on February 10th, 2015.\n\nAccepted position papers can be presented in a brief session during the workshop. At least one author of each accepted position paper must attend the workshop and all participants must register for the workshop and for at least one day of the conference. Accepted papers and other textual outcomes will be included in the workshop proceedings and made available through the workshop blog: https://collaboratingmachines.wordpress.com\n\n**Social Event**\nThe workshop will be followed by a social event (on the same day or the day after), where outcomes from the workshop will be presented and discussed with artists from Seoul’s thriving music scene.",
+              "slug": "chi2015"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "1T1Z1wO6CwSYQ0iOIMEUos"
-            }
-          }
-        ],
-        "text": "**Call for Participation**\nThis workshop brings together researchers, designers and instrument builders to explore how we can reframe the way we design “machines” for creative expression. For the purpose of this event, we are focussing on the case of music, but no expertise in this field is required, and the outcomes will be useful to the broader field of instruments and interfaces for creative work.\n\nThe following three opportunities/challenges are imminent: The disappearing computer is putting embodiment back at the center of our concerns; intelligent agents are reaching a level of complexity where it is feasible for an interface to provide suggestions based on work practises; and finally, creative work is increasingly done in collaboration reminiscent of the classic image of musicians playing in a group. The workshop is focussed on charting these new possibilities and constraints.\n\nWe invite submissions of true position papers: what is your perspective or experience with these developments, in music or in other areas, which risks and potentials do you see; in short, what is your hunch? Position papers should be short (around 500 words) and could be illustrated by examples, such as existing or conceptualized instruments, images, or pieces of music. We explicitly encourage submissions to use various forms of creative outlets to express a position.\n\n**Submissions**\nPlease send your submissions to collaboratingmachines@yahoo.com by January 19th (extended!), 2015. Submitted papers will be peer-reviewed for suitability to the workshop. Notification of acceptance will be sent on February 10th, 2015.\n\nAccepted position papers can be presented in a brief session during the workshop. At least one author of each accepted position paper must attend the workshop and all participants must register for the workshop and for at least one day of the conference. Accepted papers and other textual outcomes will be included in the workshop proceedings and made available through the workshop blog: https://collaboratingmachines.wordpress.com\n\n**Social Event**\nThe workshop will be followed by a social event (on the same day or the day after), where outcomes from the workshop will be presented and discussed with artists from Seoul’s thriving music scene.",
-        "slug": "chi2015"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "33nL3GpLBYmIyg64ucmQQO",
-        "type": "Entry",
-        "createdAt": "2015-10-16T07:08:05.182Z",
-        "updatedAt": "2015-10-16T07:12:15.430Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 4,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps workshops at ICT2015",
-        "dateTime": "2015-10-21",
-        "cityCountry": "Lisbon, Portugal",
-        "map": {
-          "lon": -9.183430999999928,
-          "lat": 38.700004
-        },
-        "teaser": "Four workshops organized by GiantSteps in Lisbon!",
-        "images": [
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "33nL3GpLBYmIyg64ucmQQO",
+              "type": "Entry",
+              "createdAt": "2015-10-16T07:08:05.182Z",
+              "updatedAt": "2015-10-16T07:12:15.430Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 4,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps workshops at ICT2015",
+              "dateTime": "2015-10-21",
+              "cityCountry": "Lisbon, Portugal",
+              "map": {
+                "lon": -9.183430999999928,
+                "lat": 38.700004
+                
+              "teaser": "Four workshops organized by GiantSteps in Lisbon!",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "4CpyLCnRmogog66a6Yq22e"
+                    
+                  
+                
+              "text": "Four series of workshops will be organized by GiantSteps partner Kristina Andersen (from STEIM) at following time slots:\n\n21st of October: 9:30 – 10:30 and 3:30 – 4:30;\n\n22nd of October: 9:30 – 10:30 and 11:00 – 12:30.\n\nAll workshops will be held at STARTS booth.\n\n__About workshop organizer:__\nKristina Andersen is a researcher and storyteller at STEIM (Studio for Electro-Instrumental Music) in Amsterdam. She works with electronics and reclaimed materials to create unusual objects and experiences. Kristina is going to introduce  GiantSteps, a European Union research initiative that seeks to overcome the limitations of current digital music production tools, to create more powerful, inspirational, collaborative, affordable, user-friendly, and efficient music creation systems.",
+              "slug": "ict2015_workshops"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4CpyLCnRmogog66a6Yq22e"
-            }
-          }
-        ],
-        "text": "Four series of workshops will be organized by GiantSteps partner Kristina Andersen (from STEIM) at following time slots:\n\n21st of October: 9:30 – 10:30 and 3:30 – 4:30;\n\n22nd of October: 9:30 – 10:30 and 11:00 – 12:30.\n\nAll workshops will be held at STARTS booth.\n\n__About workshop organizer:__\nKristina Andersen is a researcher and storyteller at STEIM (Studio for Electro-Instrumental Music) in Amsterdam. She works with electronics and reclaimed materials to create unusual objects and experiences. Kristina is going to introduce  GiantSteps, a European Union research initiative that seeks to overcome the limitations of current digital music production tools, to create more powerful, inspirational, collaborative, affordable, user-friendly, and efficient music creation systems.",
-        "slug": "ict2015_workshops"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "1VE3Ls92yMkcu0cAeOCGAE",
-        "type": "Entry",
-        "createdAt": "2015-09-25T10:59:53.617Z",
-        "updatedAt": "2015-10-16T07:09:57.697Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 11,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Understanding human creativity in music",
-        "dateTime": "2015-10-21T11:00+00:00",
-        "cityCountry": "Lisbon, Portugal",
-        "map": {
-          "lon": -9.186670400000025,
-          "lat": 38.7036962
-        },
-        "teaser": "Join a workshop on creativity, organized by 5 research EU projects!",
-        "images": [
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "1VE3Ls92yMkcu0cAeOCGAE",
+              "type": "Entry",
+              "createdAt": "2015-09-25T10:59:53.617Z",
+              "updatedAt": "2015-10-16T07:09:57.697Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 11,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "Understanding human creativity in music",
+              "dateTime": "2015-10-21T11:00+00:00",
+              "cityCountry": "Lisbon, Portugal",
+              "map": {
+                "lon": -9.186670400000025,
+                "lat": 38.7036962
+                
+              "teaser": "Join a workshop on creativity, organized by 5 research EU projects!",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "3BKq7wS9I4Wa24MuKmSIwm"
+                    
+                  
+                
+              "text": "__Workshop: Understanding human creativity in music__\n\nThe creation of music is an essential creative human activity and it can be seen as the most paradigmatic of the creative arts. Music engages a wide spectrum of practitioners, from the virtuoso performer, the professional composer or music producer, to the skilled amateur, the dilettante and the learning child. We believe, that already in the nearest future music creation – as well as experiencing of music will become an active act, at the same time as music production is moving progressively out of the studio and into everyday life. Today’s producers of music are already at the brink of being able to explore their ideas, wherever and whenever they are struck by creativity.\n\n5 European projects, complementing each other, are getting together to share thoughts, ideas, and findings – for better understanding of creativity, for making better tools, technologies and experiences.\n\n__Program:__\n\n11:00 - 11:05 Opening the workshop (Roman Kaurson, project GiantSteps)\n\n11:05 - 11:30 Keynote: creativity, its scientific understanding and models (Maarten Grachten, project [Lrn2Cre8](http://lrn2cre8.eu/))\n\n11:30 - 11:55 Creation of unknown technology and making new music (Kristina Andersen, project [GiantSteps](http://www.giantsteps-project.eu/#/))\n\n11:55 - 12:20 Pathways for turning Music Tech research outcomes into innovative bricks for new creative industries ventures (Michela Magas, project [#MusicBricks](http://musictechfest.net/musicbricks/))\n\n12:20 - 12:45 Coffee break  \n\n12:45 - 13:05 New ways of experiencing classical music (Cynthia Liem, project [PHENICX](http://phenicx.upf.edu/))\n\n13:05 - 13:25 Designing expressive interfaces for boosting creativity in music (Sergi Jorda, project [RAPID-MIX](http://rapidmix.goldsmithsdigital.com/))\n\n13:25 - 13:55 Panel discussion  \n\n13:55- 14:00 Closing the workshop (Roman Kaurson, project [GiantSteps](http://www.giantsteps-project.eu/#/))\n\n__Location:__\n\nPESTANA PALACE LISBOA, HOTEL & NATIONAL MONUMENT\n\nRua Jau, 54\n\n1300-314\n\nLisboa – Portugal\n\n\n",
+              "slug": "understanding_human_creativity_in_music"
+              
+            
           {
             "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "3BKq7wS9I4Wa24MuKmSIwm"
-            }
-          }
-        ],
-        "text": "__Workshop: Understanding human creativity in music__\n\nThe creation of music is an essential creative human activity and it can be seen as the most paradigmatic of the creative arts. Music engages a wide spectrum of practitioners, from the virtuoso performer, the professional composer or music producer, to the skilled amateur, the dilettante and the learning child. We believe, that already in the nearest future music creation – as well as experiencing of music will become an active act, at the same time as music production is moving progressively out of the studio and into everyday life. Today’s producers of music are already at the brink of being able to explore their ideas, wherever and whenever they are struck by creativity.\n\n5 European projects, complementing each other, are getting together to share thoughts, ideas, and findings – for better understanding of creativity, for making better tools, technologies and experiences.\n\n__Program:__\n\n11:00 - 11:05 Opening the workshop (Roman Kaurson, project GiantSteps)\n\n11:05 - 11:30 Keynote: creativity, its scientific understanding and models (Maarten Grachten, project [Lrn2Cre8](http://lrn2cre8.eu/))\n\n11:30 - 11:55 Creation of unknown technology and making new music (Kristina Andersen, project [GiantSteps](http://www.giantsteps-project.eu/#/))\n\n11:55 - 12:20 Pathways for turning Music Tech research outcomes into innovative bricks for new creative industries ventures (Michela Magas, project [#MusicBricks](http://musictechfest.net/musicbricks/))\n\n12:20 - 12:45 Coffee break  \n\n12:45 - 13:05 New ways of experiencing classical music (Cynthia Liem, project [PHENICX](http://phenicx.upf.edu/))\n\n13:05 - 13:25 Designing expressive interfaces for boosting creativity in music (Sergi Jorda, project [RAPID-MIX](http://rapidmix.goldsmithsdigital.com/))\n\n13:25 - 13:55 Panel discussion  \n\n13:55- 14:00 Closing the workshop (Roman Kaurson, project [GiantSteps](http://www.giantsteps-project.eu/#/))\n\n__Location:__\n\nPESTANA PALACE LISBOA, HOTEL & NATIONAL MONUMENT\n\nRua Jau, 54\n\n1300-314\n\nLisboa – Portugal\n\n\n",
-        "slug": "understanding_human_creativity_in_music"
-      }
-    },
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "45AD0vBshyO2GoEuIo6mYW",
+              "type": "Entry",
+              "createdAt": "2016-01-29T11:19:14.099Z",
+              "updatedAt": "2016-01-29T11:19:48.717Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 2,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps organizes testing session in Berlin",
+              "dateTime": "2016-02-15",
+              "cityCountry": "Berlin, Germany",
+              "map": {
+                "lon": 13.44835999999998,
+                "lat": 52.4996082
+                
+              "teaser": "What will the future of electronic music look like? What instruments will we need?",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "BzzsDFthTwIWAUoYiWooS"
+                    
+                  
+                
+              "text": "We are looking for producers and performers of electronic music to try out exciting new technologies and (sometimes experimental) new interfaces from Native Instruments, Reactable Systems, the Music Technology Group of the Universitat Pompeu Fabra, and the Department of Computational Perception at Johannes Kepler Universität. We would also like to ask you about your personal experiences with producing and performing electronic music, and what the perfect machine, interface or instrument would be for you.\n\nThe session will take place at the Native Instruments offices in Berlin, we will show 4-5 different prototypes and the whole thing will take no longer than two hours.\n\n[Contact us](http://www.giantsteps-project.eu/#/contact) for more information.",
+              "slug": "berlin_testing_session"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "7kQdzxBVSMuq02EWqcEUOk",
+              "type": "Entry",
+              "createdAt": "2016-02-29T10:24:47.143Z",
+              "updatedAt": "2016-02-29T10:30:23.188Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 3,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps talk at Audio Meetup Toulouse",
+              "dateTime": "2016-03-18",
+              "cityCountry": "Toulouse, France",
+              "map": {
+                "lon": 1.436220100000014,
+                "lat": 43.59765669999999
+                
+              "teaser": "Michael Hlatky from NI speaks at Audio Meetup!",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "48fRExLU7m0K44MAYyw0sK"
+                    
+                  
+                
+              "text": "The Audio Meetup Toulouse aims to bring together and promote exchanges between different audio practitioners - music SW developers, sound designer, articts, etc.\n\nJoin next Audio Meetup where the talk about developing UX for audio applications will be given by Michael Hlatky from Native Instruments.\n\n[More information](http://audiomeetuptlse.tumblr.com/) (in French).",
+              "slug": "audio_meetup_toulouse"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "4sTdJDkafuIwqmcGiYcSkg",
+              "type": "Entry",
+              "createdAt": "2016-01-14T18:37:22.688Z",
+              "updatedAt": "2016-01-14T18:37:56.103Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 2,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "Objects as Outcomes of Design Research",
+              "dateTime": "2016-05-07",
+              "cityCountry": "San Jose, CA, USA",
+              "map": {
+                "lon": -121.88836329999998,
+                "lat": 37.330322
+                
+              "teaser": "Attend GiantSteps workshop at CHI2016!",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "4Jhm0nMvDiuo2o0A2qykQ6"
+                    
+                  
+                
+              "text": "Design research is a growing mode of research within the HCI community. At the same time, the role of the artifact in generating knowledge outcomes from research through design (RtD) is ripe for examination. We hope to bring together researchers and practitioners who are interested in exploring how the objects of design practice are able to contribute to academic dialogue within HCI and related design fields. By assembling various practitioners and the objects they have designed and produced together in a single room, we seek to discuss the process and practices of research through design, linking these closely with their material outcomes.\n\nThis one-day workshop will provide an opportunity to examine how artifacts can produce and support research outcomes in themselves, and as material bridges to the process through which they emerge. This workshop will combine hands-on examination of design objects, comparison of design experiences, and discussion about qualities of these that are usually excluded from published academic texts.\n\nMore information: https://chi2016.acm.org/wp/workshops/",
+              "slug": "CHI2016_workshop"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "3OeklUfogMIiSuuISiqIIA",
+              "type": "Entry",
+              "createdAt": "2016-05-17T14:41:36.540Z",
+              "updatedAt": "2016-05-26T13:21:59.468Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 15,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps at Music Tech Fest",
+              "dateTime": "2016-05-27T00:00+03:00",
+              "cityCountry": "Berlin, Germany",
+              "map": {
+                "lon": 13.500340000000051,
+                "lat": 52.47908
+                
+              "teaser": "GiantSteps hack challenge at #MTF!",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "3EgzJvQJNKywUIqAw0AiSG"
+                    
+                  
+                
+              "text": "GiantSteps will pose a hack challenge at #MTF Berlin on 27-29 of May 2016. The hack challenge is targeted at the most interesting applications using GiantSteps tools.\n\nGiantSteps is a research project, delivering set of new generation digital music-making tools, intelligent agents and interfaces. Musical expert agents, supportive and inspirational systems for melody, harmony, and rhythm are delivered by GiantSteps for guiding users during composition when they lack inspiration or technical or musical knowledge.\n\nTools might be used for composing tracks (full tracks of pieces - e.g. highlighting tempo/style/rhythm transitions), creating new algorithms - or for any other application.\n\nTools available for hackers are:\n\n   GS-Harmony (Pd patch, standalone MIDI I/O application) - harmony expert agent;\n\n   Drumming with Style (Pd patch, standalone MIDI I/O application) - drum pattern variation agent;\n\n   Madmom Library - library rapid prototyping of new algorithms;\n\n   Rhythm Pattern Variation Prototype and Library - Tool for automatic variation of step sequencer rhythm patterns;\n\n   Automatic Dynamic Timewarping Tool - Madmom powered prototype to automatically warp songs with variable tempo to a fixed tempo grid;\n\n   Reactable Studio beta (for iPad Pro - iPad Pro will be provided by GiantSteps team) - Mobile application for music creation/mixing;\n\n   New Reactable Mobile 2.4 (for iPhone/Android) - Mobile application for music creation / mixing;\n\n   Updated Rhythmcat VST - drum sounds search agent.\n\nTechnical support for each tool will be provided for hackers by GiantSteps team (4 people).\n\nFull description of tools functionality and technical information will be available soon.\n\nBest use of GiantSteps tools will be awarded with single prize, which is 200€ voucher for Native Instruments online store.\n\nMore information:\n\n[#MTFHacks](http://musictechfest.net/mtfhacks/)\n\n[Programme](http://musictechfest.net/mtfberlin-programme)\n\n",
+              "slug": "MTF_berlin_hack_challenge"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "iRCNLYp1uwciQc24Eae60",
+              "type": "Entry",
+              "createdAt": "2016-05-17T14:30:04.200Z",
+              "updatedAt": "2016-05-20T12:49:46.122Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 4,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps booth at Sónar+D!",
+              "dateTime": "2016-06-16T00:00+03:00",
+              "cityCountry": "Barcelona, Spain",
+              "map": {
+                "lon": 2.1504628999999795,
+                "lat": 41.3730751
+                
+              "teaser": "Visit GiantSteps booth in MarketLab at Sónar+D in Barcelona!",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "6PreyTDCqQggk40MU0uQ6S"
+                    
+                  
+                
+              "text": "MarketLab is the nerve centre of Sónar+D. It is a space where the creators of the year's most outstanding technology initiatives present the projects that they have developed in creative labs, media labs, universities and businesses. A place for trying out innovations that explore new forms of creation, production and marketing, and which in turn fosters relationships between professionals in the creative industries and the general public.\n\nVisit GiantSteps booth at Sónar+D on 16th, 17th and 18th of June 2016 in Barcelona!\n\n[Check for more here!](http://sonarplusd.com/activity/giantsteps/)",
+              "slug": "giantsteps_booth_at_sonarplusd"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "rEARBsPqLISGWS60asYkA",
+              "type": "Entry",
+              "createdAt": "2016-06-15T13:22:45.374Z",
+              "updatedAt": "2016-06-15T13:22:45.374Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "SOAP workshop co-organized by GiantSteps",
+              "dateTime": "2016-07-16T00:00+03:00",
+              "cityCountry": "Halifax, NS, Canada ",
+              "map": {
+                "lon": -63.58418229999995,
+                "lat": 44.6430218
+                
+              "teaser": "Workshop on Surprise, Opposition, and Obstruction in Adaptive and Personalized Systems (SOAP)",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "6RCwDLNtcs08Aaua6YyIk8"
+                    
+                  
+                
+              "text": "GiantSteps will co-organize a workshop on Surprise, Opposition, and Obstruction in Adaptive and Personalized Systems (SOAP) at the 24th Conference on User Modeling, Adaptation and Personalization (UMAP) in Halifax, NS, Canada on 16th of July.\n\n[More information](https://soapworkshop2016.wordpress.com/)",
+              "slug": "SOAP_workshop"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "6PmqYZIxTGCCqSqWOCo0go",
+              "type": "Entry",
+              "createdAt": "2016-07-22T10:11:17.861Z",
+              "updatedAt": "2016-07-22T10:23:31.518Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 5,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps talk in IBM Watson",
+              "dateTime": "2016-08-01T00:00+03:00",
+              "cityCountry": "New York, US",
+              "map": {
+                "lon": -73.80264679999999,
+                "lat": 41.2097516
+                
+              "teaser": "Music Retrieval and Intelligent Machines in Sound Production",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "nAzHtKsu1E4Iiu4Kqo8GM"
+                    
+                  
+                
+              "text": "Peeter Knees from JKU - partner of GiantSteps will give a talk about GiantSteps at IBM TJ Watson Research Center.\n\nTitle: Music Retrieval and Intelligent Machines in Sound Production\n\nAbstract: The field of music information retrieval (MIR) – among other things – deals with the extraction of musical information from audio signals as well as meta-data in the widest sense. This requires a variety of intermediate steps, from onset detection, to beat tracking, to key estimation, to melody extraction, to instrument recognition. The extracted features have proven to be applicable for a number of tasks, such as music recommendation and cover song retrieval. They also facilitate several applications for intelligent music production as can be found in today’s digital audio workstations. In this talk I will give a brief introduction to the field of MIR and the prevalent techniques used in audio analysis. I will continue by showing how these methods pertain to the steps taken in today's music production and how they could be additionally applied in the future. I will conclude the talk with a discussion of the role of such intelligent audio production machines in the creative process and the desiderata and caveats of future systems that will take more the position of a collaborator than a tool. \n\nShort Bio: Peter Knees holds a doctoral degree in computer science and is currently assistant professor of the Dept. of Computational Perception of the Johannes Kepler University Linz in Austria. For over a decade, he has been an active member of the music information retrieval (MIR) research community, branching out to the related areas of multimedia, text IR, recommender systems, and digital media arts. In the ongoing EU-funded research project GiantSteps, he investigates the role of MIR in music production and performance and supports developing new tools for practitioners.",
+              "slug": "ibm_watson"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "6yrLVDnKRamYEGgsIygQ",
+              "type": "Entry",
+              "createdAt": "2016-06-10T14:21:22.787Z",
+              "updatedAt": "2016-09-30T11:49:45.448Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 9,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps at WavesVienna!",
+              "dateTime": "2016-10-01T00:00+03:00",
+              "cityCountry": "Vienna, Austria",
+              "map": {
+                "lon": 16.35141580000004,
+                "lat": 48.2232818
+                
+              "teaser": "GiantSteps is official supporter of WavesVienna!\n",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "7hyEllTKOke4sgOUMAYMuM"
+                    
+                  
+                
+              "text": "The challenge \"Best use of GiantSteps APIs for music & sound analysis and recommendation\" is proposed. We seek the best hack that uses one or more of the GiantSteps APIs for music analysis, recommendation, and semantic sound analysis. We encourage hacks about music making and performance, new instruments, improvising systems, virtual band mates, real-time visualizations or anything that will mesmerize the crowd. The award is 250 Euros in vouchers for music equipment.\n\nGiantSteps is official supporter of WavesVienna!\n\n<http://www.wavescentraleurope.com/waves-music-hackday/>",
+              "slug": "wavesvienna"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "1gTXQgiK84UQuU0wakOwEE",
+              "type": "Entry",
+              "createdAt": "2016-12-30T13:27:26.907Z",
+              "updatedAt": "2016-12-30T13:28:27.032Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 2,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "GiantSteps Mini-Trackathon at ADE",
+              "dateTime": "2016-10-21T00:00+02:00",
+              "cityCountry": "Amsterdam, The Netherlands",
+              "map": {
+                "lon": 4.897670500000004,
+                "lat": 52.370379
+                
+              "teaser": "GiantSteps at Amsterdam Dance Event - Mini-Trackathon",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "22xzz70NisoCsK0ykSwm2M"
+                    
+                  
+                
+              "text": "Native Instruments, Reactable and STEIM present: Mini-Trackathon.\n\nThis is a chance to try out new experimental instruments from NI and Reactable, as they are emerging from the Giantsteps project, a collaboration between Native Instruments, Reactable, Red Bull Music Academy, Universitat Pompeu Fabra, Johannes Kepler Universität, JCP-Consult, and STEIM funded by the European Union.With support from designers and researchers from Native Instruments, Reactable and STEIM, a group of participants will collaborate to create a new track with these new interfaces. This workshop can host 4 participants.\n\n[More...](https://www.amsterdam-dance-event.nl/program/2016/native-instruments-reactable-and-steim-present-mini-trackathon/5097919/)",
+              "slug": "ADE_trackathon"
+              
+            
+          {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "xrzr1u3na612"
+                  
+                
+              "id": "1ZlU4XQqCcOOskymOuw60I",
+              "type": "Entry",
+              "createdAt": "2016-12-30T13:34:34.650Z",
+              "updatedAt": "2016-12-30T13:34:34.650Z",
+              "environment": {
+                "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+                  
+                
+              "revision": 1,
+              "contentType": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "5SOxrPbANq4gQ8W6MUeW6g"
+                  
+                
+              "locale": "en-US"
+              
+            "fields": {
+              "title": "Hypotetical Instruments",
+              "dateTime": "2016-10-21T00:00+02:00",
+              "cityCountry": "Amsterdam, The Netherlands",
+              "map": {
+                "lon": 4.897670500000004,
+                "lat": 52.370379
+                
+              "teaser": "GiantSteps at Amsterdam Dance Event - Workshop",
+              "images": [
+                {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Asset",
+                    "id": "6URIB6TzPyooQoeaqeYmoy"
+                    
+                  
+                
+              "text": "In this workshop you can design “machines” for creative expression. Working with low fi materials, you will build non-functional instrument and ideas aimed at inventing the music machine of the future. This process is hosted by designers and researchers from Native Instruments, Reactable and STEIM and Universitat Pompeu Fabra, and forms part of the Giantsteps project, a collaboration between Native Instruments, Reactable, Red Bull Music Academy, Universitat Pompeu Fabra, Johannes Kepler Universität, JCP-Connect, and STEIM funded by the European Union. This workshop can host 10 participants.\n\n[More...](https://www.amsterdam-dance-event.nl/program/2016/steim-hypothetical-instruments-workshop/5097911/)",
+              "slug": "ADE_workshop"
+              
+            
+          
+  "includes": {
+            "Asset": [
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "1Bg60Wg9EoowOOEu6gmKyq",
+                  "type": "Asset",
+                  "createdAt": "2015-08-18T22:19:32.936Z",
+                  "updatedAt": "2015-08-18T22:19:32.936Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "simonne jones-300x199",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/1Bg60Wg9EoowOOEu6gmKyq/8afe84b58a01e76c390d66a1e6d36830/simonne_jones-300x199.jpg",
+                    "details": {
+                      "size": 26875,
+                      "image": {
+                        "width": 300,
+                        "height": 199
+                        
+                      
+                    "fileName": "simonne_jones-300x199.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "1T1Z1wO6CwSYQ0iOIMEUos",
+                  "type": "Asset",
+                  "createdAt": "2015-05-21T11:21:24.579Z",
+                  "updatedAt": "2015-05-21T11:21:24.579Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "3-night-seoul-sightseeing-and-shopping-tour-in-seoul-146564",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/1T1Z1wO6CwSYQ0iOIMEUos/2187ef831217214f27973d114b1fee41/3-night-seoul-sightseeing-and-shopping-tour-in-seoul-146564.jpg",
+                    "details": {
+                      "size": 551234,
+                      "image": {
+                        "width": 674,
+                        "height": 446
+                        
+                      
+                    "fileName": "3-night-seoul-sightseeing-and-shopping-tour-in-seoul-146564.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "1dtR5uRTMyGkIqUi2iu6UO",
+                  "type": "Asset",
+                  "createdAt": "2015-05-21T14:28:56.874Z",
+                  "updatedAt": "2015-05-21T14:28:56.874Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "nem",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/1dtR5uRTMyGkIqUi2iu6UO/5e9bf12c5084a663464c3da13ebd4cc1/nem.jpg",
+                    "details": {
+                      "size": 257365,
+                      "image": {
+                        "width": 1500,
+                        "height": 1000
+                        
+                      
+                    "fileName": "nem.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "22xzz70NisoCsK0ykSwm2M",
+                  "type": "Asset",
+                  "createdAt": "2016-12-30T13:26:51.373Z",
+                  "updatedAt": "2016-12-30T13:26:51.373Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "ADE1",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/22xzz70NisoCsK0ykSwm2M/b68e687ccf86f37b99dc83d173234726/ADE1.jpeg",
+                    "details": {
+                      "size": 24120,
+                      "image": {
+                        "width": 282,
+                        "height": 376
+                        
+                      
+                    "fileName": "ADE1.jpeg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "23c8mKR5xyq2QkYmY2Eyok",
+                  "type": "Asset",
+                  "createdAt": "2015-08-18T22:17:55.905Z",
+                  "updatedAt": "2015-08-18T22:17:55.905Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "sergi jorda-300x225",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/23c8mKR5xyq2QkYmY2Eyok/567cf0c7ce718209a9d6d5300171e75b/sergi_jorda-300x225.jpg",
+                    "details": {
+                      "size": 14412,
+                      "image": {
+                        "width": 300,
+                        "height": 225
+                        
+                      
+                    "fileName": "sergi_jorda-300x225.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "2ptOUhb3gMAO0Ao2EyUa6i",
+                  "type": "Asset",
+                  "createdAt": "2015-08-09T18:01:25.039Z",
+                  "updatedAt": "2015-08-09T18:01:25.039Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "SonarDpanel",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/2ptOUhb3gMAO0Ao2EyUa6i/f70e35aec31bf97121090a8214c36050/SonarDpanel.jpg",
+                    "details": {
+                      "size": 28389,
+                      "image": {
+                        "width": 300,
+                        "height": 199
+                        
+                      
+                    "fileName": "SonarDpanel.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "3BKq7wS9I4Wa24MuKmSIwm",
+                  "type": "Asset",
+                  "createdAt": "2015-09-25T10:24:31.676Z",
+                  "updatedAt": "2015-09-25T10:24:31.676Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "music",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/3BKq7wS9I4Wa24MuKmSIwm/1d3aabd68ea11626d98fe950dff6b7c3/music.jpg",
+                    "details": {
+                      "size": 52090,
+                      "image": {
+                        "width": 300,
+                        "height": 300
+                        
+                      
+                    "fileName": "music.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "3EgzJvQJNKywUIqAw0AiSG",
+                  "type": "Asset",
+                  "createdAt": "2016-05-17T14:35:12.146Z",
+                  "updatedAt": "2016-05-17T14:35:12.146Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "MTF-Logo",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/3EgzJvQJNKywUIqAw0AiSG/20cbbea671737be35256becea56bccf4/MTF-Logo.png",
+                    "details": {
+                      "size": 65000,
+                      "image": {
+                        "width": 1368,
+                        "height": 942
+                        
+                      
+                    "fileName": "MTF-Logo.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "3h23QnsEZOmAcUQyAC86oo",
+                  "type": "Asset",
+                  "createdAt": "2015-08-18T22:16:31.083Z",
+                  "updatedAt": "2015-08-18T22:16:31.083Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "michael hlatky-300x300",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/3h23QnsEZOmAcUQyAC86oo/e5c7e67e95f29f9effa6721923614c2e/michael_hlatky-300x300.jpg",
+                    "details": {
+                      "size": 15868,
+                      "image": {
+                        "width": 300,
+                        "height": 300
+                        
+                      
+                    "fileName": "michael_hlatky-300x300.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "3nePpqeHYIyugScYMKYEMG",
+                  "type": "Asset",
+                  "createdAt": "2015-08-11T09:04:39.561Z",
+                  "updatedAt": "2015-08-11T09:04:39.561Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "fascinat",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/3nePpqeHYIyugScYMKYEMG/90b66946ffa9df1be080a21394c1c611/fascinat.jpg",
+                    "details": {
+                      "size": 23318,
+                      "image": {
+                        "width": 200,
+                        "height": 149
+                        
+                      
+                    "fileName": "fascinat.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "48fRExLU7m0K44MAYyw0sK",
+                  "type": "Asset",
+                  "createdAt": "2016-02-29T10:16:37.991Z",
+                  "updatedAt": "2016-02-29T10:16:37.991Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "toulouse",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/48fRExLU7m0K44MAYyw0sK/afabf1c2c269f89c79e48a89b0ee09be/toulouse.png",
+                    "details": {
+                      "size": 22575,
+                      "image": {
+                        "width": 926,
+                        "height": 290
+                        
+                      
+                    "fileName": "toulouse.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "499jyRxiKAIuQEwC6Y8gKu",
+                  "type": "Asset",
+                  "createdAt": "2015-08-11T08:22:55.110Z",
+                  "updatedAt": "2015-08-13T09:05:03.667Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 3,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "ArcInTex logo",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/499jyRxiKAIuQEwC6Y8gKu/3517dfb1435e6a0ae0b18bfa61918161/arcintex_s.png",
+                    "details": {
+                      "size": 39636,
+                      "image": {
+                        "width": 250,
+                        "height": 135
+                        
+                      
+                    "fileName": "arcintex_s.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "4CpyLCnRmogog66a6Yq22e",
+                  "type": "Asset",
+                  "createdAt": "2015-10-16T07:05:28.561Z",
+                  "updatedAt": "2015-10-16T07:05:28.561Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "ICT2015",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/4CpyLCnRmogog66a6Yq22e/0a06fb4cf1fa51bd8e4f77b895df6575/ict_2015_lisbon.png",
+                    "details": {
+                      "size": 148353,
+                      "image": {
+                        "width": 660,
+                        "height": 830
+                        
+                      
+                    "fileName": "ict_2015_lisbon.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "4Jhm0nMvDiuo2o0A2qykQ6",
+                  "type": "Asset",
+                  "createdAt": "2016-01-14T18:35:09.529Z",
+                  "updatedAt": "2016-01-14T18:35:09.529Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "CHI-Logo-Colored",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/4Jhm0nMvDiuo2o0A2qykQ6/de2e1ccff00785721530955b43b5221e/CHI-Logo-Colored.png",
+                    "details": {
+                      "size": 4815,
+                      "image": {
+                        "width": 300,
+                        "height": 255
+                        
+                      
+                    "fileName": "CHI-Logo-Colored.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "4Y2un64p3Oyee4cGASeiak",
+                  "type": "Asset",
+                  "createdAt": "2015-08-09T18:22:26.924Z",
+                  "updatedAt": "2015-08-09T18:22:26.924Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "mhd 2014 poster small",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/4Y2un64p3Oyee4cGASeiak/5aabee168b0e64d9d035c63d71c9354f/mhd_2014_poster_small.jpg",
+                    "details": {
+                      "size": 146874,
+                      "image": {
+                        "width": 600,
+                        "height": 849
+                        
+                      
+                    "fileName": "mhd_2014_poster_small.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "53GnHT97y8ekMaMiE60eE4",
+                  "type": "Asset",
+                  "createdAt": "2015-08-18T22:03:04.469Z",
+                  "updatedAt": "2015-08-18T22:03:04.469Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "sonard",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/53GnHT97y8ekMaMiE60eE4/8639cf3d311f6e7a44d16f6475fc6ffd/sonard.jpg",
+                    "details": {
+                      "size": 148589,
+                      "image": {
+                        "width": 1024,
+                        "height": 738
+                        
+                      
+                    "fileName": "sonard.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "5Rk3YwClzOgKCey4qioco2",
+                  "type": "Asset",
+                  "createdAt": "2015-05-21T14:55:15.769Z",
+                  "updatedAt": "2015-05-21T14:55:15.769Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "Kunstverein-Arnsberg Rafael-Rozendaal 1",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/5Rk3YwClzOgKCey4qioco2/f3ef2368326096276c06856617b2d0df/Kunstverein-Arnsberg_Rafael-Rozendaal_1.jpg",
+                    "details": {
+                      "size": 132879,
+                      "image": {
+                        "width": 800,
+                        "height": 532
+                        
+                      
+                    "fileName": "Kunstverein-Arnsberg_Rafael-Rozendaal_1.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "5apwLdHqpOWwMEmWIUOYq",
+                  "type": "Asset",
+                  "createdAt": "2015-08-18T22:17:27.132Z",
+                  "updatedAt": "2015-08-18T22:17:27.132Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "throwing snow-200x300",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/5apwLdHqpOWwMEmWIUOYq/54ebeff11f0f6037a49ace9e6ebf8dd9/throwing_snow-200x300.jpg",
+                    "details": {
+                      "size": 13562,
+                      "image": {
+                        "width": 200,
+                        "height": 300
+                        
+                      
+                    "fileName": "throwing_snow-200x300.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "6HOfeW7idUsgAscUuCAQK0",
+                  "type": "Asset",
+                  "createdAt": "2015-08-13T09:09:09.464Z",
+                  "updatedAt": "2015-08-13T09:09:09.464Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "ade",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/6HOfeW7idUsgAscUuCAQK0/7c2140cbc60a9790f13cddcc6aa168cf/ade.jpeg",
+                    "details": {
+                      "size": 5673,
+                      "image": {
+                        "width": 300,
+                        "height": 168
+                        
+                      
+                    "fileName": "ade.jpeg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "6PreyTDCqQggk40MU0uQ6S",
+                  "type": "Asset",
+                  "createdAt": "2016-05-17T14:16:24.636Z",
+                  "updatedAt": "2016-05-17T14:16:24.636Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "sonar logo",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/6PreyTDCqQggk40MU0uQ6S/f7b45306ffb20d005ef2c88f0ecd6539/sonar_logo.png",
+                    "details": {
+                      "size": 2593,
+                      "image": {
+                        "width": 251,
+                        "height": 121
+                        
+                      
+                    "fileName": "sonar_logo.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "6RCwDLNtcs08Aaua6YyIk8",
+                  "type": "Asset",
+                  "createdAt": "2016-06-15T13:22:27.971Z",
+                  "updatedAt": "2016-06-15T13:22:27.971Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "SOAP",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/6RCwDLNtcs08Aaua6YyIk8/f0abfae0c0c0c25dac9b27ea3e7a664a/soap-ws-logo.png",
+                    "details": {
+                      "size": 22175,
+                      "image": {
+                        "width": 294,
+                        "height": 161
+                        
+                      
+                    "fileName": "soap-ws-logo.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "6URIB6TzPyooQoeaqeYmoy",
+                  "type": "Asset",
+                  "createdAt": "2016-12-30T13:33:32.710Z",
+                  "updatedAt": "2016-12-30T13:33:32.710Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "ade2",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/6URIB6TzPyooQoeaqeYmoy/676d9b6d3f26b7f67c6882b253e80da9/ade2.jpeg",
+                    "details": {
+                      "size": 25085,
+                      "image": {
+                        "width": 282,
+                        "height": 376
+                        
+                      
+                    "fileName": "ade2.jpeg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "7MFUROKpMsqeSmmyw4Kqg2",
+                  "type": "Asset",
+                  "createdAt": "2015-05-21T14:58:24.509Z",
+                  "updatedAt": "2015-05-21T14:58:24.509Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "HackBarcelona-4",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/7MFUROKpMsqeSmmyw4Kqg2/7645a90abffe8a5defb1ba0acc0263a7/HackBarcelona-4.jpg",
+                    "details": {
+                      "size": 447943,
+                      "image": {
+                        "width": 800,
+                        "height": 534
+                        
+                      
+                    "fileName": "HackBarcelona-4.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "7hyEllTKOke4sgOUMAYMuM",
+                  "type": "Asset",
+                  "createdAt": "2016-06-10T14:18:49.751Z",
+                  "updatedAt": "2016-06-10T14:18:49.751Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "fox",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/7hyEllTKOke4sgOUMAYMuM/860f6621c5c976d0b6e6b1faf1eaa6ec/fox.png",
+                    "details": {
+                      "size": 125177,
+                      "image": {
+                        "width": 662,
+                        "height": 558
+                        
+                      
+                    "fileName": "fox.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "7yR4aLtudUY4Go8ew2maeK",
+                  "type": "Asset",
+                  "createdAt": "2015-08-11T10:25:19.989Z",
+                  "updatedAt": "2015-08-11T10:25:19.989Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "dis2014",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/7yR4aLtudUY4Go8ew2maeK/b32b0f1dfa270cfaaf5db997cfb2e3f8/dis2014.jpeg",
+                    "details": {
+                      "size": 59357,
+                      "image": {
+                        "width": 481,
+                        "height": 321
+                        
+                      
+                    "fileName": "dis2014.jpeg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "BzzsDFthTwIWAUoYiWooS",
+                  "type": "Asset",
+                  "createdAt": "2016-01-29T11:14:02.011Z",
+                  "updatedAt": "2016-01-29T11:14:02.011Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "testing",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/BzzsDFthTwIWAUoYiWooS/62ef0866ac4757a896e94ea80bda445b/testing.png",
+                    "details": {
+                      "size": 1896144,
+                      "image": {
+                        "width": 1184,
+                        "height": 790
+                        
+                      
+                    "fileName": "testing.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "fn5zruWNTqM0w0CKA0sok",
+                  "type": "Asset",
+                  "createdAt": "2015-08-18T22:17:00.925Z",
+                  "updatedAt": "2015-08-18T22:17:00.925Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "florian grote-300x300",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/fn5zruWNTqM0w0CKA0sok/6c1dbada279862979206124e96d7a333/florian_grote-300x300.jpg",
+                    "details": {
+                      "size": 15216,
+                      "image": {
+                        "width": 300,
+                        "height": 300
+                        
+                      
+                    "fileName": "florian_grote-300x300.jpg",
+                    "contentType": "image/jpeg"
+                    
+                  
+                
+              {
+                "sys": {
+                  "space": {
+                    "sys": {
+                      "type": "Link",
+                      "linkType": "Space",
+                      "id": "xrzr1u3na612"
+                      
+                    
+                  "id": "nAzHtKsu1E4Iiu4Kqo8GM",
+                  "type": "Asset",
+                  "createdAt": "2016-07-22T10:15:36.535Z",
+                  "updatedAt": "2016-07-22T10:15:36.535Z",
+                  "environment": {
+                    "sys": {
+                      "id": "master",
+                      "type": "Link",
+                      "linkType": "Environment"
+                      
+                    
+                  "revision": 1,
+                  "locale": "en-US"
+                  
+                "fields": {
+                  "title": "ibm watson1",
+                  "file": {
+                    "url": "//images.ctfassets.net/xrzr1u3na612/nAzHtKsu1E4Iiu4Kqo8GM/5ea06fbe586980e409944affe56ae465/ibm_watson1.png",
+                    "details": {
+                      "size": 600468,
+                      "image": {
+                        "width": 640,
+                        "height": 409
+                        
+                      
+                    "fileName": "ibm_watson1.png",
+                    "contentType": "image/png"
+                    
+                  
+                
+              
+            
+};
+
+var dataSets = {
+  "sys": {
+    "type": "Array"
+  },
+  "total": 2,
+  "skip": 0,
+  "limit": 100,
+  "items": [
     {
       "sys": {
         "space": {
@@ -8713,10 +10340,10 @@ var eventsText = {
             "id": "xrzr1u3na612"
           }
         },
-        "id": "45AD0vBshyO2GoEuIo6mYW",
+        "id": "5jVNrQrRryk2iKiCU8CmQo",
         "type": "Entry",
-        "createdAt": "2016-01-29T11:19:14.099Z",
-        "updatedAt": "2016-01-29T11:19:48.717Z",
+        "createdAt": "2015-11-12T09:16:12.209Z",
+        "updatedAt": "2015-11-12T09:19:22.419Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -8729,31 +10356,15 @@ var eventsText = {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
+            "id": "6Va4POKGt208EmOmiiCoUe"
           }
         },
         "locale": "en-US"
       },
       "fields": {
-        "title": "GiantSteps organizes testing session in Berlin",
-        "dateTime": "2016-02-15",
-        "cityCountry": "Berlin, Germany",
-        "map": {
-          "lon": 13.44835999999998,
-          "lat": 52.4996082
-        },
-        "teaser": "What will the future of electronic music look like? What instruments will we need?",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "BzzsDFthTwIWAUoYiWooS"
-            }
-          }
-        ],
-        "text": "We are looking for producers and performers of electronic music to try out exciting new technologies and (sometimes experimental) new interfaces from Native Instruments, Reactable Systems, the Music Technology Group of the Universitat Pompeu Fabra, and the Department of Computational Perception at Johannes Kepler Universität. We would also like to ask you about your personal experiences with producing and performing electronic music, and what the perfect machine, interface or instrument would be for you.\n\nThe session will take place at the Native Instruments offices in Berlin, we will show 4-5 different prototypes and the whole thing will take no longer than two hours.\n\n[Contact us](http://www.giantsteps-project.eu/#/contact) for more information.",
-        "slug": "berlin_testing_session"
+        "title": "GiantSteps Key Set",
+        "url": "http://www.cp.jku.at/datasets/giantsteps/#key",
+        "text": "As described in:\n\nP. Knees, Á. Faraldo, P. Herrera, R. Vogl, S. Böck, F. Hörschläger, and M. Le Goff. \nTwo Data Sets for Tempo Estimation and Key Detection in Electronic Dance Music Annotated from User Corrections. \nIn *Proceedings of the 16th International Society for Music Information Retrieval Conference (ISMIR)*, Málaga, Spain, 2015.\n\nPlease cite this paper if you make use of one of the data sets in your work."
       }
     },
     {
@@ -8765,62 +10376,10 @@ var eventsText = {
             "id": "xrzr1u3na612"
           }
         },
-        "id": "7kQdzxBVSMuq02EWqcEUOk",
+        "id": "1yBZZRoSlaiEYQCgi8GyyO",
         "type": "Entry",
-        "createdAt": "2016-02-29T10:24:47.143Z",
-        "updatedAt": "2016-02-29T10:30:23.188Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 3,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps talk at Audio Meetup Toulouse",
-        "dateTime": "2016-03-18",
-        "cityCountry": "Toulouse, France",
-        "map": {
-          "lon": 1.436220100000014,
-          "lat": 43.59765669999999
-        },
-        "teaser": "Michael Hlatky from NI speaks at Audio Meetup!",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "48fRExLU7m0K44MAYyw0sK"
-            }
-          }
-        ],
-        "text": "The Audio Meetup Toulouse aims to bring together and promote exchanges between different audio practitioners - music SW developers, sound designer, articts, etc.\n\nJoin next Audio Meetup where the talk about developing UX for audio applications will be given by Michael Hlatky from Native Instruments.\n\n[More information](http://audiomeetuptlse.tumblr.com/) (in French).",
-        "slug": "audio_meetup_toulouse"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "4sTdJDkafuIwqmcGiYcSkg",
-        "type": "Entry",
-        "createdAt": "2016-01-14T18:37:22.688Z",
-        "updatedAt": "2016-01-14T18:37:56.103Z",
+        "createdAt": "2015-11-12T09:14:37.456Z",
+        "updatedAt": "2015-11-12T09:17:34.514Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -8833,1499 +10392,23 @@ var eventsText = {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
+            "id": "6Va4POKGt208EmOmiiCoUe"
           }
         },
         "locale": "en-US"
       },
       "fields": {
-        "title": "Objects as Outcomes of Design Research",
-        "dateTime": "2016-05-07",
-        "cityCountry": "San Jose, CA, USA",
-        "map": {
-          "lon": -121.88836329999998,
-          "lat": 37.330322
-        },
-        "teaser": "Attend GiantSteps workshop at CHI2016!",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4Jhm0nMvDiuo2o0A2qykQ6"
-            }
-          }
-        ],
-        "text": "Design research is a growing mode of research within the HCI community. At the same time, the role of the artifact in generating knowledge outcomes from research through design (RtD) is ripe for examination. We hope to bring together researchers and practitioners who are interested in exploring how the objects of design practice are able to contribute to academic dialogue within HCI and related design fields. By assembling various practitioners and the objects they have designed and produced together in a single room, we seek to discuss the process and practices of research through design, linking these closely with their material outcomes.\n\nThis one-day workshop will provide an opportunity to examine how artifacts can produce and support research outcomes in themselves, and as material bridges to the process through which they emerge. This workshop will combine hands-on examination of design objects, comparison of design experiences, and discussion about qualities of these that are usually excluded from published academic texts.\n\nMore information: https://chi2016.acm.org/wp/workshops/",
-        "slug": "CHI2016_workshop"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "3OeklUfogMIiSuuISiqIIA",
-        "type": "Entry",
-        "createdAt": "2016-05-17T14:41:36.540Z",
-        "updatedAt": "2016-05-26T13:21:59.468Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 15,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps at Music Tech Fest",
-        "dateTime": "2016-05-27T00:00+03:00",
-        "cityCountry": "Berlin, Germany",
-        "map": {
-          "lon": 13.500340000000051,
-          "lat": 52.47908
-        },
-        "teaser": "GiantSteps hack challenge at #MTF!",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "3EgzJvQJNKywUIqAw0AiSG"
-            }
-          }
-        ],
-        "text": "GiantSteps will pose a hack challenge at #MTF Berlin on 27-29 of May 2016. The hack challenge is targeted at the most interesting applications using GiantSteps tools.\n\nGiantSteps is a research project, delivering set of new generation digital music-making tools, intelligent agents and interfaces. Musical expert agents, supportive and inspirational systems for melody, harmony, and rhythm are delivered by GiantSteps for guiding users during composition when they lack inspiration or technical or musical knowledge.\n\nTools might be used for composing tracks (full tracks of pieces - e.g. highlighting tempo/style/rhythm transitions), creating new algorithms - or for any other application.\n\nTools available for hackers are:\n\n   GS-Harmony (Pd patch, standalone MIDI I/O application) - harmony expert agent;\n\n   Drumming with Style (Pd patch, standalone MIDI I/O application) - drum pattern variation agent;\n\n   Madmom Library - library rapid prototyping of new algorithms;\n\n   Rhythm Pattern Variation Prototype and Library - Tool for automatic variation of step sequencer rhythm patterns;\n\n   Automatic Dynamic Timewarping Tool - Madmom powered prototype to automatically warp songs with variable tempo to a fixed tempo grid;\n\n   Reactable Studio beta (for iPad Pro - iPad Pro will be provided by GiantSteps team) - Mobile application for music creation/mixing;\n\n   New Reactable Mobile 2.4 (for iPhone/Android) - Mobile application for music creation / mixing;\n\n   Updated Rhythmcat VST - drum sounds search agent.\n\nTechnical support for each tool will be provided for hackers by GiantSteps team (4 people).\n\nFull description of tools functionality and technical information will be available soon.\n\nBest use of GiantSteps tools will be awarded with single prize, which is 200€ voucher for Native Instruments online store.\n\nMore information:\n\n[#MTFHacks](http://musictechfest.net/mtfhacks/)\n\n[Programme](http://musictechfest.net/mtfberlin-programme)\n\n",
-        "slug": "MTF_berlin_hack_challenge"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "iRCNLYp1uwciQc24Eae60",
-        "type": "Entry",
-        "createdAt": "2016-05-17T14:30:04.200Z",
-        "updatedAt": "2016-05-20T12:49:46.122Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 4,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps booth at Sónar+D!",
-        "dateTime": "2016-06-16T00:00+03:00",
-        "cityCountry": "Barcelona, Spain",
-        "map": {
-          "lon": 2.1504628999999795,
-          "lat": 41.3730751
-        },
-        "teaser": "Visit GiantSteps booth in MarketLab at Sónar+D in Barcelona!",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "6PreyTDCqQggk40MU0uQ6S"
-            }
-          }
-        ],
-        "text": "MarketLab is the nerve centre of Sónar+D. It is a space where the creators of the year's most outstanding technology initiatives present the projects that they have developed in creative labs, media labs, universities and businesses. A place for trying out innovations that explore new forms of creation, production and marketing, and which in turn fosters relationships between professionals in the creative industries and the general public.\n\nVisit GiantSteps booth at Sónar+D on 16th, 17th and 18th of June 2016 in Barcelona!\n\n[Check for more here!](http://sonarplusd.com/activity/giantsteps/)",
-        "slug": "giantsteps_booth_at_sonarplusd"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "rEARBsPqLISGWS60asYkA",
-        "type": "Entry",
-        "createdAt": "2016-06-15T13:22:45.374Z",
-        "updatedAt": "2016-06-15T13:22:45.374Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "SOAP workshop co-organized by GiantSteps",
-        "dateTime": "2016-07-16T00:00+03:00",
-        "cityCountry": "Halifax, NS, Canada ",
-        "map": {
-          "lon": -63.58418229999995,
-          "lat": 44.6430218
-        },
-        "teaser": "Workshop on Surprise, Opposition, and Obstruction in Adaptive and Personalized Systems (SOAP)",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "6RCwDLNtcs08Aaua6YyIk8"
-            }
-          }
-        ],
-        "text": "GiantSteps will co-organize a workshop on Surprise, Opposition, and Obstruction in Adaptive and Personalized Systems (SOAP) at the 24th Conference on User Modeling, Adaptation and Personalization (UMAP) in Halifax, NS, Canada on 16th of July.\n\n[More information](https://soapworkshop2016.wordpress.com/)",
-        "slug": "SOAP_workshop"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "6PmqYZIxTGCCqSqWOCo0go",
-        "type": "Entry",
-        "createdAt": "2016-07-22T10:11:17.861Z",
-        "updatedAt": "2016-07-22T10:23:31.518Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 5,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps talk in IBM Watson",
-        "dateTime": "2016-08-01T00:00+03:00",
-        "cityCountry": "New York, US",
-        "map": {
-          "lon": -73.80264679999999,
-          "lat": 41.2097516
-        },
-        "teaser": "Music Retrieval and Intelligent Machines in Sound Production",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "nAzHtKsu1E4Iiu4Kqo8GM"
-            }
-          }
-        ],
-        "text": "Peeter Knees from JKU - partner of GiantSteps will give a talk about GiantSteps at IBM TJ Watson Research Center.\n\nTitle: Music Retrieval and Intelligent Machines in Sound Production\n\nAbstract: The field of music information retrieval (MIR) – among other things – deals with the extraction of musical information from audio signals as well as meta-data in the widest sense. This requires a variety of intermediate steps, from onset detection, to beat tracking, to key estimation, to melody extraction, to instrument recognition. The extracted features have proven to be applicable for a number of tasks, such as music recommendation and cover song retrieval. They also facilitate several applications for intelligent music production as can be found in today’s digital audio workstations. In this talk I will give a brief introduction to the field of MIR and the prevalent techniques used in audio analysis. I will continue by showing how these methods pertain to the steps taken in today's music production and how they could be additionally applied in the future. I will conclude the talk with a discussion of the role of such intelligent audio production machines in the creative process and the desiderata and caveats of future systems that will take more the position of a collaborator than a tool. \n\nShort Bio: Peter Knees holds a doctoral degree in computer science and is currently assistant professor of the Dept. of Computational Perception of the Johannes Kepler University Linz in Austria. For over a decade, he has been an active member of the music information retrieval (MIR) research community, branching out to the related areas of multimedia, text IR, recommender systems, and digital media arts. In the ongoing EU-funded research project GiantSteps, he investigates the role of MIR in music production and performance and supports developing new tools for practitioners.",
-        "slug": "ibm_watson"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "6yrLVDnKRamYEGgsIygQ",
-        "type": "Entry",
-        "createdAt": "2016-06-10T14:21:22.787Z",
-        "updatedAt": "2016-09-30T11:49:45.448Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 9,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps at WavesVienna!",
-        "dateTime": "2016-10-01T00:00+03:00",
-        "cityCountry": "Vienna, Austria",
-        "map": {
-          "lon": 16.35141580000004,
-          "lat": 48.2232818
-        },
-        "teaser": "GiantSteps is official supporter of WavesVienna!\n",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "7hyEllTKOke4sgOUMAYMuM"
-            }
-          }
-        ],
-        "text": "The challenge \"Best use of GiantSteps APIs for music & sound analysis and recommendation\" is proposed. We seek the best hack that uses one or more of the GiantSteps APIs for music analysis, recommendation, and semantic sound analysis. We encourage hacks about music making and performance, new instruments, improvising systems, virtual band mates, real-time visualizations or anything that will mesmerize the crowd. The award is 250 Euros in vouchers for music equipment.\n\nGiantSteps is official supporter of WavesVienna!\n\n<http://www.wavescentraleurope.com/waves-music-hackday/>",
-        "slug": "wavesvienna"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "1gTXQgiK84UQuU0wakOwEE",
-        "type": "Entry",
-        "createdAt": "2016-12-30T13:27:26.907Z",
-        "updatedAt": "2016-12-30T13:28:27.032Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 2,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "GiantSteps Mini-Trackathon at ADE",
-        "dateTime": "2016-10-21T00:00+02:00",
-        "cityCountry": "Amsterdam, The Netherlands",
-        "map": {
-          "lon": 4.897670500000004,
-          "lat": 52.370379
-        },
-        "teaser": "GiantSteps at Amsterdam Dance Event - Mini-Trackathon",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "22xzz70NisoCsK0ykSwm2M"
-            }
-          }
-        ],
-        "text": "Native Instruments, Reactable and STEIM present: Mini-Trackathon.\n\nThis is a chance to try out new experimental instruments from NI and Reactable, as they are emerging from the Giantsteps project, a collaboration between Native Instruments, Reactable, Red Bull Music Academy, Universitat Pompeu Fabra, Johannes Kepler Universität, JCP-Consult, and STEIM funded by the European Union.With support from designers and researchers from Native Instruments, Reactable and STEIM, a group of participants will collaborate to create a new track with these new interfaces. This workshop can host 4 participants.\n\n[More...](https://www.amsterdam-dance-event.nl/program/2016/native-instruments-reactable-and-steim-present-mini-trackathon/5097919/)",
-        "slug": "ADE_trackathon"
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "xrzr1u3na612"
-          }
-        },
-        "id": "1ZlU4XQqCcOOskymOuw60I",
-        "type": "Entry",
-        "createdAt": "2016-12-30T13:34:34.650Z",
-        "updatedAt": "2016-12-30T13:34:34.650Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "revision": 1,
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "5SOxrPbANq4gQ8W6MUeW6g"
-          }
-        },
-        "locale": "en-US"
-      },
-      "fields": {
-        "title": "Hypotetical Instruments",
-        "dateTime": "2016-10-21T00:00+02:00",
-        "cityCountry": "Amsterdam, The Netherlands",
-        "map": {
-          "lon": 4.897670500000004,
-          "lat": 52.370379
-        },
-        "teaser": "GiantSteps at Amsterdam Dance Event - Workshop",
-        "images": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "6URIB6TzPyooQoeaqeYmoy"
-            }
-          }
-        ],
-        "text": "In this workshop you can design “machines” for creative expression. Working with low fi materials, you will build non-functional instrument and ideas aimed at inventing the music machine of the future. This process is hosted by designers and researchers from Native Instruments, Reactable and STEIM and Universitat Pompeu Fabra, and forms part of the Giantsteps project, a collaboration between Native Instruments, Reactable, Red Bull Music Academy, Universitat Pompeu Fabra, Johannes Kepler Universität, JCP-Connect, and STEIM funded by the European Union. This workshop can host 10 participants.\n\n[More...](https://www.amsterdam-dance-event.nl/program/2016/steim-hypothetical-instruments-workshop/5097911/)",
-        "slug": "ADE_workshop"
+        "title": "GiantSteps Tempo Set",
+        "url": "http://www.cp.jku.at/datasets/giantsteps/#tempo",
+        "text": "As described in:\n\nP. Knees, Á. Faraldo, P. Herrera, R. Vogl, S. Böck, F. Hörschläger, and M. Le Goff. \nTwo Data Sets for Tempo Estimation and Key Detection in Electronic Dance Music Annotated from User Corrections. \nIn *Proceedings of the 16th International Society for Music Information Retrieval Conference (ISMIR)*, Málaga, Spain, 2015.\n\nPlease cite this paper if you make use of one of the data sets in your work."
       }
     }
-  ],
-  "includes": {
-    "Asset": [
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "1Bg60Wg9EoowOOEu6gmKyq",
-          "type": "Asset",
-          "createdAt": "2015-08-18T22:19:32.936Z",
-          "updatedAt": "2015-08-18T22:19:32.936Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "simonne jones-300x199",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/1Bg60Wg9EoowOOEu6gmKyq/8afe84b58a01e76c390d66a1e6d36830/simonne_jones-300x199.jpg",
-            "details": {
-              "size": 26875,
-              "image": {
-                "width": 300,
-                "height": 199
-              }
-            },
-            "fileName": "simonne_jones-300x199.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "1T1Z1wO6CwSYQ0iOIMEUos",
-          "type": "Asset",
-          "createdAt": "2015-05-21T11:21:24.579Z",
-          "updatedAt": "2015-05-21T11:21:24.579Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "3-night-seoul-sightseeing-and-shopping-tour-in-seoul-146564",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/1T1Z1wO6CwSYQ0iOIMEUos/2187ef831217214f27973d114b1fee41/3-night-seoul-sightseeing-and-shopping-tour-in-seoul-146564.jpg",
-            "details": {
-              "size": 551234,
-              "image": {
-                "width": 674,
-                "height": 446
-              }
-            },
-            "fileName": "3-night-seoul-sightseeing-and-shopping-tour-in-seoul-146564.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "1dtR5uRTMyGkIqUi2iu6UO",
-          "type": "Asset",
-          "createdAt": "2015-05-21T14:28:56.874Z",
-          "updatedAt": "2015-05-21T14:28:56.874Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "nem",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/1dtR5uRTMyGkIqUi2iu6UO/5e9bf12c5084a663464c3da13ebd4cc1/nem.jpg",
-            "details": {
-              "size": 257365,
-              "image": {
-                "width": 1500,
-                "height": 1000
-              }
-            },
-            "fileName": "nem.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "22xzz70NisoCsK0ykSwm2M",
-          "type": "Asset",
-          "createdAt": "2016-12-30T13:26:51.373Z",
-          "updatedAt": "2016-12-30T13:26:51.373Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "ADE1",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/22xzz70NisoCsK0ykSwm2M/b68e687ccf86f37b99dc83d173234726/ADE1.jpeg",
-            "details": {
-              "size": 24120,
-              "image": {
-                "width": 282,
-                "height": 376
-              }
-            },
-            "fileName": "ADE1.jpeg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "23c8mKR5xyq2QkYmY2Eyok",
-          "type": "Asset",
-          "createdAt": "2015-08-18T22:17:55.905Z",
-          "updatedAt": "2015-08-18T22:17:55.905Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "sergi jorda-300x225",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/23c8mKR5xyq2QkYmY2Eyok/567cf0c7ce718209a9d6d5300171e75b/sergi_jorda-300x225.jpg",
-            "details": {
-              "size": 14412,
-              "image": {
-                "width": 300,
-                "height": 225
-              }
-            },
-            "fileName": "sergi_jorda-300x225.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "2ptOUhb3gMAO0Ao2EyUa6i",
-          "type": "Asset",
-          "createdAt": "2015-08-09T18:01:25.039Z",
-          "updatedAt": "2015-08-09T18:01:25.039Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "SonarDpanel",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/2ptOUhb3gMAO0Ao2EyUa6i/f70e35aec31bf97121090a8214c36050/SonarDpanel.jpg",
-            "details": {
-              "size": 28389,
-              "image": {
-                "width": 300,
-                "height": 199
-              }
-            },
-            "fileName": "SonarDpanel.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "3BKq7wS9I4Wa24MuKmSIwm",
-          "type": "Asset",
-          "createdAt": "2015-09-25T10:24:31.676Z",
-          "updatedAt": "2015-09-25T10:24:31.676Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "music",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/3BKq7wS9I4Wa24MuKmSIwm/1d3aabd68ea11626d98fe950dff6b7c3/music.jpg",
-            "details": {
-              "size": 52090,
-              "image": {
-                "width": 300,
-                "height": 300
-              }
-            },
-            "fileName": "music.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "3EgzJvQJNKywUIqAw0AiSG",
-          "type": "Asset",
-          "createdAt": "2016-05-17T14:35:12.146Z",
-          "updatedAt": "2016-05-17T14:35:12.146Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "MTF-Logo",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/3EgzJvQJNKywUIqAw0AiSG/20cbbea671737be35256becea56bccf4/MTF-Logo.png",
-            "details": {
-              "size": 65000,
-              "image": {
-                "width": 1368,
-                "height": 942
-              }
-            },
-            "fileName": "MTF-Logo.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "3h23QnsEZOmAcUQyAC86oo",
-          "type": "Asset",
-          "createdAt": "2015-08-18T22:16:31.083Z",
-          "updatedAt": "2015-08-18T22:16:31.083Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "michael hlatky-300x300",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/3h23QnsEZOmAcUQyAC86oo/e5c7e67e95f29f9effa6721923614c2e/michael_hlatky-300x300.jpg",
-            "details": {
-              "size": 15868,
-              "image": {
-                "width": 300,
-                "height": 300
-              }
-            },
-            "fileName": "michael_hlatky-300x300.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "3nePpqeHYIyugScYMKYEMG",
-          "type": "Asset",
-          "createdAt": "2015-08-11T09:04:39.561Z",
-          "updatedAt": "2015-08-11T09:04:39.561Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "fascinat",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/3nePpqeHYIyugScYMKYEMG/90b66946ffa9df1be080a21394c1c611/fascinat.jpg",
-            "details": {
-              "size": 23318,
-              "image": {
-                "width": 200,
-                "height": 149
-              }
-            },
-            "fileName": "fascinat.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "48fRExLU7m0K44MAYyw0sK",
-          "type": "Asset",
-          "createdAt": "2016-02-29T10:16:37.991Z",
-          "updatedAt": "2016-02-29T10:16:37.991Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "toulouse",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/48fRExLU7m0K44MAYyw0sK/afabf1c2c269f89c79e48a89b0ee09be/toulouse.png",
-            "details": {
-              "size": 22575,
-              "image": {
-                "width": 926,
-                "height": 290
-              }
-            },
-            "fileName": "toulouse.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "499jyRxiKAIuQEwC6Y8gKu",
-          "type": "Asset",
-          "createdAt": "2015-08-11T08:22:55.110Z",
-          "updatedAt": "2015-08-13T09:05:03.667Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 3,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "ArcInTex logo",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/499jyRxiKAIuQEwC6Y8gKu/3517dfb1435e6a0ae0b18bfa61918161/arcintex_s.png",
-            "details": {
-              "size": 39636,
-              "image": {
-                "width": 250,
-                "height": 135
-              }
-            },
-            "fileName": "arcintex_s.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "4CpyLCnRmogog66a6Yq22e",
-          "type": "Asset",
-          "createdAt": "2015-10-16T07:05:28.561Z",
-          "updatedAt": "2015-10-16T07:05:28.561Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "ICT2015",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/4CpyLCnRmogog66a6Yq22e/0a06fb4cf1fa51bd8e4f77b895df6575/ict_2015_lisbon.png",
-            "details": {
-              "size": 148353,
-              "image": {
-                "width": 660,
-                "height": 830
-              }
-            },
-            "fileName": "ict_2015_lisbon.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "4Jhm0nMvDiuo2o0A2qykQ6",
-          "type": "Asset",
-          "createdAt": "2016-01-14T18:35:09.529Z",
-          "updatedAt": "2016-01-14T18:35:09.529Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "CHI-Logo-Colored",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/4Jhm0nMvDiuo2o0A2qykQ6/de2e1ccff00785721530955b43b5221e/CHI-Logo-Colored.png",
-            "details": {
-              "size": 4815,
-              "image": {
-                "width": 300,
-                "height": 255
-              }
-            },
-            "fileName": "CHI-Logo-Colored.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "4Y2un64p3Oyee4cGASeiak",
-          "type": "Asset",
-          "createdAt": "2015-08-09T18:22:26.924Z",
-          "updatedAt": "2015-08-09T18:22:26.924Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "mhd 2014 poster small",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/4Y2un64p3Oyee4cGASeiak/5aabee168b0e64d9d035c63d71c9354f/mhd_2014_poster_small.jpg",
-            "details": {
-              "size": 146874,
-              "image": {
-                "width": 600,
-                "height": 849
-              }
-            },
-            "fileName": "mhd_2014_poster_small.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "53GnHT97y8ekMaMiE60eE4",
-          "type": "Asset",
-          "createdAt": "2015-08-18T22:03:04.469Z",
-          "updatedAt": "2015-08-18T22:03:04.469Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "sonard",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/53GnHT97y8ekMaMiE60eE4/8639cf3d311f6e7a44d16f6475fc6ffd/sonard.jpg",
-            "details": {
-              "size": 148589,
-              "image": {
-                "width": 1024,
-                "height": 738
-              }
-            },
-            "fileName": "sonard.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "5Rk3YwClzOgKCey4qioco2",
-          "type": "Asset",
-          "createdAt": "2015-05-21T14:55:15.769Z",
-          "updatedAt": "2015-05-21T14:55:15.769Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Kunstverein-Arnsberg Rafael-Rozendaal 1",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/5Rk3YwClzOgKCey4qioco2/f3ef2368326096276c06856617b2d0df/Kunstverein-Arnsberg_Rafael-Rozendaal_1.jpg",
-            "details": {
-              "size": 132879,
-              "image": {
-                "width": 800,
-                "height": 532
-              }
-            },
-            "fileName": "Kunstverein-Arnsberg_Rafael-Rozendaal_1.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "5apwLdHqpOWwMEmWIUOYq",
-          "type": "Asset",
-          "createdAt": "2015-08-18T22:17:27.132Z",
-          "updatedAt": "2015-08-18T22:17:27.132Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "throwing snow-200x300",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/5apwLdHqpOWwMEmWIUOYq/54ebeff11f0f6037a49ace9e6ebf8dd9/throwing_snow-200x300.jpg",
-            "details": {
-              "size": 13562,
-              "image": {
-                "width": 200,
-                "height": 300
-              }
-            },
-            "fileName": "throwing_snow-200x300.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "6HOfeW7idUsgAscUuCAQK0",
-          "type": "Asset",
-          "createdAt": "2015-08-13T09:09:09.464Z",
-          "updatedAt": "2015-08-13T09:09:09.464Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "ade",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/6HOfeW7idUsgAscUuCAQK0/7c2140cbc60a9790f13cddcc6aa168cf/ade.jpeg",
-            "details": {
-              "size": 5673,
-              "image": {
-                "width": 300,
-                "height": 168
-              }
-            },
-            "fileName": "ade.jpeg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "6PreyTDCqQggk40MU0uQ6S",
-          "type": "Asset",
-          "createdAt": "2016-05-17T14:16:24.636Z",
-          "updatedAt": "2016-05-17T14:16:24.636Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "sonar logo",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/6PreyTDCqQggk40MU0uQ6S/f7b45306ffb20d005ef2c88f0ecd6539/sonar_logo.png",
-            "details": {
-              "size": 2593,
-              "image": {
-                "width": 251,
-                "height": 121
-              }
-            },
-            "fileName": "sonar_logo.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "6RCwDLNtcs08Aaua6YyIk8",
-          "type": "Asset",
-          "createdAt": "2016-06-15T13:22:27.971Z",
-          "updatedAt": "2016-06-15T13:22:27.971Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "SOAP",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/6RCwDLNtcs08Aaua6YyIk8/f0abfae0c0c0c25dac9b27ea3e7a664a/soap-ws-logo.png",
-            "details": {
-              "size": 22175,
-              "image": {
-                "width": 294,
-                "height": 161
-              }
-            },
-            "fileName": "soap-ws-logo.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "6URIB6TzPyooQoeaqeYmoy",
-          "type": "Asset",
-          "createdAt": "2016-12-30T13:33:32.710Z",
-          "updatedAt": "2016-12-30T13:33:32.710Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "ade2",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/6URIB6TzPyooQoeaqeYmoy/676d9b6d3f26b7f67c6882b253e80da9/ade2.jpeg",
-            "details": {
-              "size": 25085,
-              "image": {
-                "width": 282,
-                "height": 376
-              }
-            },
-            "fileName": "ade2.jpeg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "7MFUROKpMsqeSmmyw4Kqg2",
-          "type": "Asset",
-          "createdAt": "2015-05-21T14:58:24.509Z",
-          "updatedAt": "2015-05-21T14:58:24.509Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "HackBarcelona-4",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/7MFUROKpMsqeSmmyw4Kqg2/7645a90abffe8a5defb1ba0acc0263a7/HackBarcelona-4.jpg",
-            "details": {
-              "size": 447943,
-              "image": {
-                "width": 800,
-                "height": 534
-              }
-            },
-            "fileName": "HackBarcelona-4.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "7hyEllTKOke4sgOUMAYMuM",
-          "type": "Asset",
-          "createdAt": "2016-06-10T14:18:49.751Z",
-          "updatedAt": "2016-06-10T14:18:49.751Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "fox",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/7hyEllTKOke4sgOUMAYMuM/860f6621c5c976d0b6e6b1faf1eaa6ec/fox.png",
-            "details": {
-              "size": 125177,
-              "image": {
-                "width": 662,
-                "height": 558
-              }
-            },
-            "fileName": "fox.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "7yR4aLtudUY4Go8ew2maeK",
-          "type": "Asset",
-          "createdAt": "2015-08-11T10:25:19.989Z",
-          "updatedAt": "2015-08-11T10:25:19.989Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "dis2014",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/7yR4aLtudUY4Go8ew2maeK/b32b0f1dfa270cfaaf5db997cfb2e3f8/dis2014.jpeg",
-            "details": {
-              "size": 59357,
-              "image": {
-                "width": 481,
-                "height": 321
-              }
-            },
-            "fileName": "dis2014.jpeg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "BzzsDFthTwIWAUoYiWooS",
-          "type": "Asset",
-          "createdAt": "2016-01-29T11:14:02.011Z",
-          "updatedAt": "2016-01-29T11:14:02.011Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "testing",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/BzzsDFthTwIWAUoYiWooS/62ef0866ac4757a896e94ea80bda445b/testing.png",
-            "details": {
-              "size": 1896144,
-              "image": {
-                "width": 1184,
-                "height": 790
-              }
-            },
-            "fileName": "testing.png",
-            "contentType": "image/png"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "fn5zruWNTqM0w0CKA0sok",
-          "type": "Asset",
-          "createdAt": "2015-08-18T22:17:00.925Z",
-          "updatedAt": "2015-08-18T22:17:00.925Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "florian grote-300x300",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/fn5zruWNTqM0w0CKA0sok/6c1dbada279862979206124e96d7a333/florian_grote-300x300.jpg",
-            "details": {
-              "size": 15216,
-              "image": {
-                "width": 300,
-                "height": 300
-              }
-            },
-            "fileName": "florian_grote-300x300.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "xrzr1u3na612"
-            }
-          },
-          "id": "nAzHtKsu1E4Iiu4Kqo8GM",
-          "type": "Asset",
-          "createdAt": "2016-07-22T10:15:36.535Z",
-          "updatedAt": "2016-07-22T10:15:36.535Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "ibm watson1",
-          "file": {
-            "url": "//images.ctfassets.net/xrzr1u3na612/nAzHtKsu1E4Iiu4Kqo8GM/5ea06fbe586980e409944affe56ae465/ibm_watson1.png",
-            "details": {
-              "size": 600468,
-              "image": {
-                "width": 640,
-                "height": 409
-              }
-            },
-            "fileName": "ibm_watson1.png",
-            "contentType": "image/png"
-          }
-        }
-      }
-    ]
-  }
+  ]
 };
 
 angular.module('giantSteps2App').factory('contentFarm', [
   '$q',
-  '$cacheFactory',
+'$cacheFactory',
   'contentfulClient',
   'cacheService',
   function ($q, $cacheFactory, contentfulClient, cacheService) {

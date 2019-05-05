@@ -17,14 +17,9 @@ angular
     'ngSanitize',
     'ng-contentful',
     'headroom',
-    'uiGmapgoogle-maps',
     'viewhead'
   ])
   .config(function ($stateProvider, $urlRouterProvider, contentfulClientProvider, uiGmapGoogleMapApiProvider) {
-
-
-
-
 
     // -------------------------------------------------
     //
@@ -140,22 +135,5 @@ angular
         templateUrl: 'views/news.detail.html',
         controller: 'NewsDetailCtrl'
       });
-
-
-    contentfulClientProvider.setSpaceId('xrzr1u3na612');
-    contentfulClientProvider.setAccessToken('a46fb11be216be4733826fad592b065889332f3d8d30d2aa49ea084d9e3632fc');
-
-    // ------------------------------------------------
-    // Set up maps
-    //
-    uiGmapGoogleMapApiProvider.configure({
-      key: 'AIzaSyCJ_JGWN55v7ngy9J8RKkXOfn1Ebxy3CKE',
-      v: '3.21',
-      libraries: 'geometry, visualization'
-    });
-
-
-
-
 
   });
