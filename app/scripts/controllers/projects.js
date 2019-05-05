@@ -36,11 +36,12 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 
 		$scope.loading = true;
 
-		contentFarm.textIndex().then(function(response){
+		contentFarm.textIndex().then(function (response) {
+
 			// ------------------------------------------------
 			// Convert markdown for about text
 			//
-			$scope.projects = response[0];
+			$scope.projects = response.items[0];
 
 			$scope.consortium = markdownService.convert($scope.projects.fields.consortium);
 			$scope.objectives = markdownService.convert($scope.projects.fields.projectObjectives);
@@ -50,19 +51,19 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 			$scope.loading = false;
 
 			$scope.current = $scope.projects.fields.projectObjectives;
-			
+
 		});
 
-		$scope.trust = function(text){
+		$scope.trust = function (text) {
 			return $sce.trustAsHtml(text);
 		};
 
-		
 
 
 
-		$scope.switch = function(topic){
-			
+
+		$scope.switch = function (topic) {
+
 			$scope.objActive = false;
 			$scope.workActive = false;
 			$scope.consortActive = false;
@@ -70,21 +71,21 @@ angular.module('giantSteps2App').controller('ProjectsCtrl', [
 
 
 
-			if (topic === 'objectives'){
+			if (topic === 'objectives') {
 				$scope.objActive = true;
 				$state.go('project.objectives');
 			}
-			else if (topic === 'workplan'){
+			else if (topic === 'workplan') {
 				$scope.workActive = true;
 				$state.go('project.workplan');
 			}
 
-			else if (topic === 'consortium'){
+			else if (topic === 'consortium') {
 				$scope.consortActive = true;
 				$state.go('project.consortium');
 			}
 
-			else if (topic === 'imprint'){
+			else if (topic === 'imprint') {
 				$scope.imprintActive = true;
 				$state.go('project.imprint');
 			}

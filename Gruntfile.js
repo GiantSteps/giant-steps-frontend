@@ -42,7 +42,7 @@ module.exports = function (grunt) {
       },
       jsTest: {
         files: ['test/spec/{,*/}*.js'],
-        tasks: ['newer:jshint:test', 'karma']
+        tasks: ['newer:jshint:test']
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
@@ -56,7 +56,6 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= yeoman.app %>/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -179,24 +178,24 @@ module.exports = function (grunt) {
     wiredep: {
       app: {
         src: ['<%= yeoman.app %>/index.html'],
-        ignorePath:  /\.\.\//
+        ignorePath: /\.\.\//
       },
-      test: {
-        devDependencies: true,
-        src: '<%= karma.unit.configFile %>',
-        ignorePath:  /\.\.\//,
-        fileTypes:{
-          js: {
-            block: /(([\s\t]*)\/{2}\s*?bower:\s*?(\S*))(\n|\r|.)*?(\/{2}\s*endbower)/gi,
-              detect: {
-                js: /'(.*\.js)'/gi
-              },
-              replace: {
-                js: '\'{{filePath}}\','
-              }
-            }
-          }
-      },
+      // test: {
+      //   devDependencies: true,
+      //   src: '<%= karma.unit.configFile %>',
+      //   ignorePath: /\.\.\//,
+      //   fileTypes: {
+      //     js: {
+      //       block: /(([\s\t]*)\/{2}\s*?bower:\s*?(\S*))(\n|\r|.)*?(\/{2}\s*endbower)/gi,
+      //       detect: {
+      //         js: /'(.*\.js)'/gi
+      //       },
+      //       replace: {
+      //         js: '\'{{filePath}}\','
+      //       }
+      //     }
+      //   }
+      // },
       sass: {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
@@ -226,9 +225,9 @@ module.exports = function (grunt) {
         }
       },
       server: {
-        options: {
-          sourcemap: true
-        }
+        // options: {
+        //   sourcemap: true
+        // }
       }
     },
 
@@ -396,20 +395,20 @@ module.exports = function (grunt) {
     },
 
 
-    aws: grunt.file.readJSON('env.json'),
+    //aws: grunt.file.readJSON('env.json'),
 
-    s3: {
-      options:{
-        accessKeyId: '<%= aws.accessKeyId %>',
-        secretAccessKey: '<%= aws.secretAccessKey %>',
-        bucket: '<%= aws.bucket %>'
-      },
+    // s3: {
+    //   options:{
+    //     accessKeyId: '<%= aws.accessKeyId %>',
+    //     secretAccessKey: '<%= aws.secretAccessKey %>',
+    //     bucket: '<%= aws.bucket %>'
+    //   },
 
-      build:{
-        cwd: 'dist/',
-        src: '**'
-      }
-    },
+    //   build:{
+    //     cwd: 'dist/',
+    //     src: '**'
+    //   }
+    // },
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
@@ -427,12 +426,12 @@ module.exports = function (grunt) {
     },
 
     // Test settings
-    karma: {
-      unit: {
-        configFile: 'test/karma.conf.js',
-        singleRun: true
-      }
-    }
+    // karma: {
+    //   unit: {
+    //     configFile: 'test/karma.conf.js',
+    //     singleRun: true
+    //   }
+    // }
   });
 
 
@@ -456,14 +455,14 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'wiredep',
-    'concurrent:test',
-    'autoprefixer',
-    'connect:test',
-    'karma'
-  ]);
+  // grunt.registerTask('test', [
+  //   'clean:server',
+  //   'wiredep',
+  //   'concurrent:test',
+  //   'autoprefixer',
+  //   // 'connect:test',
+  //   // 'karma'
+  // ]);
 
   grunt.registerTask('build', [
     'clean:dist',
@@ -484,7 +483,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'newer:jshint',
-    'test',
     'build'
   ]);
 };

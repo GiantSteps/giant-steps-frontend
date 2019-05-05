@@ -8,7 +8,7 @@
  * Controller of the giantSteps2App
  */
 
- /* global moment:false */
+/* global moment:false */
 
 angular.module('giantSteps2App').controller('EventsCtrl', [
 	'$scope',
@@ -28,7 +28,7 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 		canvasService.destroy();
 
 
-		$scope.togglePast = function(){
+		$scope.togglePast = function () {
 			$scope.showPast = !$scope.showPast;
 			return $scope.showPast;
 		};
@@ -41,28 +41,43 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 		// Get events
 		// 
 		// -------------------------------------------------
-		
-		contentFarm.eventsIndex().then(function(response){
+
+		contentFarm.eventsIndex().then(function (response) {
 
 			// ------------------------------------------------
 			// turn all event dates into moments
 			//
+			var items = response.items;
+			var assets = response.includes.Asset;
 
-			for (var i = 0; i < response.length; i++ ){
-				response[i].fields.dateTime = moment(response[i].fields.dateTime);
 
+			for (var i = 0; i < items.length; i++) {
+				items[i].fields.dateTime = moment(items[i].fields.dateTime);
 
-				if (now > response[i].fields.dateTime){
-					response[i].fields.dateTime = new Date(moment(response[i].fields.dateTime));
-					$scope.pastEvents.push(response[i]);
+				// see if there are any images
+				if (items[i].fields.images && items[i].fields.images.length) {
+					for (var x = 0; x < items[i].fields.images.length; x++) {
+						var id = items[i].fields.images[x].sys.id;
+						// find in assets
+						var target = assets.find(a => a.sys.id === id);
+						if (target) {
+							items[i].fields.images[x].url = target.fields.file.url;
+						}
+					}
 				}
-				else{
-					response[i].fields.dateTime = new Date(moment(response[i].fields.dateTime));
-					$scope.futureEvents.push(response[i]);
+
+
+				if (now > items[i].fields.dateTime) {
+					items[i].fields.dateTime = new Date(moment(items[i].fields.dateTime));
+					$scope.pastEvents.push(items[i]);
+				}
+				else {
+					items[i].fields.dateTime = new Date(moment(items[i].fields.dateTime));
+					$scope.futureEvents.push(items[i]);
 				}
 			}
 
-			
+
 			$scope.loading = false;
 		});
 
@@ -72,8 +87,8 @@ angular.module('giantSteps2App').controller('EventsCtrl', [
 		// Go to event
 		// 
 		// -------------------------------------------------
-		$scope.goToEvent = function(id){
-			$state.go('eventDetail', {'eventId': id});
+		$scope.goToEvent = function (id) {
+			$state.go('eventDetail', { 'eventId': id });
 		};
 
 
