@@ -14,8 +14,7 @@ angular.module('giantSteps2App').controller('EventsDetailCtrl', [
 	'contentFarm',
 	'markdownService',
 	'canvasService',
-	'uiGmapGoogleMapApi',
-	function ($scope, $state, $sce, contentFarm, markdownService, canvasService, uiGmapGoogleMapApi) {
+	function ($scope, $state, $sce, contentFarm, markdownService, canvasService) {
 
 		// ------------------------------------------------
 		// Slug for specific event
@@ -83,14 +82,6 @@ angular.module('giantSteps2App').controller('EventsDetailCtrl', [
 					}
 				};
 
-				// ------------------------------------------------
-				// Setup maps once data from contentful is in. IF it exists
-				//
-				if ($scope.event.fields.map.lat) {
-					uiGmapGoogleMapApi.then(function () {
-						console.log('Maps up');
-					});
-				}
 			}
 		});
 

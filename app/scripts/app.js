@@ -15,11 +15,10 @@ angular
     'ngCookies',
     'ui.router',
     'ngSanitize',
-    'ng-contentful',
     'headroom',
     'viewhead'
   ])
-  .config(function ($stateProvider, $urlRouterProvider, contentfulClientProvider, uiGmapGoogleMapApiProvider) {
+  .config(function ($stateProvider, $urlRouterProvider) {
 
     // -------------------------------------------------
     //

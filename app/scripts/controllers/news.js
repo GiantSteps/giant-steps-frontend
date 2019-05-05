@@ -42,7 +42,6 @@ angular.module('giantSteps2App').controller('NewsCtrl', function ($scope, $state
 					// find in assets
 					var target = assets.find(a => a.sys.id === id);
 					if (target) {
-						console.log('target', target);
 						items[i].fields.images[x].url = target.fields.file.url;
 					}
 				}
